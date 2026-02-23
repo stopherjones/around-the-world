@@ -59,27 +59,87 @@ body {
 
 .filter-bar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
     padding: 1rem 1.5rem;
     background: #f3f3f3;
     border-radius: 12px;
     margin-bottom: 1.5rem;
-
-    /* Sticky behaviour */
     position: sticky;
     top: 0;
     z-index: 50;
 }
 
-.books-list ~ .filter-bar,
-.music-list ~ .filter-bar {
-    grid-template-columns: 1fr auto auto;
+/* Desktop: all on one row */
+.filter-bar {
+    grid-template-columns: auto 1fr auto;
+    align-items: end;
 }
 
-.filter-bar:has(#booksList),
-.filter-bar:has(#musicList) {
-    grid-template-columns: 1fr auto auto;
+/* Label positioning for first column (Content Type or Sort) */
+.filter-bar > .filter-group:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* Search in middle, flexible width */
+.filter-bar > .filter-group.search {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 200px;
+}
+
+/* Continent on right */
+.filter-bar > .filter-group.continent {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+/* Tablet: 900px and below - Content Type/Sort stays on row 1, Search and Continent on row 2 */
+@media (max-width: 900px) {
+    .filter-bar {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .filter-bar > .filter-group:nth-child(1) {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+
+    .filter-bar > .filter-group.search {
+        grid-column: 1;
+        grid-row: 2;
+        min-width: unset;
+    }
+
+    .filter-bar > .filter-group.continent {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: end;
+    }
+}
+
+/* Mobile: 600px and below - three separate rows */
+@media (max-width: 600px) {
+    .filter-bar {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .filter-bar > .filter-group:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .filter-bar > .filter-group.continent {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .filter-bar > .filter-group.search {
+        grid-column: 1;
+        grid-row: 3;
+    }
 }
 
 .filter-group {
@@ -122,7 +182,6 @@ body {
 
 .checkbox-group input[type="checkbox"] {
     cursor: pointer;
-    margin: 0 0 0 -3.5rem;
 }
 
 .filter-bar select,
@@ -131,22 +190,7 @@ body {
     border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 0.95rem;
-    min-width: 150px;
-}
-
-#searchInput {
-    min-width: 220px;
-    flex: 0 1 auto;
-}
-
-.filter-group:has(#searchInput) {
-    margin-left: 0;
-    flex: 0 1 auto;
-}
-
-.filter-group:has(#continentFilter) {
-    margin-left: auto;
-    flex: 0 0 auto;
+    width: 100%;
 }
 
 .stat-display {

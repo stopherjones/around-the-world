@@ -18,13 +18,20 @@
 
     <!-- Sticky Nav Bar -->
     <nav class="filter-bar">
+        <div class="filter-group sort">
+            <label for="sortFilter">Sort</label>
+            <select id="sortFilter">
+                <option value="alpha">A–Z</option>
+                <option value="recent">Most Recent</option>
+            </select>
+        </div>
 
-        <div class="filter-group">
+        <div class="filter-group search">
             <label for="searchInput">Search</label>
             <input type="text" id="searchInput" placeholder="Find a country...">
         </div>
 
-        <div class="filter-group">
+        <div class="filter-group continent">
             <label for="continentFilter">Continent</label>
             <select id="continentFilter">
                 <option value="all">All</option>
@@ -36,16 +43,6 @@
                 <option value="Oceania">Oceania</option>
             </select>
         </div>
-
-<div class="filter-group">
-    <label for="sortFilter">Sort</label>
-    <select id="sortFilter">
-        <option value="alpha">A–Z</option>
-        <option value="recent">Most Recent</option>
-    </select>
-</div>
-
-
     </nav>
 
     <div class="container">
