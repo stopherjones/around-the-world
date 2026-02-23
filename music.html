@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen Around the World - Music List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="index.html" class="back-link">Back to Gallery</a>
+    <h1 class="main-title">Music I've Listened To</h1>
+
+    <div class="stat-display">
+        <span id="statText">0 tracks in 0 countries</span>
+    </div>
+
+    <p class="subtitle">A list of music entries organized by country</p>
+
+    <nav class="filter-bar">
+
+        <div class="filter-group">
+            <label for="searchInput">Search</label>
+            <input type="text" id="searchInput" placeholder="Find a country, artist or album...">
+        </div>
+
+        <div class="filter-group">
+            <label for="continentFilter">Continent</label>
+            <select id="continentFilter">
+                <option value="all">All</option>
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="sortFilter">Sort</label>
+            <select id="sortFilter">
+                <option value="alpha">Country A–Z</option>
+                <option value="date">National Day</option>
+            </select>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div id="musicList" class="music-list"></div>
+    </div>
+
+    <script>
+        // Simple music renderer that reads countries.json and lists music entries
+        async function loadMusic() {
+            const res = await fetch('countries.json');
+            const data = await res.json();
+
+            const musicListEl = document.getElementById('musicList');
+            const searchEl = document.getElementById('searchInput');
+            const continentEl = document.getElementById('continentFilter');
+            const sortEl = document.getElementById('sortFilter');
+
+            function updateStats(flat) {
+                const countriesWithMusic = new Set(flat.map(f => f.countryName)).size;
+                const statText = document.getElementById('statText');
+                if (statText) statText.textContent = `${flat.length} tracks in ${countriesWithMusic} countries`;
+            }
+
+            function render() {
+                musicListEl.innerHTML = '';
+
+                const search = (searchEl.value || '').toLowerCase();
+                const continent = continentEl.value || 'all';
+                const sortMode = sortEl.value || 'alpha';
+
+                const entries = [];
+                data.forEach(country => {
+                    if (!country.music || country.music.length === 0) return;
+                    if (continent !== 'all' && country.continent !== continent) return;
+
+                    country.music.forEach(m => {
+                        const textToSearch = `${country.name} ${m.artist || ''} ${m.album_or_playlist || ''} ${m.description || ''}`.toLowerCase();
+                        if (search && !textToSearch.includes(search)) return;
+
+                        entries.push({
+                            ...m,
+                            countryName: country.name,
+                            countryCode: country.code
+                        });
+                    });
+                });
+
+                if (entries.length === 0) {
+                    musicListEl.innerHTML = '<div class="empty-state">No music recorded yet.</div>';
+                    updateStats([]);
+                    return;
+                }
+
+                if (sortMode === 'date') {
+                    entries.sort((a, b) => {
+                        const getDateOrder = (dateStr) => {
+                            if (!dateStr) return '99-99'; // No date goes last
+                            return dateStr; // Already in MM-DD format, sorts correctly
+                        };
+                        return getDateOrder(a.date || '').localeCompare(getDateOrder(b.date || ''));
+                    });
+                } else {
+                    entries.sort((a, b) => (a.countryName || '').localeCompare(b.countryName || ''));
+                }
+
+                entries.forEach(entry => {
+                    const item = document.createElement('div');
+                    item.classList.add('music-item');
+
+                    const flagDiv = document.createElement('div');
+                    flagDiv.classList.add('flag-thumbnail');
+                    const img = document.createElement('img');
+                    if (entry.countryCode && (entry.countryCode.includes('/') || entry.countryCode.startsWith('http'))) {
+                        img.src = entry.countryCode;
+                    } else if (entry.countryCode) {
+                        img.src = `https://flagcdn.com/w160/${entry.countryCode}.png`;
+                    }
+                    img.alt = `Flag of ${entry.countryName}`;
+                    flagDiv.appendChild(img);
+
+                    const details = document.createElement('div');
+                    details.classList.add('music-details');
+
+                    const countryName = document.createElement('div');
+                    countryName.classList.add('country-name');
+                    countryName.textContent = entry.countryName;
+                    details.appendChild(countryName);
+
+                    const artist = document.createElement('div');
+                    artist.classList.add('music-artist');
+                    artist.textContent = entry.artist || '';
+                    details.appendChild(artist);
+
+                    const album = document.createElement('div');
+                    album.classList.add('music-album');
+                    if (entry.url) {
+                        const a = document.createElement('a');
+                        a.href = entry.url;
+                        a.target = '_blank';
+                        a.rel = 'noopener noreferrer';
+                        a.textContent = entry.album_or_playlist || 'Listen';
+                        album.appendChild(a);
+                    } else {
+                        album.textContent = entry.album_or_playlist || '';
+                    }
+                    details.appendChild(album);
+
+                    if (entry.description) {
+                        const desc = document.createElement('div');
+                        desc.classList.add('music-desc');
+                        desc.textContent = entry.description;
+                        details.appendChild(desc);
+                    }
+
+                    if (entry.date) {
+                        const dateEl = document.createElement('div');
+                        dateEl.classList.add('music-date');
+                        // Format MM-DD to DD-MMM
+                        const [month, day] = entry.date.split('-');
+                        const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                        const monthIndex = parseInt(month) - 1;
+                        const formatted = `${day}-${monthNames[monthIndex]}`;
+                        dateEl.textContent = `National day: ${formatted}`;
+                        details.appendChild(dateEl);
+                    }
+
+                    item.appendChild(flagDiv);
+                    item.appendChild(details);
+                    musicListEl.appendChild(item);
+                });
+
+                updateStats(entries);
+            }
+
+            searchEl.addEventListener('input', render);
+            continentEl.addEventListener('change', render);
+            sortEl.addEventListener('change', render);
+
+            render();
+        }
+
+        loadMusic().catch(err => console.error('Failed to load music:', err));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Around the World - List of Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="index.html" class="back-link">Back to Gallery</a>
+    <h1 class="main-title">Books I've Read</h1>
+
+    <div class="stat-display">
+        <span id="statText">0 books read in 0 of 0 countries</span>
+    </div>
+
+    <p class="subtitle">A complete list of books organized by country of origin</p>
+
+    <!-- Sticky Nav Bar -->
+    <nav class="filter-bar">
+
+        <div class="filter-group">
+            <label for="searchInput">Search</label>
+            <input type="text" id="searchInput" placeholder="Find a country...">
+        </div>
+
+        <div class="filter-group">
+            <label for="continentFilter">Continent</label>
+            <select id="continentFilter">
+                <option value="all">All</option>
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+
+<div class="filter-group">
+    <label for="sortFilter">Sort</label>
+    <select id="sortFilter">
+        <option value="alpha">A–Z</option>
+        <option value="recent">Most Recent</option>
+    </select>
+</div>
+
+
+    </nav>
+
+    <div class="container">
+        <div id="booksList" class="books-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+    </body>
+</html>
