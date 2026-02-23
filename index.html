@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="books.html" class="top-link">View all books</a>
-    <a href="music.html" class="top-link music-link">View all music</a>
+    <a href="books.html" class="top-link">View books list</a>
+    <a href="music.html" class="top-link music-link">View music list</a>
 
     <h1 class="main-title">Read Around the World</h1>
 
@@ -21,16 +21,11 @@
     <!-- Sticky Nav Bar -->
     <nav class="filter-bar">
         <div class="filter-group content-type">
-            <label>Content Type</label>
+            <label>Show Books or Music:</label>
             <div class="checkbox-group">
                 <label>Books <input type="checkbox" id="filterBooks" checked></label>
                 <label>Music <input type="checkbox" id="filterMusic" checked></label>
             </div>
-        </div>
-
-        <div class="filter-group search">
-            <label for="searchInput">Search</label>
-            <input type="text" id="searchInput" placeholder="Find a country...">
         </div>
 
         <div class="filter-group continent">
@@ -44,6 +39,11 @@
                 <option value="South America">South America</option>
                 <option value="Oceania">Oceania</option>
             </select>
+        </div>
+
+        <div class="filter-group search">
+            <label for="searchInput">Search</label>
+            <input type="text" id="searchInput" placeholder="Find a country...">
         </div>
     </nav>
 

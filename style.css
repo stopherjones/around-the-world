@@ -69,58 +69,88 @@ body {
     z-index: 50;
 }
 
-/* Desktop: all on one row */
+/* Desktop: all on one row - Left | Center | Right */
+/* GRID LAYOUT EXPLANATION:
+   - "auto" = shrinks to fit content width
+   - "1fr" = flexible, takes remaining space
+   So "auto 1fr auto" means: Left (fit content) | Center (fill space) | Right (fit content)
+   
+   To adjust widths, modify grid-template-columns or individual element properties below.
+*/
 .filter-bar {
     grid-template-columns: auto 1fr auto;
     align-items: end;
 }
 
-/* Label positioning for first column (Content Type or Sort) */
+/* First element (Content Type or Sort) - left
+   WIDTH CONTROL: 
+   - Currently "auto" from grid-template-columns, so it shrinks to fit content
+   - To force a specific width: add "width: 200px;" or use "min-width: 150px;"
+*/
 .filter-bar > .filter-group:nth-child(1) {
     grid-column: 1;
     grid-row: 1;
+    width: 150px;
 }
 
-/* Search in middle, flexible width */
-.filter-bar > .filter-group.search {
+/* Second element (Continent) - center/flexible
+   WIDTH CONTROL:
+   - Currently takes all remaining space ("1fr" from grid-template-columns)
+   - To force narrower: add "width: 200px;" or "max-width: 300px;"
+   - To make it fixed width: change grid-template-columns at top to use specific size like "150px 200px 150px"
+*/
+.filter-bar > .filter-group:nth-child(2) {
     grid-column: 2;
     grid-row: 1;
-    min-width: 200px;
+    width: 200px;
 }
 
-/* Continent on right */
-.filter-bar > .filter-group.continent {
+/* Third element (Search) - right
+   WIDTH CONTROL:
+   - Currently "auto" from grid-template-columns, but has "min-width: 200px"
+   - min-width: ensures minimum width even with short input
+   - To make wider: increase min-width (e.g., min-width: 300px)
+   - To make narrower: decrease min-width (e.g., min-width: 150px)
+   - To force exact width: add "width: 250px;" (overrides min-width)
+*/
+.filter-bar > .filter-group:nth-child(3) {
     grid-column: 3;
     grid-row: 1;
+    min-width: 400px;  /* ADJUST THIS to change search box minimum width */
 }
 
-/* Tablet: 900px and below - Content Type/Sort stays on row 1, Search and Continent on row 2 */
+/* Tablet: 900px and below - First and Second on row 1, Third on row 2
+   WIDTH CONTROL:
+   - grid-template-columns: "1fr 1fr" = two equal columns
+   - To adjust column ratio: change to "1fr 2fr" (first narrower) or "2fr 1fr" (second narrower)
+   - Or use fixed widths: "300px 300px" or "auto auto"
+*/
 @media (max-width: 900px) {
     .filter-bar {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;  /* ADJUST THIS to change desktop breakpoint column widths */
         grid-template-rows: auto auto;
     }
 
     .filter-bar > .filter-group:nth-child(1) {
-        grid-column: 1 / 3;
+        grid-column: 1;
         grid-row: 1;
     }
 
-    .filter-bar > .filter-group.search {
-        grid-column: 1;
-        grid-row: 2;
-        min-width: unset;
+    .filter-bar > .filter-group:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;  /* Aligns second element to right */
     }
 
-    .filter-bar > .filter-group.continent {
-        grid-column: 2;
+    .filter-bar > .filter-group:nth-child(3) {
+        grid-column: 1 / 3;  /* Spans both columns */
         grid-row: 2;
-        justify-self: end;
+        min-width: unset;  /* Removes min-width restriction so search fills available width */
     }
 }
 
-/* Mobile: 600px and below - three separate rows */
-@media (max-width: 600px) {
+/* Mobile: 450px and below - three separate rows */
+@media (max-width: 450px) {
     .filter-bar {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
@@ -178,6 +208,7 @@ body {
     margin: 0;
     cursor: pointer;
     white-space: nowrap;
+    margin-bottom: 15px;
 }
 
 .checkbox-group input[type="checkbox"] {
