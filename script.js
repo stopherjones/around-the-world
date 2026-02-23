@@ -10,6 +10,7 @@ fetch("countries.json")
         if (document.getElementById("gallery")) {
             renderGallery(data);
             setupGalleryFilters();
+            updateStats(data, 'gallery');
         }
 
         // If we're on the books page
@@ -18,19 +19,81 @@ fetch("countries.json")
             renderBooks();
         }
 
-        updateStats(data);
+        // If we're on the music page
+        if (document.getElementById("musicList")) {
+            setupMusicFilters();
+            renderMusic();
+        }
     });
 
 /* ----------------- STATS ----------------- */
 
-function updateStats(data) {
-    const totalBooks = data.reduce((sum, c) => sum + (c.books ? c.books.length : 0), 0);
-    const readCountries = data.filter(c => c.read).length;
+function updateStats(data, pageType = 'gallery') {
     const totalCountries = data.filter(c => c.type === 'country').length;
-
     const statText = document.getElementById("statText");
-    if (statText) {
-        statText.textContent = `${totalBooks} books read in ${readCountries} of ${totalCountries} countries`;
+    if (!statText) return;
+
+    if (pageType === 'gallery') {
+        // Apply search and continent filters
+        const search = (document.getElementById("searchInput")?.value || "").toLowerCase();
+        const continent = document.getElementById("continentFilter")?.value || "all";
+        const showBooks = document.getElementById("filterBooks")?.checked ?? true;
+        const showMusic = document.getElementById("filterMusic")?.checked ?? true;
+        
+        const filtered = data.filter(c => {
+            const matchSearch = c.name.toLowerCase().includes(search);
+            const matchContinent = continent === "all" || c.continent === continent;
+            return matchSearch && matchContinent;
+        });
+        
+        let totalEntries = 0;
+        let entriesCountries = new Set();
+        
+        if (showBooks || showMusic) {
+            filtered.forEach(c => {
+                if (showBooks && c.books && c.books.length > 0) {
+                    totalEntries += c.books.length;
+                    entriesCountries.add(c.name);
+                }
+                if (showMusic && c.music && c.music.length > 0) {
+                    totalEntries += c.music.length;
+                    entriesCountries.add(c.name);
+                }
+            });
+        }
+        
+        statText.textContent = `${totalEntries} entries from ${entriesCountries.size} of ${totalCountries} countries`;
+    } else if (pageType === 'books') {
+        // Apply search and continent filters
+        const search = document.getElementById("searchInput")?.value.toLowerCase() || "";
+        const continent = document.getElementById("continentFilter")?.value || "all";
+        
+        // Count all entries (countries + territories)
+        const allFiltered = data.filter(c =>
+            c.read &&
+            c.books &&
+            c.books.length > 0 &&
+            (search === "" || c.name.toLowerCase().includes(search)) &&
+            (continent === "all" || c.continent === continent)
+        );
+        
+        const totalBooks = allFiltered.reduce((sum, c) => sum + c.books.length, 0);
+        statText.textContent = `${totalBooks} entries from ${allFiltered.length} of ${totalCountries} countries`;
+    } else if (pageType === 'music') {
+        // Apply search and continent filters
+        const search = document.getElementById("searchInput")?.value.toLowerCase() || "";
+        const continent = document.getElementById("continentFilter")?.value || "all";
+        
+        // Count all entries (countries + territories)
+        const allFiltered = data.filter(c =>
+            c.music &&
+            c.music.length > 0 &&
+            (search === "" || c.name.toLowerCase().includes(search)) &&
+            (continent === "all" || c.continent === continent)
+        );
+        
+        const totalMusic = allFiltered.reduce((sum, c) => sum + c.music.length, 0);
+        statText.textContent = `${totalMusic} entries from ${allFiltered.length} of ${totalCountries} countries`;
     }
 }
 
@@ -209,7 +272,7 @@ function applyGalleryFilters() {
     });
 
     renderGallery(filtered, showBooks, showMusic);
-    updateStats(countriesData);
+    updateStats(countriesData, 'gallery');
 }
 
 /* ----------------- BOOKS LIST PAGE ----------------- */
@@ -268,7 +331,13 @@ function renderBooks() {
     if (sortMode === "recent") {
         flatBooks.sort((a, b) => new Date(b.date_read) - new Date(a.date_read));
     } else {
-        flatBooks.sort((a, b) => a.countryName.localeCompare(b.countryName));
+        // A-Z: countries first, then territories
+        flatBooks.sort((a, b) => {
+            if (a.type !== b.type) {
+                return a.type === 'country' ? -1 : 1;  // countries before territories
+            }
+            return a.countryName.localeCompare(b.countryName);
+        });
     }
 
     // Render
@@ -326,5 +395,5 @@ function renderBooks() {
         booksList.appendChild(item);
     });
 
-    updateStats(countriesData);
+    updateStats(countriesData, 'books');
 }
