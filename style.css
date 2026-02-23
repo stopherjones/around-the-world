@@ -9,6 +9,7 @@ body {
 .main-title {
     text-align: center;
     margin-bottom: 1.5rem;
+    padding-top: 2rem;
 }
 
 .subtitle {
@@ -18,8 +19,6 @@ body {
     font-size: 0.95rem;
 }
 
-/* When the stats display is placed between the H1 and subtitle,
-   center it and give a small separation from the title/subtitle. */
 .main-title + .stat-display {
     display: block;
     text-align: center;
@@ -64,108 +63,110 @@ body {
     position: sticky;
     top: 0;
     z-index: 50;
-}
-
-/* Desktop: all on one row - Left | Center | Right */
-/* GRID LAYOUT EXPLANATION:
-   - "auto" = shrinks to fit content width
-   - "1fr" = flexible, takes remaining space
-   So "auto 1fr auto" means: Left (fit content) | Center (fill space) | Right (fit content)
-   
-   To adjust widths, modify grid-template-columns or individual element properties below.
-*/
-.filter-bar {
     grid-template-columns: auto 1fr auto;
     align-items: end;
 }
 
-/* First element (Content Type or Sort) - left
-   WIDTH CONTROL: 
-   - Currently "auto" from grid-template-columns, so it shrinks to fit content
-   - To force a specific width: add "width: 200px;" or use "min-width: 150px;"
-*/
 .filter-bar > .filter-group:nth-child(1) {
     grid-column: 1;
     grid-row: 1;
     width: 280px;
 }
 
-/* Second element (Continent) - center/flexible
-   WIDTH CONTROL:
-   - Currently takes all remaining space ("1fr" from grid-template-columns)
-   - To force narrower: add "width: 200px;" or "max-width: 300px;"
-   - To make it fixed width: change grid-template-columns at top to use specific size like "150px 200px 150px"
-*/
 .filter-bar > .filter-group:nth-child(2) {
     grid-column: 2;
     grid-row: 1;
     width: 200px;
 }
 
-/* Third element (Search) - right
-   WIDTH CONTROL:
-   - Currently "auto" from grid-template-columns, but has "min-width: 200px"
-   - min-width: ensures minimum width even with short input
-   - To make wider: increase min-width (e.g., min-width: 300px)
-   - To make narrower: decrease min-width (e.g., min-width: 150px)
-   - To force exact width: add "width: 250px;" (overrides min-width)
-*/
 .filter-bar > .filter-group:nth-child(3) {
     grid-column: 3;
     grid-row: 1;
-    min-width: 400px;  /* ADJUST THIS to change search box minimum width */
+    min-width: 400px;
 }
 
-/* Tablet: 900px and below - First and Second on row 1, Third on row 2
-   WIDTH CONTROL:
-   - grid-template-columns: "1fr 1fr" = two equal columns
-   - To adjust column ratio: change to "1fr 2fr" (first narrower) or "2fr 1fr" (second narrower)
-   - Or use fixed widths: "300px 300px" or "auto auto"
-*/
+/* Tablet */
 @media (max-width: 900px) {
     .filter-bar {
-        grid-template-columns: 1fr 1fr;  /* ADJUST THIS to change desktop breakpoint column widths */
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
     }
 
     .filter-bar > .filter-group:nth-child(1) {
         grid-column: 1;
         grid-row: 1;
+        width: auto;
     }
 
     .filter-bar > .filter-group:nth-child(2) {
         grid-column: 2;
         grid-row: 1;
-        justify-self: end;  /* Aligns second element to right */
+        justify-self: end;
+        width: auto;
     }
 
     .filter-bar > .filter-group:nth-child(3) {
-        grid-column: 1 / 3;  /* Spans both columns */
+        grid-column: 1 / 3;
         grid-row: 2;
-        min-width: unset;  /* Removes min-width restriction so search fills available width */
+        min-width: unset;
     }
 }
 
-/* Mobile: 450px and below - three separate rows */
-@media (max-width: 450px) {
-    .filter-bar {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
+/* Mobile */
+@media (max-width: 600px) {
+
+    /* INDEX PAGE */
+    .filter-bar.index-bar {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
     }
 
-    .filter-bar > .filter-group:nth-child(1) {
+    .filter-bar.index-bar > .filter-group:nth-child(1) {
         grid-column: 1;
         grid-row: 1;
+        width: auto;
     }
 
-    .filter-bar > .filter-group.continent {
-        grid-column: 1;
+    .filter-bar.index-bar > .filter-group:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+        width: auto;
+    }
+
+    .filter-bar.index-bar > .filter-group:nth-child(3) {
+        grid-column: 1 / 3;
         grid-row: 2;
+        min-width: unset;
     }
 
-    .filter-bar > .filter-group.search {
+    .checkbox-group {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    /* BOOKS/MUSIC PAGES */
+    .filter-bar.list-bar {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .filter-bar.list-bar > .filter-group:nth-child(1) {
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 1;
+        width: auto;
+    }
+
+    .filter-bar.list-bar > .filter-group:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+        width: auto;
+    }
+
+    .filter-bar.list-bar > .filter-group:nth-child(3) {
+        grid-column: 1 / 3;
+        grid-row: 2;
+        min-width: unset;
     }
 }
 
@@ -189,7 +190,7 @@ body {
 
 .checkbox-group {
     display: flex;
-    gap: 1.5rem;          /* gap between "Books ☑" and "Music ☑" */
+    gap: 1.5rem;
     flex-wrap: nowrap;
     align-items: center;
     margin: 0;
@@ -199,8 +200,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.1rem;          /* space between text and checkbox */
-    font-size: 1.5rem;
+    gap: 0.1rem;
+    font-size: 1.0rem;
     color: #222;
     margin: 0;
     cursor: pointer;
@@ -212,7 +213,7 @@ body {
     cursor: pointer;
     width: 1.2rem;
     height: 1.2rem;
-    margin-right: 0.4rem;
+    margin: 0;
 }
 
 .filter-bar select,
@@ -234,30 +235,6 @@ body {
     padding-top: 0.25rem;
 }
 
-@media (max-width: 600px) {
-    .filter-bar {
-        grid-template-columns: 1fr;
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .filter-bar:has(#booksList),
-    .filter-bar:has(#musicList) {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .filter-group {
-        flex-direction: column;
-        gap: 0.3rem;
-    }
-
-    .filter-group:has(.checkbox-group) {
-        flex-direction: column;
-        gap: 0.3rem;
-        align-items: flex-start;
-    }
-}
-
 /* ----------------- GALLERY ----------------- */
 
 .gallery {
@@ -266,8 +243,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 
-/* When the gallery contains section blocks (heading + nested grids)
-   prevent the outer container from acting as a grid so sections stack vertically. */
 .gallery.sectioned {
     display: block;
 }
@@ -311,7 +286,6 @@ body {
     filter: grayscale(100%);
 }
 
-/* Flag highlighting based on content type */
 .gallery-image.has-books {
     box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.6);
 }
@@ -324,7 +298,6 @@ body {
     box-shadow: 0 0 0 3px rgba(153, 51, 153, 0.6);
 }
 
-/* Greyscale when filter doesn't match */
 .gallery-image.greyed-out {
     filter: grayscale(100%) opacity(0.5);
 }
@@ -361,7 +334,6 @@ body {
     box-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
 
-
 .popup-box h2 {
     margin-top: 0;
     margin-bottom: 0.8rem;
@@ -383,8 +355,7 @@ body {
     text-align: center;
 }
 
-
-/* ----------------- BOOKS PAGE (moved from books.html) ----------------- */
+/* ----------------- BOOKS/MUSIC PAGES ----------------- */
 
 .container {
     max-width: 900px;
@@ -456,8 +427,8 @@ body {
 }
 
 .book-author {
-    font-size: 1rem;   /* larger */
-    font-weight: 600;    /* darker/bolder */
+    font-size: 1rem;
+    font-weight: 600;
     color: #666;
     margin-bottom: 0.25rem;
 }
@@ -468,14 +439,12 @@ body {
     margin-top: 0.2rem;
 }
 
-
 .empty-state {
     text-align: center;
     padding: 2rem;
     color: #888;
 }
 
-/* Music list styling */
 .music-list {
     display: flex;
     flex-direction: column;
@@ -545,4 +514,3 @@ body {
         font-size: 1rem;
     }
 }
-
