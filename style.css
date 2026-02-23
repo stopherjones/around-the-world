@@ -31,16 +31,10 @@ body {
 }
 
 .top-link {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
     color: #0066cc;
     text-decoration: none;
     font-size: 0.95rem;
-}
-
-.music-link {
-    right: 11rem;
+    white-space: nowrap;
 }
 
 .top-link:hover {
@@ -52,7 +46,10 @@ body {
     top: 1.5rem;
     right: 1.5rem;
     display: flex;
-    gap: 1.5rem;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: flex-end;
+    z-index: 100;
 }
 
 /* ----------------- NAV BAR ----------------- */
@@ -90,7 +87,7 @@ body {
 .filter-bar > .filter-group:nth-child(1) {
     grid-column: 1;
     grid-row: 1;
-    width: 150px;
+    width: 280px;
 }
 
 /* Second element (Continent) - center/flexible
@@ -203,16 +200,19 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 0.1rem;          /* space between text and checkbox */
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     color: #222;
     margin: 0;
     cursor: pointer;
     white-space: nowrap;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .checkbox-group input[type="checkbox"] {
     cursor: pointer;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.4rem;
 }
 
 .filter-bar select,
