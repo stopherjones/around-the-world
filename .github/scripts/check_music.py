@@ -41,8 +41,7 @@ else:
 
     with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
         f.write("has_matches=true\n")
-        body_encoded = body.replace('\n', '%0A').replace('\r', '')
         f.write(f"email_subject={subject}\n")
-        f.write(f"email_body={body_encoded}\n")
+        f.write(f"email_body={body}\n")
     
     print(f"Found {len(matches)} match(es): {[c['name'] for c, _ in matches]}")
