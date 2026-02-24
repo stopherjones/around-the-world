@@ -1,0 +1,30 @@
+name: Music Reminder
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 8am UTC daily - adjust to your timezone
+  workflow_dispatch:       # allows manual trigger for testing
+
+jobs:
+  check-music:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Check for today's music entries
+        id: check
+        run: |
+          python3 .github/scripts/check_music.py
+
+      - name: Send email
+        if: steps.check.outputs.has_matches == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.chrisjones59@gmail.com }}
+          password: ${{ secrets.uxfg rxqv mewb xljf }}
+          to: ${{ secrets.chrisjones59@gmail.com }}
+          from: Music Reminder
+          subject: ${{ steps.check.outputs.email_subject }}
+          html_body: ${{ steps.check.outputs.email_body }}
