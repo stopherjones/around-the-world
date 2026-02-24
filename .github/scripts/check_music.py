@@ -36,6 +36,11 @@ else:
             """)
         search_url = f"https://www.google.com/search?q=Identify+for+{country['name'].replace(' ', '+')}:+a+traditional+music+genre,+a+modern+mainstream+artist,+and+an+experimental+fusion+act"
         body_parts.append(f'<p><a href="{search_url}">🔍 Explore more music from {country["name"]}</a></p>')
+        
+        bbc_url = f"https://www.google.com/search?q=BBC+Music+Planet+{country['name'].replace(' ', '+')}"
+        guardian_url = f"https://www.google.com/search?q=Guardian+Global+album+of+the+month+{country['name'].replace(' ', '+')}"
+        body_parts.append(f'<p><a href="{bbc_url}">🎙️ BBC Music Planet - {country["name"]}</a></p>')
+        body_parts.append(f'<p><a href="{guardian_url}">📰 Guardian Global album of the month - {country["name"]}</a></p>')
 
     body = "\n".join(body_parts)
 
