@@ -13,15 +13,12 @@ for country in countries:
     music_today = [m for m in country.get('music', []) if m.get('date') == today]
     if music_today:
         matches.append((country, music_today))
-        search_url = f"https://www.google.com/search?q=Identify+for+{country['name'].replace(' ', '+')}:+a+traditional+music+genre,+a+modern+mainstream+artist,+and+an+experimental+fusion+act"
-body_parts.append(f'<p><a href="{search_url}">🔍 Explore more music from {country["name"]}</a></p>')
 
 if not matches:
     print("No music entries for today.")
     with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
         f.write("has_matches=false\n")
 else:
-    # Build email
     date_display = datetime.now().strftime('%d %B')
     subject = f"🎵 Music for today ({date_display}): {', '.join(c['name'] for c, _ in matches)}"
 
@@ -37,12 +34,13 @@ else:
                 <a href="{entry['url']}">▶ Open in Spotify</a>
             </div>
             """)
-    
+        search_url = f"https://www.google.com/search?q=Identify+for+{country['name'].replace(' ', '+')}:+a+traditional+music+genre,+a+modern+mainstream+artist,+and+an+experimental+fusion+act"
+        body_parts.append(f'<p><a href="{search_url}">🔍 Explore more music from {country["name"]}</a></p>')
+
     body = "\n".join(body_parts)
 
     with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
         f.write("has_matches=true\n")
-        # GH Actions outputs can't contain newlines directly, so we encode
         body_encoded = body.replace('\n', '%0A').replace('\r', '')
         f.write(f"email_subject={subject}\n")
         f.write(f"email_body={body_encoded}\n")
