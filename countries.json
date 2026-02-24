@@ -54,7 +54,7 @@
   { "name": "El Salvador", "code": "sv", "type": "country", "continent": "North America", "read": false, "books": [],"music": [] },
   { "name": "Equatorial Guinea", "code": "gq", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
   { "name": "Eritrea", "code": "er", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
-  { "name": "Estonia", "code": "ee", "type": "country", "continent": "Europe", "read": false, "books": [],"music": [] },
+  { "name": "Estonia", "code": "ee", "type": "country", "continent": "Europe", "read": false, "books": [],"music": [{ "artist": "Estrada Orchestra", "album_or_playlist": "Zucker Tanzclub", "url": "https://open.spotify.com/album/3YZNYB5gGZQeTHcvr4mG3h?si=3OxJMhBwQs2_GwFn_X9P9w", "description": "Psychedelic jazz quintet from Tallinn with a free-flowing, anything-goes voyage across many sounds and styles", "date": "24-02" }] },
   { "name": "Eswatini", "code": "sz", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
   { "name": "Ethiopia", "code": "et", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
   { "name": "Fiji", "code": "fj", "type": "country", "continent": "Oceania", "read": false, "books": [],"music": [] },
