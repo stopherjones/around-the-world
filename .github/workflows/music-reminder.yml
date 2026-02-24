@@ -22,9 +22,9 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465
-          username: ${{ secrets.chrisjones59@gmail.com }}
-          password: ${{ secrets.uxfg rxqv mewb xljf }}
-          to: ${{ secrets.chrisjones59@gmail.com }}
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          to: ${{ secrets.MAIL_TO }}
           from: Music Reminder
           subject: ${{ steps.check.outputs.email_subject }}
           html_body: ${{ steps.check.outputs.email_body }}
