@@ -113,9 +113,13 @@
             // Sort
             if (sortMode === "date") {
                 flatMusic.sort((a, b) => {
-                    const aDate = a.date || "99-99";
-                    const bDate = b.date || "99-99";
-                    return aDate.localeCompare(bDate);
+                    // Convert DD-MM to MM-DD for proper calendar sorting
+                    const convertToSortable = (dateStr) => {
+                        if (!dateStr) return "99-99";
+                        const [day, month] = dateStr.split('-');
+                        return `${month}-${day}`;
+                    };
+                    return convertToSortable(a.date).localeCompare(convertToSortable(b.date));
                 });
             } else {
                 // A-Z: countries first, then territories
