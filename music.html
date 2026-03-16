@@ -19,7 +19,7 @@
 
     <p class="subtitle">Spotify playlist of highlights <a href="https://open.spotify.com/playlist/5FiWvn8J58Lyy3VFId3Heu?si=84075f56514046f1">here</a></p>
 
-    <nav class="filter-bar list-bar">
+    <nav class="filter-bar music-bar">
         <div class="filter-group sort">
             <label for="sortFilter">Sort</label>
             <select id="sortFilter">
@@ -39,6 +39,10 @@
                 <option value="South America">South America</option>
                 <option value="Oceania">Oceania</option>
             </select>
+        </div>
+
+        <div class="filter-group random">
+            <button id="randomPicker">Random entry</button>
         </div>
 
         <div class="filter-group search">
@@ -199,6 +203,21 @@
             });
 
             updateStats(countriesData, 'music');
+        }
+
+        // Random picker functionality
+        document.getElementById("randomPicker").addEventListener("click", pickRandom);
+
+        function pickRandom() {
+            const musicListEl = document.getElementById("musicList");
+            const items = musicListEl.querySelectorAll(".music-item");
+            if (items.length === 0) return;
+            const randomIndex = Math.floor(Math.random() * items.length);
+            const randomItem = items[randomIndex];
+            randomItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            // Highlight temporarily
+            randomItem.style.backgroundColor = 'yellow';
+            setTimeout(() => randomItem.style.backgroundColor = '', 2000);
         }
     </script>
 
