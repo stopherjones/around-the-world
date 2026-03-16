@@ -224,6 +224,7 @@
     "read": true,
     "books": [
       { "date_read": "2024-10-17", "title": "Devil's Table", "author": "Kate Rhodes" }, 
-      { "date_read": "2025-09-23", "title": "Scilly Sergeant", "author": "Colin Taylor" }
-    ],"music": [{ "artist": "Rough Island Band", "album_or_playlist": "This Island of Yours", "url": "https://open.spotify.com/album/1cEEG5opJ9SjnGqvmcJprh?si=iFCL2ViURQuW2emxJWt92A", "description": "Folk tales of shipwreck, tunes for dancing, and evocations of landscape, written by the band in response to an extraordinary place and inspired by the powerful traditional Celtic music of neighbouring Cornwall.", "date": "05-03" }] }
+      { "date_read": "2025-09-23", "title": "Scilly Sergeant", "author": "Colin Taylor" }],
+    "music": [
+      { "artist": "Rough Island Band", "album_or_playlist": "This Island of Yours", "url": "https://open.spotify.com/album/1cEEG5opJ9SjnGqvmcJprh?si=iFCL2ViURQuW2emxJWt92A", "description": "Folk tales of shipwreck, tunes for dancing, and evocations of landscape, written by the band in response to an extraordinary place and inspired by the powerful traditional Celtic music of neighbouring Cornwall.", "date": "05-03" }] }     
 ]
