@@ -213,8 +213,8 @@
   "code": "images/wales.png", 
   "type": "territory", 
   "continent": "Europe", 
-  "read": false, 
-  "books": [],"music": [{ "artist": "9Bach", "album_or_playlist": "Tincian", "url": "https://open.spotify.com/album/1qk4BKRsutdlC6PxlMlRZ4?si=y1Rhfnh4T421n9C3JYWhOg", "description": "A delicate, atmospheric reimagining of Welsh folk, where the ancient, weaving the Cymraeg language and Welsh harp through a gentle tapestry of trip-hop and electronica", "date": "01-03" }] },
+  "read": true, 
+  "books": [{ "date_read": "2026-03-16", "title": "Pigeon", "author": "Alys Conran" }],"music": [{ "artist": "9Bach", "album_or_playlist": "Tincian", "url": "https://open.spotify.com/album/1qk4BKRsutdlC6PxlMlRZ4?si=y1Rhfnh4T421n9C3JYWhOg", "description": "A delicate, atmospheric reimagining of Welsh folk, where the ancient, weaving the Cymraeg language and Welsh harp through a gentle tapestry of trip-hop and electronica", "date": "01-03" }] },
 
   {
     "name": "Isles of Scilly",
