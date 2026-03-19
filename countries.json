@@ -50,7 +50,7 @@
   { "name": "Dominica", "code": "dm", "type": "country", "continent": "North America", "read": false, "books": [],"music": [] },
   { "name": "Dominican Republic", "code": "do", "type": "country", "continent": "North America", "read": false, "books": [],"music": [] },
   { "name": "Ecuador", "code": "ec", "type": "country", "continent": "South America", "read": false, "books": [],"music": [{ "artist": "Various artists", "album_or_playlist": "Juyungo", "url": "https://open.spotify.com/album/04ZjNybpqv2jGGB2COZFz7", "description": "A hypnotic, Afro-Indigenous fusion featuring the rhythmic roll of the marimba", "date": "10-08" }] },
-  { "name": "Egypt", "code": "eg", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
+  { "name": "Egypt", "code": "eg", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [{ "artist": "Abdullah Miniawy", "album_or_playlist": "Le Cri du Caire", "url": "https://open.spotify.com/album/1I5gfRMxDlv2y1ZVxXKPG5?si=ariuBhaPTK-nPvrtM_Lr6Q", "description": "A hypnotic blend of traditional and contemporary jazz, rich with trumpet, cello and saxophone, overlaid with the aching vocals of Abdullah Miniawy, spitting Arabic poetry in this deeply emotional protest against religious and ethic oppresion.", "date": "23-07" }] },
   { "name": "El Salvador", "code": "sv", "type": "country", "continent": "North America", "read": false, "books": [],"music": [] },
   { "name": "Equatorial Guinea", "code": "gq", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
   { "name": "Eritrea", "code": "er", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
