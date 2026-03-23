@@ -104,22 +104,26 @@
                 return;
             }
 
-            // Flatten music entries with country info
-            let flatMusic = [];
-            musicItems.forEach(country => {
-                country.music.forEach((m, i) => {
-                    const highlight = country.highlights && country.highlights[i];
-                    flatMusic.push({
-                        ...m,
-                        countryName: country.name,
-                        countryCode: country.code,
-                        type: country.type,
-                        track_name: highlight?.track_name || null,
-                        highlight_description: highlight?.highlight_description || null
-                    });
-                });
-            });
-
+            // Flatten music entries based on HIGHLIGHTS, not the full music array
+let flatMusic = [];
+musicItems.forEach(country => {
+    // We only want the specific highlights, usually just the first one
+    country.highlights.forEach((highlight, i) => {
+        // Find the corresponding music metadata (artist, url, etc.)
+        // This defaults to the first music entry if the indexes don't match perfectly
+        const m = country.music[i] || country.music[0]; 
+        
+        flatMusic.push({
+            ...m,
+            countryName: country.name,
+            countryCode: country.code,
+            type: country.type,
+            date: country.date, // Ensure date is passed for sorting
+            track_name: highlight.track_name,
+            highlight_description: highlight.highlight_description
+        });
+    });
+});
             // Sort
             if (sortMode === "date") {
                 flatMusic.sort((a, b) => {
