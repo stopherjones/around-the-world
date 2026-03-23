@@ -621,3 +621,37 @@ body {
         font-size: 1rem;
     }
 }
+
+/* Floating Spotify Footer Styles */
+.spotify-footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(transparent, #fafafa 30%); /* Blends with your body background */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.spotify-footer-content {
+    width: 100%;
+    max-width: 800px; /* Matches the width of your music-list container */
+    filter: drop-shadow(0 -4px 12px rgba(0, 0, 0, 0.1));
+}
+
+/* Add padding to the body so the last list item isn't hidden behind the player */
+body {
+    padding-bottom: 180px; 
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 600px) {
+    .spotify-footer-container {
+        padding: 0.5rem;
+    }
+    body {
+        padding-bottom: 170px;
+    }
+}
