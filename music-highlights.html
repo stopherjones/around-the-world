@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.jpg" type="image/jpg">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="music-highlights">
     <div class="top-links">
         <a href="index.html" class="top-link">Back to Gallery</a>
         <a href="music.html" class="top-link">View music list</a>
@@ -15,7 +15,7 @@
     <h1 class="main-title">A playlist of highlights from the Around the World list</h1>
 
     <div class="stat-display">
-        <span id="statText">0 records from 0 countries</span>
+        <span id="statText">0 tracks from 0 highlights</span>
     </div>
 
     <p class="subtitle">Find the Spotify playlist of highlights <a href="https://open.spotify.com/playlist/5FiWvn8J58Lyy3VFId3Heu?si=84075f56514046f1">here</a></p>
@@ -24,8 +24,8 @@
         <div class="filter-group sort">
             <label for="sortFilter">Sort</label>
             <select id="sortFilter">
-                <option value="alpha">Country A–Z</option>
-                <option value="date">National Day</option>
+                <option value="alpha">Track A–Z</option>
+                <option value="date">Artist A–Z</option>
             </select>
         </div>
 
@@ -67,135 +67,101 @@
             musicSearchEl = document.getElementById("searchInput");
             musicContinentEl = document.getElementById("continentFilter");
             musicSortEl = document.getElementById("sortFilter");
+            const renderFn = isMusicHighlightsPage ? renderHighlights : renderMusic;
 
-            if (musicSearchEl) musicSearchEl.addEventListener("input", renderMusic);
-            if (musicContinentEl) musicContinentEl.addEventListener("change", renderMusic);
-            if (musicSortEl) musicSortEl.addEventListener("change", renderMusic);
+            if (musicSearchEl) musicSearchEl.addEventListener("input", renderFn);
+            if (musicContinentEl) musicContinentEl.addEventListener("change", renderFn);
+            if (musicSortEl) musicSortEl.addEventListener("change", renderFn);
         }
 
-        function renderMusic() {
+        function renderHighlights() {
             const musicListEl = document.getElementById("musicList");
             if (!musicListEl) return;
 
             musicListEl.innerHTML = "";
 
             const search = musicSearchEl?.value.toLowerCase() || "";
-            const continent = musicContinentEl?.value || "all";
             const sortMode = musicSortEl?.value || "alpha";
 
-            const musicItems = countriesData.filter(c =>
-                c.music &&
-                c.music.length > 0 &&
-                (search === "" || c.name.toLowerCase().includes(search) || 
-                 c.music.some(m => 
-                    (m.artist?.toLowerCase().includes(search)) ||
-                    (m.album_or_playlist?.toLowerCase().includes(search)) ||
-                    (m.description?.toLowerCase().includes(search))
-                 )
-                ) &&
-                (continent === "all" || c.continent === continent)
+            let filtered = highlightsData.filter(item =>
+                search === "" ||
+                item.track_name.toLowerCase().includes(search) ||
+                item.artist_name.toLowerCase().includes(search) ||
+                item.album_name.toLowerCase().includes(search) ||
+                (item.style_note || "").toLowerCase().includes(search)
             );
 
-            if (musicItems.length === 0) {
-                musicListEl.innerHTML = '<div class="empty-state">No music recorded yet.</div>';
-                updateStats(countriesData, 'music');
+            if (filtered.length === 0) {
+                musicListEl.innerHTML = '<div class="empty-state">No highlights found.</div>';
+                updateStats(highlightsData, 'highlights');
                 return;
             }
 
-            // Flatten music entries with country info
-            let flatMusic = [];
-            musicItems.forEach(country => {
-                country.music.forEach(m => {
-                    flatMusic.push({
-                        ...m,
-                        countryName: country.name,
-                        countryCode: country.code,
-                        type: country.type
-                    });
-                });
-            });
-
-            // Sort
             if (sortMode === "date") {
-                flatMusic.sort((a, b) => {
-                    // Convert DD-MM to MM-DD for proper calendar sorting
-                    const convertToSortable = (dateStr) => {
-                        if (!dateStr) return "99-99";
-                        const [day, month] = dateStr.split('-');
-                        return `${month}-${day}`;
-                    };
-                    return convertToSortable(a.date).localeCompare(convertToSortable(b.date));
-                });
+                filtered.sort((a, b) => a.artist_name.localeCompare(b.artist_name));
             } else {
-                // A-Z: countries first, then territories
-                flatMusic.sort((a, b) => {
-                    if (a.type !== b.type) {
-                        return a.type === 'country' ? -1 : 1;  // countries before territories
-                    }
-                    return a.countryName.localeCompare(b.countryName);
-                });
+                filtered.sort((a, b) => a.track_name.localeCompare(b.track_name));
             }
 
-            // Render
-            flatMusic.forEach(entry => {
+            filtered.forEach(entry => {
                 const item = document.createElement("div");
                 item.classList.add("music-item");
 
                 const flagDiv = document.createElement("div");
                 flagDiv.classList.add("flag-thumbnail");
-                const img = document.createElement("img");
-                if (entry.countryCode && (entry.countryCode.includes("/") || entry.countryCode.startsWith("http"))) {
-                    img.src = entry.countryCode;
-                } else if (entry.countryCode) {
-                    img.src = `https://flagcdn.com/w160/${entry.countryCode}.png`;
+
+                const flagImg = document.createElement("img");
+                if (entry.country) {
+                    const countryCode = entry.country.trim().toLowerCase();
+                    if (countryCode.includes("/") || countryCode.startsWith("http")) {
+                        flagImg.src = entry.country;
+                    } else if (countryCode.length === 2) {
+                        flagImg.src = `https://flagcdn.com/w160/${countryCode}.png`;
+                    } else {
+                        flagImg.src = `https://flagcdn.com/w160/${countryCode}.png`;
+                    }
+                    flagImg.alt = `Flag of ${entry.country}`;
+                } else {
+                    flagImg.src = "";
+                    flagImg.alt = "No flag";
                 }
-                img.alt = `Flag of ${entry.countryName}`;
-                flagDiv.appendChild(img);
+                flagDiv.appendChild(flagImg);
 
                 const details = document.createElement("div");
                 details.classList.add("music-details");
 
                 const countryName = document.createElement("div");
                 countryName.classList.add("country-name");
-                countryName.textContent = entry.countryName;
+                countryName.textContent = entry.country || entry.track_name;
                 details.appendChild(countryName);
 
                 const artist = document.createElement("div");
                 artist.classList.add("music-artist");
-                artist.textContent = entry.artist || "";
+                artist.textContent = entry.artist_name;
                 details.appendChild(artist);
 
                 const album = document.createElement("div");
                 album.classList.add("music-album");
-                if (entry.url) {
+                const spotifyUrl = entry.spotify_uri?.startsWith("spotify:")
+                    ? entry.spotify_uri.replace("spotify:track:", "https://open.spotify.com/track/")
+                    : entry.spotify_uri;
+                if (spotifyUrl) {
                     const a = document.createElement("a");
-                    a.href = entry.url;
+                    a.href = spotifyUrl;
                     a.target = "_blank";
                     a.rel = "noopener noreferrer";
-                    a.textContent = entry.album_or_playlist || "Listen";
+                    a.textContent = entry.album_name || "Listen";
                     album.appendChild(a);
                 } else {
-                    album.textContent = entry.album_or_playlist || "";
+                    album.textContent = entry.album_name || "";
                 }
                 details.appendChild(album);
 
-                if (entry.description) {
+                if (entry.style_note) {
                     const desc = document.createElement("div");
                     desc.classList.add("music-desc");
-                    desc.textContent = entry.description;
+                    desc.textContent = entry.style_note;
                     details.appendChild(desc);
-                }
-
-                if (entry.date) {
-                    const dateEl = document.createElement("div");
-                    dateEl.classList.add("music-date");
-                    // Format DD-MM to DD-MMM
-                    const [day, month] = entry.date.split("-");
-                    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-                    const monthIndex = parseInt(month) - 1;
-                    const formatted = `${day}-${monthNames[monthIndex]}`;
-                    dateEl.textContent = `National day: ${formatted}`;
-                    details.appendChild(dateEl);
                 }
 
                 item.appendChild(flagDiv);
@@ -203,7 +169,7 @@
                 musicListEl.appendChild(item);
             });
 
-            updateStats(countriesData, 'music');
+            updateStats(highlightsData, 'highlights');
         }
 
         // Random picker functionality

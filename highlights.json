@@ -1,5 +1,8 @@
 [
   {
+    "country": "Algeria",
+    "code": "dz",
+    "continent": "Africa",
     "track_name": "Écoute-moi camarade",
     "artist_name": "Mazouni",
     "album_name": "Un dandy en exil (Algérie- France 1969-1983)",
@@ -7,6 +10,9 @@
     "style_note": "A hypnotic piece of Franco-Algerian immigrant pop with a dry, driving drum machine beat."
   },
   {
+    "country": "Afghanistan",
+    "code": "af",
+    "continent": "Asia",
     "track_name": "Rag Shivaranjani",
     "artist_name": "Ustad Rahim Khushnawaz",
     "album_name": "Afghan Rubab with Songbirds",
@@ -14,6 +20,9 @@
     "style_note": "A stunning display of Afghan rubab mastery with shimmering, ethereal resonance."
   },
   {
+    "country": "Armenia",
+    "code": "am",
+    "continent": "Asia",
     "track_name": "Seta, Seta",
     "artist_name": "Ara Kekedjian",
     "album_name": "Bourj Hammoud Groove (Habibi Funk 033)",
@@ -21,6 +30,9 @@
     "style_note": "A heavy, brass-forward Armenian-Lebanese groove with a fuzzed-out bassline."
   },
   {
+    "country": "Belgium",
+    "code": "be",
+    "continent": "Europe",
     "track_name": "Alors on danse - Radio Edit",
     "artist_name": "Stromae",
     "album_name": "Cheese",
@@ -28,6 +40,9 @@
     "style_note": "Minimalist Belgian New Beat-inspired house featuring a melancholy saxophone hook."
   },
   {
+    "country": "Bosnia and Herzegovina",
+    "code": "ba",
+    "continent": "Europe",
     "track_name": "USA",
     "artist_name": "Dubioza kolektiv",
     "album_name": "Wild Wild East",
@@ -35,6 +50,9 @@
     "style_note": "High-energy Bosnian 'Balkan Ska' blending hip-hop with frantic accordion riffs."
   },
   {
+    "country": "France",
+    "code": "fr",
+    "continent": "Europe",
     "track_name": "Aline",
     "artist_name": "Jarvis Cocker",
     "album_name": "CHANSONS d'ENNUI TIP-TOP",
@@ -42,6 +60,9 @@
     "style_note": "A lush, 1960s-inspired French pop cover; the ultimate cinematic 'Ye-Ye' pastiche."
   },
   {
+    "country": "Germany",
+    "code": "de",
+    "continent": "Europe",
     "track_name": "Das Model",
     "artist_name": "Kraftwerk",
     "album_name": "3-D Der Katalog (German Version)",
@@ -49,6 +70,9 @@
     "style_note": "The cold, mechanical blueprint for electronic pop, perfectly sequenced."
   },
   {
+    "country": "India",
+    "code": "in",
+    "continent": "Asia",
     "track_name": "Mundian to Bach Ke - Beware Of The Boys - Jay-Z",
     "artist_name": "Panjabi MC;JAY-Z",
     "album_name": "The Album",
@@ -56,6 +80,9 @@
     "style_note": "A massive collision of Bhangra percussion and Knight Rider-sampling hip-hop."
   },
   {
+    "country": "Lebanon",
+    "code": "lb",
+    "continent": "Asia",
     "track_name": "Yay Yay Ya Nassini",
     "artist_name": "Georgette Sayegh",
     "album_name": "The Best Of Georgette Sayegh",
@@ -63,6 +90,9 @@
     "style_note": "A shimmering Lebanese disco-pop gem with heavy, driving Arabic orchestral backing."
   },
   {
+    "country": "Mongolia",
+    "code": "mn",
+    "continent": "Asia",
     "track_name": "Legend",
     "artist_name": "Bulgarian Voices Angelite;Huun-Huur-Tu",
     "album_name": "Fly, Fly My Sadness",
@@ -70,6 +100,9 @@
     "style_note": "Otherworldly collaboration bridging Siberian throat singing and Bulgarian polyphony."
   },
   {
+    "country": "Norway",
+    "code": "no",
+    "continent": "Europe",
     "track_name": "Helvegen",
     "artist_name": "Wardruna",
     "album_name": "Runaljod - Yggdrasil",
@@ -77,6 +110,9 @@
     "style_note": "Dark, ambient Nordic folk utilizing ancient instruments for a ritualistic atmosphere."
   },
   {
+    "country": "Portugal",
+    "code": "pt",
+    "continent": "Europe",
     "track_name": "Estranha Forma de Vida",
     "artist_name": "Amália Rodrigues",
     "album_name": "O Melhor de Amália",
@@ -84,6 +120,9 @@
     "style_note": "The definitive sound of Portuguese Fado—raw, soulful, and deeply melancholic."
   },
   {
+    "country": "Sri Lanka",
+    "code": "lk",
+    "continent": "Asia",
     "track_name": "Bucky Done Gun",
     "artist_name": "M.I.A.",
     "album_name": "Arular",
@@ -91,6 +130,9 @@
     "style_note": "A gritty London fusion of Brazilian Baile Funk and aggressive electro-pop."
   },
   {
+    "country": "Ukraine",
+    "code": "ua",
+    "continent": "Europe",
     "track_name": "Зола-Земля",
     "artist_name": "Morwan",
     "album_name": "Зола-Земля",
@@ -98,6 +140,9 @@
     "style_note": "Dark, driving Ukrainian post-punk that feels industrial and claustrophobic."
   },
   {
+    "country": "Poland",
+    "code": "pl",
+    "continent": "Europe",
     "track_name": "Symphony No. 3, Op. 36: II. Lento e Largo - Tranquillissimo",
     "artist_name": "Henryk Górecki;Dawn Upshaw;London Sinfonietta",
     "album_name": "Górecki: Symphony No. 3",
@@ -105,6 +150,9 @@
     "style_note": "A transcendent, slow-moving symphony defining modern Polish minimalism."
   },
   {
+    "country": "Cuba",
+    "code": "cu",
+    "continent": "North America",
     "track_name": "Chan Chan",
     "artist_name": "Buena Vista Social Club",
     "album_name": "Buena Vista Social Club",
@@ -112,6 +160,9 @@
     "style_note": "The quintessential Afro-Cuban son; dusty, rhythmic, and timelessly evocative."
   },
   {
+    "country": "United States",
+    "code": "us",
+    "continent": "North America",
     "track_name": "Electric Pow Wow Drum",
     "artist_name": "The Halluci Nation",
     "album_name": "A Tribe Called Red",
@@ -119,6 +170,9 @@
     "style_note": "A floor-shaking collision of traditional Indigenous chanting and heavy dubstep."
   },
   {
+    "country": "Argentina",
+    "code": "ar",
+    "continent": "South America",
     "track_name": "Época",
     "artist_name": "Gotan Project",
     "album_name": "La revancha del tango",
@@ -126,6 +180,9 @@
     "style_note": "Fuzzed-out 'Neo-Tango' blending the bandoneon with dub-inspired electronic beats."
   },
   {
+    "country": "Colombia",
+    "code": "co",
+    "continent": "South America",
     "track_name": "Un Pelito y un Tamal",
     "artist_name": "Penyair;dj spizike",
     "album_name": "Filantropía",
@@ -133,6 +190,9 @@
     "style_note": "Modern Latin hip-hop retaining a gritty, street-level rhythmic backbone."
   },
   {
+    "country": "Democratic Republic of the Congo",
+    "code": "cd",
+    "continent": "Africa",
     "track_name": "Paradiso",
     "artist_name": "Konono N°1",
     "album_name": "Congotronics",
@@ -140,6 +200,9 @@
     "style_note": "Distorted Congolese trance played on DIY electrified likembes."
   },
   {
+    "country": "Gambia",
+    "code": "gm",
+    "continent": "Africa",
     "track_name": "Gambia",
     "artist_name": "Sona Jobarteh",
     "album_name": "Badinyaa Kumoo",
@@ -147,6 +210,9 @@
     "style_note": "Fluid kora performance honoring West African griot traditions with modern clarity."
   },
   {
+    "country": "Ireland",
+    "code": "ie",
+    "continent": "Europe",
     "track_name": "I Have a Love",
     "artist_name": "For Those I Love",
     "album_name": "For Those I Love",
@@ -154,6 +220,9 @@
     "style_note": "Emotionally raw blend of spoken-word poetry and atmospheric Dublin house."
   },
   {
+    "country": "Jamaica",
+    "code": "jm",
+    "continent": "North America",
     "track_name": "(To Be) Young Gifted and Black",
     "artist_name": "Bob & Marcia",
     "album_name": "Young, Gifted & Black",
@@ -161,6 +230,9 @@
     "style_note": "A defiant, soulful reggae anthem capturing the spirit of 1970s Kingston."
   },
   {
+    "country": "Japan",
+    "code": "jp",
+    "continent": "Asia",
     "track_name": "Otoko-koko-ni ariki",
     "artist_name": "Masaya Takashino;Wadaiko Matsuriza",
     "album_name": "Wadaiko Matsuriza: Japanese Drums",
@@ -168,6 +240,9 @@
     "style_note": "Thunderous Japanese Taiko drum performance; visceral and intensely physical."
   },
   {
+    "country": "Mexico",
+    "code": "mx",
+    "continent": "North America",
     "track_name": "Los Luchadores",
     "artist_name": "La Sonora Santanera",
     "album_name": "La Sonora Santanera en Su 60 Aniversario",
@@ -175,6 +250,9 @@
     "style_note": "Classic Mexican Cumbia with bright horns and an infectious, swinging beat."
   },
   {
+    "country": "Senegal",
+    "code": "sn",
+    "continent": "Africa",
     "track_name": "Mane Khouma Khol Thi Yao",
     "artist_name": "Etoile De Dakar;Youssou N'Dour;El Hadji Faye",
     "album_name": "Volume 1 - Absa Gueye",
@@ -182,6 +260,9 @@
     "style_note": "Seminal Senegalese Mbalax featuring a young Youssou N'Dour; complex and driving."
   },
   {
+    "country": "Spain",
+    "code": "es",
+    "continent": "Europe",
     "track_name": "Medley: Viva Sevilla",
     "artist_name": "Rocío Jurado",
     "album_name": "Sevillanas De Carlos Saura",
@@ -189,6 +270,9 @@
     "style_note": "Dramatic Flamenco-pop suite showcasing intense Spanish vocal 'duende'."
   },
   {
+    "country": "Sudan",
+    "code": "sd",
+    "continent": "Africa",
     "track_name": "Gedima",
     "artist_name": "Jantra",
     "album_name": "Synthesized Sudan: Astro-Nubian Electronic Jaglara",
@@ -196,6 +280,9 @@
     "style_note": "Dizzying Astro-Nubian electronic music with manic, rhythmic synthesizer patterns."
   },
   {
+    "country": "Syria",
+    "code": "sy",
+    "continent": "Asia",
     "track_name": "Warni Warni",
     "artist_name": "Omar Souleyman",
     "album_name": "Wenu Wenu",
@@ -203,6 +290,9 @@
     "style_note": "The gold standard of Dabke-Industrial; high-BPM Syrian wedding-techno fusion."
   },
   {
+    "country": "Vietnam",
+    "code": "vn",
+    "continent": "Asia",
     "track_name": "3 Gnossiennes: Gnossiennes No. 3",
     "artist_name": "Van-Anh Vo",
     "album_name": "Three-Mountain Pass",
@@ -210,6 +300,9 @@
     "style_note": "Avant-garde reimagining of Satie performed on traditional Vietnamese zither."
   },
   {
+    "country": "Wales",
+    "code": "gb-wls",
+    "continent": "Europe",
     "track_name": "Lliwiau",
     "artist_name": "9Bach",
     "album_name": "Tincian",
@@ -217,6 +310,9 @@
     "style_note": "Atmospheric Welsh folk blending ethereal vocals with subtle electronics."
   },
   {
+    "country": "Tunisia",
+    "code": "tn",
+    "continent": "Africa",
     "track_name": "Something in the Way",
     "artist_name": "Emel",
     "album_name": "The Tunis Diaries",

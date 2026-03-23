@@ -1,10 +1,18 @@
 let countriesData = [];
+let highlightsData = [];
+
+const isMusicHighlightsPage = document.body?.id === 'music-highlights';
+const dataSource = isMusicHighlightsPage ? 'highlights.json' : 'countries.json';
 
 // Load JSON once, then render whatever the page needs
-fetch("countries.json")
+fetch(dataSource)
     .then(res => res.json())
     .then(data => {
-        countriesData = data;
+        if (isMusicHighlightsPage) {
+            highlightsData = data;
+        } else {
+            countriesData = data;
+        }
 
         // If we're on the gallery page
         if (document.getElementById("gallery")) {
@@ -19,17 +27,22 @@ fetch("countries.json")
             renderBooks();
         }
 
-        // If we're on the music page
+        // If we're on either music page
         if (document.getElementById("musicList")) {
-            setupMusicFilters();
-            renderMusic();
+            if (isMusicHighlightsPage) {
+                setupMusicFilters();
+                renderHighlights();
+            } else {
+                setupMusicFilters();
+                renderMusic();
+            }
         }
     });
 
 /* ----------------- STATS ----------------- */
 
 function updateStats(data, pageType = 'gallery') {
-    const totalCountries = data.filter(c => c.type === 'country').length;
+    const totalCountries = pageType === 'highlights' ? 0 : data.filter(c => c.type === 'country').length;
     const statText = document.getElementById("statText");
     if (!statText) return;
 
@@ -94,6 +107,17 @@ function updateStats(data, pageType = 'gallery') {
         
         const totalMusic = allFiltered.reduce((sum, c) => sum + c.music.length, 0);
         statText.textContent = `${totalMusic} entries from ${allFiltered.length} of ${totalCountries} countries`;
+    } else if (pageType === 'highlights') {
+        const search = document.getElementById("searchInput")?.value.toLowerCase() || "";
+        let filteredHighlights = data.filter(item =>
+            search === "" ||
+            item.track_name.toLowerCase().includes(search) ||
+            item.artist_name.toLowerCase().includes(search) ||
+            item.album_name.toLowerCase().includes(search) ||
+            (item.style_note || "").toLowerCase().includes(search)
+        );
+
+        statText.textContent = `${filteredHighlights.length} tracks from ${data.length} items`;
     }
 }
 
