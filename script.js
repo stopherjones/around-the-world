@@ -230,9 +230,15 @@ function renderGallery(data) {
                     const musicList = document.createElement("ul");
                     country.music.forEach(m => {
                         const li = document.createElement("li");
-                        li.textContent = `${m.artist} – ${m.album_or_playlist}`;
+                        li.appendChild(document.createTextNode(`${m.artist} – `));
+                        const albumLink = document.createElement("a");
+                        albumLink.href = m.url;
+                        albumLink.textContent = m.album_or_playlist;
+                        albumLink.target = "_blank";
+                        albumLink.rel = "noopener noreferrer";
+                        li.appendChild(albumLink);
                         if (m.description) {
-                            li.textContent += ` (${m.description})`;
+                            li.appendChild(document.createTextNode(` (${m.description})`));
                         }
                         musicList.appendChild(li);
                     });
