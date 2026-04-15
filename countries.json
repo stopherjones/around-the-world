@@ -30,7 +30,7 @@
   { "name": "Cabo Verde", "code": "cv", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
   { "name": "Cambodia", "code": "kh", "type": "country", "continent": "Asia", "read": false, "books": [],"music": [] },
   { "name": "Cameroon", "code": "cm", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
-  { "name": "Canada", "code": "ca", "type": "country", "continent": "North America", "read": true, "books": [{ "date_read": "2025-03-12", "title": "Call of the Wild", "author": "Jack London" }],"music": [] },
+  { "name": "Canada", "code": "ca", "type": "country", "continent": "North America", "read": true, "books": [{ "date_read": "2025-03-12", "title": "Call of the Wild", "author": "Jack London" }],"music": [{ "artist": "Angine de Poitrine", "album_or_playlist": "Vol. 1", "url": "https://open.spotify.com/album/67AYhGt60AoJa1TVcn5lCn?si=HSKBfreqQZGwD4jdZP5ihQ", "description": "Tight, pulsing drum grooves and intricate tangles of double-neck microtonal guitar creat an infectious asymmetrical and dissonant sound. As they say, Angine de Poitrine’s music makes hearts race and bodies move with ecstatic abandon.", "date": "01-07" }] },
   { "name": "Central African Republic", "code": "cf", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
   { "name": "Chad", "code": "td", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
   { "name": "Chile", "code": "cl", "type": "country", "continent": "South America", "read": false, "books": [],"music": [] },
