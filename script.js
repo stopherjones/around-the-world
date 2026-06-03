@@ -10,6 +10,33 @@ fetch(dataSource)
     .then(data => {
         if (isMusicHighlightsPage) {
             highlightsData = data;
+            // Convert highlights.json items into the same shape the music renderer expects
+            countriesData = data.map(h => {
+                const spotifyUri = h.spotify_uri || h.spotify || h.url || "";
+                let url = "";
+                if (spotifyUri && spotifyUri.startsWith("spotify:track:")) {
+                    const id = spotifyUri.split(":").pop();
+                    url = `https://open.spotify.com/track/${id}`;
+                } else if (spotifyUri && spotifyUri.startsWith("spotify:")) {
+                    const id = spotifyUri.split(":").pop();
+                    url = `https://open.spotify.com/track/${id}`;
+                } else if (spotifyUri && (spotifyUri.startsWith("http://") || spotifyUri.startsWith("https://"))) {
+                    url = spotifyUri;
+                }
+
+                return {
+                    name: h.country || "",
+                    code: h.code || "",
+                    type: 'country',
+                    music: [{
+                        artist: h.artist_name || h.artist || "",
+                        album_or_playlist: h.track_name || h.album_name || "",
+                        url: url,
+                        description: h.style_note || "",
+                        date: h.date || ""
+                    }]
+                };
+            });
         } else {
             countriesData = data;
         }
@@ -27,15 +54,10 @@ fetch(dataSource)
             renderBooks();
         }
 
-        // If we're on either music page
+        // If we're on either music page; always use the existing music renderer
         if (document.getElementById("musicList")) {
-            if (isMusicHighlightsPage) {
-                setupMusicFilters();
-                renderHighlights();
-            } else {
-                setupMusicFilters();
-                renderMusic();
-            }
+            setupMusicFilters();
+            renderMusic();
         }
     });
 

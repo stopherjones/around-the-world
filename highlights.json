@@ -1,113 +1,275 @@
 [
   {
+    "country": "Canada",
+    "code": "ca",
+    "track_name": "Sherpa",
+    "artist_name": "Angine de Poitrine",
+    "spotify_uri": "https://open.spotify.com/track/55mW03rqsI9s3xUnuruF7G",
+    "style_note": "A driving, micro-tonal blast of instrumental guitar math rock from Canada's viral masked, polka-dot-clad breakout duo."
+  },
+  {
+    "country": "Mexico",
+    "code": "mx",
+    "track_name": "Los Luchadores",
+    "artist_name": "La Sonora Santanera",
+    "spotify_uri": "https://open.spotify.com/track/0HBiHi1FZBpI8QOqiS0oBm",
+    "style_note": "A legendary, high-energy cumbia anthem celebrating Mexico's colorful lucha libre wrestling culture with bright horns and infectihorns, swinging beat."
+  },
+  {
+    "country": "United States of America",
+    "code": "us",
+    "track_name": "Electric Pow Wow Drum",
+    "artist_name": "The Halluci Nation",
+    "spotify_uri": "https://open.spotify.com/track/5e8v4ibmsMHxHLALe5KaiZ",
+    "style_note": "A groundbreaking, heavy electronic track fusing traditional Indigenous powwow vocals and drumming with modern dubstep and hip-hop beats."
+  },
+  {
     "country": "Algeria",
     "code": "dz",
-    "continent": "Africa",
     "track_name": "Écoute-moi camarade",
     "artist_name": "Mazouni",
-    "album_name": "Un dandy en exil (Algérie- France 1969-1983)",
-    "spotify_uri": "spotify:track:4kckMTfGW38On1wcgSP11A",
+    "spotify_uri": "https://open.spotify.com/track/4kckMTfGW38On1wcgSP11A",
     "style_note": "A hypnotic piece of Franco-Algerian immigrant pop with a dry, driving drum machine beat."
   },
   {
-    "country": "Afghanistan",
-    "code": "af",
-    "continent": "Asia",
-    "track_name": "Rag Shivaranjani",
-    "artist_name": "Ustad Rahim Khushnawaz",
-    "album_name": "Afghan Rubab with Songbirds",
-    "spotify_uri": "spotify:track:6MzggDc8jiPVeixQCoyJlt",
-    "style_note": "A stunning display of Afghan rubab mastery with shimmering, ethereal resonance."
+    "country": "Argentina",
+    "code": "ar",
+    "track_name": "Eloca",
+    "artist_name": "The Gotan Project",
+    "spotify_uri": "https://open.spotify.com/track/786hvlF3Hi3hdNAXHdIo8Q",
+    "style_note": "A sultry, cinematic masterpiece blending traditional Argentine tango with slick, down-tempo electronic trip-hop beats."
   },
   {
-    "country": "Armenia",
-    "code": "am",
-    "continent": "Asia",
-    "track_name": "Seta, Seta",
-    "artist_name": "Ara Kekedjian",
-    "album_name": "Bourj Hammoud Groove (Habibi Funk 033)",
-    "spotify_uri": "spotify:track:2yysm9eQFWu2SGqPNOseZQ",
-    "style_note": "A heavy, brass-forward Armenian-Lebanese groove with a fuzzed-out bassline."
+    "country": "Australia",
+    "code": "au",
+    "track_name": "Great Southern Land",
+    "artist_name": "Icehouse",
+    "spotify_uri": "https://open.spotify.com/track/3OmEIZ6bYHqlReQ1YLaRHV",
+    "style_note": "An atmospheric, synth-driven pub rock love letter to the vastness of the Australian outback and its ancient history."
+  },
+  {
+    "country": "Austria",
+    "code": "at",
+    "track_name": "Booty Swing",
+    "artist_name": "Parov Stellar",
+    "spotify_uri": "https://open.spotify.com/track/3P7LQUvGw5TQofcETsN4FJ",
+    "style_note": "The pioneer of Euro electro-swing delivers an infectious blend of 1930s jazz vocals fused with driving modern breakbeats."
   },
   {
     "country": "Belgium",
     "code": "be",
-    "continent": "Europe",
-    "track_name": "Alors on danse - Radio Edit",
+    "track_name": "Alors on danse",
     "artist_name": "Stromae",
-    "album_name": "Cheese",
-    "spotify_uri": "spotify:track:2GYHyAOLWpkxLVa4oYTVko",
-    "style_note": "Minimalist Belgian New Beat-inspired house featuring a melancholy saxophone hook."
+    "spotify_uri": "https://open.spotify.com/track/2GYHyAOLWpkxLVa4oYTVko",
+    "style_note": "Satire with swagger in this massive electropop hit, pairing an infectious, melancholic saxophone loop with bleak lyrics about escaping economic despair through dance."
   },
   {
     "country": "Bosnia and Herzegovina",
     "code": "ba",
-    "continent": "Europe",
-    "track_name": "USA",
+    "track_name": "I am from Bosnia, take me to America",
     "artist_name": "Dubioza kolektiv",
-    "album_name": "Wild Wild East",
-    "spotify_uri": "spotify:track:3AjZd2FYElRKklklXIKtX6",
-    "style_note": "High-energy Bosnian 'Balkan Ska' blending hip-hop with frantic accordion riffs."
+    "spotify_uri": "https://open.spotify.com/track/2PE4wA1uaHWtTLsfIpTdSS",
+    "style_note": "A satrical swipe at the American Dream, delivered through high-energy Bosnian 'Balkan Ska' blending hip-hop with frantic accordion riffs."
+  },
+  {
+    "country": "Brazil",
+    "code": "br",
+    "track_name": "Vai Malandra",
+    "artist_name": "Anitta",
+    "spotify_uri": "https://open.spotify.com/track/6u0EAxf1OJTLS7CvInuNd7",
+    "style_note": "A baile funk phenomenon that brought the raw, heavy beats of Rio's favelas to global mainstream pop. Anitta is appearing in the 2026 World Cup opening ceremony."
+  },
+  {
+    "country": "Cape Verde",
+    "code": "cv",
+    "track_name": "Petit Pays",
+    "artist_name": "Cesária Évora",
+    "spotify_uri": "https://open.spotify.com/track/3TPr2Em1i454nDS8UJbaFW",
+    "style_note": "A classic of Cape Verdian 'morna', rich with bittersweet longing and love for her small island homeland"
+  },
+  {
+    "country": "Colombia",
+    "code": "co",
+    "track_name": "Un Pelito y un Tamal",
+    "artist_name": "dj spizike",
+    "spotify_uri": "https://open.spotify.com/track/1VBss5t7b8CX4xZqSc5VN8",
+    "style_note": "DJ and beatmaker, popular on TikTok for fusing hip hop beats over '60s Spanish pop songs."
+  },
+  {
+    "country": "DR Congo",
+    "code": "cd",
+    "track_name": "Paradiso",
+    "artist_name": "Konono N°1",
+    "spotify_uri": "https://open.spotify.com/track/5FF4SpIWmPxMOvEuyYacv0",
+    "style_note": "African beats fusing dance and traditional rhythms using DIY instruments."
+  },
+  {
+    "country": "Cote d'Ivoire",
+    "code": "ci",
+    "track_name": "Magic in the Air",
+    "artist_name": "Magic System",
+    "spotify_uri": "https://open.spotify.com/track/3s6ltUrI93LBKU8taezsLn",
+    "style_note": "The joyous theme song to the 2014 World Cup, from the stars of Ivorian Zouglou Afrobeat."
+  },
+  {
+    "country": "Croatia",
+    "code": "hr",
+    "track_name": "One Day in Morea",
+    "artist_name": "Dina e Mel",
+    "spotify_uri": "https://open.spotify.com/track/57WhUd4kkUjOQ6vfYfyMti",
+    "style_note": "A hauntingly beautiful folk song that revives the ancient language of the Zadar Arbanasi."
+  },
+  {
+    "country": "Curacao",
+    "code": "cw",
+    "track_name": "Lightswitch",
+    "artist_name": "Kuenta I Tambu",
+    "spotify_uri": "https://open.spotify.com/track/1bYrAiFxOnZBZk8UZYsGMM",
+    "style_note": "A relentless, riotous 'Tambú-tronic' fusion of Afro-Curaçaoan drums and aggressive EDM / Dancehall beats."
+  },
+  {
+    "country": "czechia",
+    "code": "cz",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
+  },
+  {
+    "country": "Ecuador",
+    "code": "ec",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
+  },
+  {
+    "country": "Egypt",
+    "code": "eg",
+    "track_name": "Pearls for Orphans",
+    "artist_name": "Le Cri du Caire",
+    "spotify_uri": "https://open.spotify.com/track/5wD2DHmPiEg6Pem7EcJvqm",
+    "style_note": "Egyptian poet, Abdullah Miniawy, delivers an aching, emotional cry against oppresion in this haunting jazz number, rich with trumpet, cello and saxophone."
+  },
+  {
+    "country": "England",
+    "code": "gb-eng",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
   },
   {
     "country": "France",
     "code": "fr",
-    "continent": "Europe",
-    "track_name": "Aline",
+    "track_name": "Contact",
     "artist_name": "Jarvis Cocker",
-    "album_name": "CHANSONS d'ENNUI TIP-TOP",
-    "spotify_uri": "spotify:track:4spUOLlrBfT9DBL6Yojbg",
+    "spotify_uri": "https://open.spotify.com/track/2dWrIJdwYWI6K7WWL3kpqu",
     "style_note": "A lush, 1960s-inspired French pop cover; the ultimate cinematic 'Ye-Ye' pastiche."
   },
   {
     "country": "Germany",
     "code": "de",
-    "continent": "Europe",
     "track_name": "Das Model",
     "artist_name": "Kraftwerk",
-    "album_name": "3-D Der Katalog (German Version)",
     "spotify_uri": "spotify:track:3VwLD5o1r0YBLkjUfgSEYg",
     "style_note": "The cold, mechanical blueprint for electronic pop, perfectly sequenced."
   },
   {
-    "country": "India",
-    "code": "in",
-    "continent": "Asia",
-    "track_name": "Mundian to Bach Ke - Beware Of The Boys - Jay-Z",
-    "artist_name": "Panjabi MC;JAY-Z",
-    "album_name": "The Album",
-    "spotify_uri": "spotify:track:3QD2mDnbcTQNTlyJRmNmut",
-    "style_note": "A massive collision of Bhangra percussion and Knight Rider-sampling hip-hop."
+    "country": "Ghana",
+    "code": "gh",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
   },
   {
-    "country": "Lebanon",
-    "code": "lb",
-    "continent": "Asia",
-    "track_name": "Yay Yay Ya Nassini",
-    "artist_name": "Georgette Sayegh",
-    "album_name": "The Best Of Georgette Sayegh",
-    "spotify_uri": "spotify:track:7COnj7YdPoxvgJMmAh9OI",
-    "style_note": "A shimmering Lebanese disco-pop gem with heavy, driving Arabic orchestral backing."
+    "country": "Haiti",
+    "code": "ht",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
   },
   {
-    "country": "Mongolia",
-    "code": "mn",
-    "continent": "Asia",
-    "track_name": "Legend",
-    "artist_name": "Bulgarian Voices Angelite;Huun-Huur-Tu",
-    "album_name": "Fly, Fly My Sadness",
-    "spotify_uri": "spotify:track:7hAK6BNmKkuH4TukUoGgFY",
-    "style_note": "Otherworldly collaboration bridging Siberian throat singing and Bulgarian polyphony."
+    "country": "Iran",
+    "code": "ir",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
+  },
+  {
+    "country": "Iraq",
+    "code": "iq",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
+  },
+  {
+    "country": "Japan",
+    "code": "jp",
+    "track_name": "Otoko-koko-ni ariki",
+    "artist_name": "Masaya Takashino;Wadaiko Matsuriza",
+    "spotify_uri": "spotify:track:6ZI9Pyo4zblkNjDysZOhw",
+    "style_note": "Thunderous Japanese Taiko drum performance; visceral and intensely physical."
+  },
+  {
+    "country": "Jordan",
+    "code": "jo",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
+  },
+  {
+    "country": "Morocco",
+    "code": "ma",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
+  },
+  {
+    "country": "Netherlands",
+    "code": "nl",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
+  },
+  {
+    "country": "New Zealand",
+    "code": "nz",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
   },
   {
     "country": "Norway",
     "code": "no",
     "continent": "Europe",
-    "track_name": "Helvegen",
     "artist_name": "Wardruna",
-    "album_name": "Runaljod - Yggdrasil",
     "spotify_uri": "spotify:track:0OXEH9T6QSQCrmnjdtpf4P",
     "style_note": "Dark, ambient Nordic folk utilizing ancient instruments for a ritualistic atmosphere."
+  },
+  {
+    "country": "Panama",
+    "code": "pa",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
+  },
+  {
+    "country": "Paraguay",
+    "code": "py",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
   },
   {
     "country": "Portugal",
@@ -120,194 +282,76 @@
     "style_note": "The definitive sound of Portuguese Fado—raw, soulful, and deeply melancholic."
   },
   {
-    "country": "Sri Lanka",
-    "code": "lk",
-    "continent": "Asia",
-    "track_name": "Bucky Done Gun",
-    "artist_name": "M.I.A.",
-    "album_name": "Arular",
-    "spotify_uri": "spotify:track:5eQABBjVIGIMIA7ZDB1QL7",
-    "style_note": "A gritty London fusion of Brazilian Baile Funk and aggressive electro-pop."
+    "country": "Qatar",
+    "code": "qa",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
   },
   {
-    "country": "Ukraine",
-    "code": "ua",
-    "continent": "Europe",
-    "track_name": "Зола-Земля",
-    "artist_name": "Morwan",
-    "album_name": "Зола-Земля",
-    "spotify_uri": "spotify:track:3THuHcthKzzpDIJQUH5Xfu",
-    "style_note": "Dark, driving Ukrainian post-punk that feels industrial and claustrophobic."
+    "country": "Saudi Arabia",
+    "code": "sa",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
   },
   {
-    "country": "Poland",
-    "code": "pl",
-    "continent": "Europe",
-    "track_name": "Symphony No. 3, Op. 36: II. Lento e Largo - Tranquillissimo",
-    "artist_name": "Henryk Górecki;Dawn Upshaw;London Sinfonietta",
-    "album_name": "Górecki: Symphony No. 3",
-    "spotify_uri": "spotify:track:4iCn374fZg5UbGD1xFNo1m",
-    "style_note": "A transcendent, slow-moving symphony defining modern Polish minimalism."
-  },
-  {
-    "country": "Cuba",
-    "code": "cu",
-    "continent": "North America",
-    "track_name": "Chan Chan",
-    "artist_name": "Buena Vista Social Club",
-    "album_name": "Buena Vista Social Club",
-    "spotify_uri": "spotify:track:3bxZhauuIu4ubctdRZwPYW",
-    "style_note": "The quintessential Afro-Cuban son; dusty, rhythmic, and timelessly evocative."
-  },
-  {
-    "country": "United States",
-    "code": "us",
-    "continent": "North America",
-    "track_name": "Electric Pow Wow Drum",
-    "artist_name": "The Halluci Nation",
-    "album_name": "A Tribe Called Red",
-    "spotify_uri": "spotify:track:5e8v4ibmsMHxLLALe5KaiZ",
-    "style_note": "A floor-shaking collision of traditional Indigenous chanting and heavy dubstep."
-  },
-  {
-    "country": "Argentina",
-    "code": "ar",
-    "continent": "South America",
-    "track_name": "Época",
-    "artist_name": "Gotan Project",
-    "album_name": "La revancha del tango",
-    "spotify_uri": "spotify:track:786hvIF3Hi3hdNAXHdlo8Q",
-    "style_note": "Fuzzed-out 'Neo-Tango' blending the bandoneon with dub-inspired electronic beats."
-  },
-  {
-    "country": "Colombia",
-    "code": "co",
-    "continent": "South America",
-    "track_name": "Un Pelito y un Tamal",
-    "artist_name": "Penyair;dj spizike",
-    "album_name": "Filantropía",
-    "spotify_uri": "spotify:track:1VBss5t7b8CX4xZqSc5VN8",
-    "style_note": "Modern Latin hip-hop retaining a gritty, street-level rhythmic backbone."
-  },
-  {
-    "country": "Democratic Republic of the Congo",
-    "code": "cd",
-    "continent": "Africa",
-    "track_name": "Paradiso",
-    "artist_name": "Konono N°1",
-    "album_name": "Congotronics",
-    "spotify_uri": "spotify:track:5Ff4SPIMwPEuvEayyvacv0",
-    "style_note": "Distorted Congolese trance played on DIY electrified likembes."
-  },
-  {
-    "country": "Gambia",
-    "code": "gm",
-    "continent": "Africa",
-    "track_name": "Gambia",
-    "artist_name": "Sona Jobarteh",
-    "album_name": "Badinyaa Kumoo",
-    "spotify_uri": "spotify:track:62CiJa3DgDNODUswout4CW",
-    "style_note": "Fluid kora performance honoring West African griot traditions with modern clarity."
-  },
-  {
-    "country": "Ireland",
-    "code": "ie",
-    "continent": "Europe",
-    "track_name": "I Have a Love",
-    "artist_name": "For Those I Love",
-    "album_name": "For Those I Love",
-    "spotify_uri": "spotify:track:3qWT8PN74cYf0dr2Gi7ZRE",
-    "style_note": "Emotionally raw blend of spoken-word poetry and atmospheric Dublin house."
-  },
-  {
-    "country": "Jamaica",
-    "code": "jm",
-    "continent": "North America",
-    "track_name": "(To Be) Young Gifted and Black",
-    "artist_name": "Bob & Marcia",
-    "album_name": "Young, Gifted & Black",
-    "spotify_uri": "spotify:track:7GH08yfGT4cxZ9HTSoPw8q",
-    "style_note": "A defiant, soulful reggae anthem capturing the spirit of 1970s Kingston."
-  },
-  {
-    "country": "Japan",
-    "code": "jp",
-    "continent": "Asia",
-    "track_name": "Otoko-koko-ni ariki",
-    "artist_name": "Masaya Takashino;Wadaiko Matsuriza",
-    "album_name": "Wadaiko Matsuriza: Japanese Drums",
-    "spotify_uri": "spotify:track:6ZI9Pyo4zblkNjDysZOhw",
-    "style_note": "Thunderous Japanese Taiko drum performance; visceral and intensely physical."
-  },
-  {
-    "country": "Mexico",
-    "code": "mx",
-    "continent": "North America",
-    "track_name": "Los Luchadores",
-    "artist_name": "La Sonora Santanera",
-    "album_name": "La Sonora Santanera en Su 60 Aniversario",
-    "spotify_uri": "spotify:track:0HBiHi1FZBpl8QOqiS0oBm",
-    "style_note": "Classic Mexican Cumbia with bright horns and an infectious, swinging beat."
+    "country": "Scotland",
+    "code": "gb-sct",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
   },
   {
     "country": "Senegal",
     "code": "sn",
-    "continent": "Africa",
     "track_name": "Mane Khouma Khol Thi Yao",
     "artist_name": "Etoile De Dakar;Youssou N'Dour;El Hadji Faye",
-    "album_name": "Volume 1 - Absa Gueye",
     "spotify_uri": "spotify:track:36s8KYzChBLukyzXPEy03G",
     "style_note": "Seminal Senegalese Mbalax featuring a young Youssou N'Dour; complex and driving."
   },
   {
+    "country": "South Africa",
+    "code": "za",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
+  },
+  {
+    "country": "South Korea",
+    "code": "kr",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
+  },
+  {
     "country": "Spain",
     "code": "es",
-    "continent": "Europe",
-    "track_name": "Medley: Viva Sevilla",
-    "artist_name": "Rocío Jurado",
-    "album_name": "Sevillanas De Carlos Saura",
-    "spotify_uri": "spotify:track:3CrtlyyfTxv74Dz4LNfoi2",
-    "style_note": "Dramatic Flamenco-pop suite showcasing intense Spanish vocal 'duende'."
+    "track_name": "",
+    "artist_name": "Rosalia",
+    "spotify_uri": "",
+    "style_note": ""
   },
   {
-    "country": "Sudan",
-    "code": "sd",
-    "continent": "Africa",
-    "track_name": "Gedima",
-    "artist_name": "Jantra",
-    "album_name": "Synthesized Sudan: Astro-Nubian Electronic Jaglara",
-    "spotify_uri": "spotify:track:7adrBVnscljGRMlejhTeW",
-    "style_note": "Dizzying Astro-Nubian electronic music with manic, rhythmic synthesizer patterns."
+    "country": "Sweden",
+    "code": "se",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
   },
   {
-    "country": "Syria",
-    "code": "sy",
-    "continent": "Asia",
-    "track_name": "Warni Warni",
-    "artist_name": "Omar Souleyman",
-    "album_name": "Wenu Wenu",
-    "spotify_uri": "spotify:track:3cAeVEM3e2qv2V4lVhMpdR",
-    "style_note": "The gold standard of Dabke-Industrial; high-BPM Syrian wedding-techno fusion."
-  },
-  {
-    "country": "Vietnam",
-    "code": "vn",
-    "continent": "Asia",
-    "track_name": "3 Gnossiennes: Gnossiennes No. 3",
-    "artist_name": "Van-Anh Vo",
-    "album_name": "Three-Mountain Pass",
-    "spotify_uri": "spotify:track:7y36yj54KJRBpA9Ym59ghv",
-    "style_note": "Avant-garde reimagining of Satie performed on traditional Vietnamese zither."
-  },
-  {
-    "country": "Wales",
-    "code": "gb-wls",
-    "continent": "Europe",
-    "track_name": "Lliwiau",
-    "artist_name": "9Bach",
-    "album_name": "Tincian",
-    "spotify_uri": "spotify:track:0LmdWyulVleampgb3Ronfr",
-    "style_note": "Atmospheric Welsh folk blending ethereal vocals with subtle electronics."
+    "country": "Switzerland",
+    "code": "ch",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
   },
   {
     "country": "Tunisia",
@@ -318,5 +362,29 @@
     "album_name": "The Tunis Diaries",
     "spotify_uri": "spotify:track:35hQ58kBiauhXVy0hjcJIA",
     "style_note": "Haunting North African electronic reimagining of Nirvana; dark and sparse."
+  },
+  {
+    "country": "Turkiye",
+    "code": "tr",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
+  },
+  {
+    "country": "Uruguay",
+    "code": "uy",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
+  },
+  {
+    "country": "Uzbekistan",
+    "code": "uz",
+    "track_name": "",
+    "artist_name": "",
+    "spotify_uri": "",
+    "style_note": ""
   }
 ]
