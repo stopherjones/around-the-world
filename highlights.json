@@ -298,10 +298,10 @@
   {
     "country": "Scotland",
     "code": "gb-sct",
-    "track_name": "",
-    "artist_name": "",
-    "spotify_uri": "",
-    "style_note": ""
+    "track_name": "Road to Nowhere",
+    "artist_name": "The Bad Shepherds",
+    "spotify_uri": "https://open.spotify.com/track/1EkqQ1lNBHgHpuLNZIszsB?si=50f44aa3f0ef4615",
+    "style_note": "Celtic covers of '70s and '80s punk and new wave classics. Possibly predicting Scotland's performance at the 2026 World Cup ;)"
   },
   {
     "country": "Senegal",
@@ -322,10 +322,10 @@
   {
     "country": "South Korea",
     "code": "kr",
-    "track_name": "",
-    "artist_name": "",
-    "spotify_uri": "",
-    "style_note": ""
+    "track_name": "Gangnam Style",
+    "artist_name": "PSY",
+    "spotify_uri": "https://open.spotify.com/track/03UrZgTINDqvnUMbbIMhql?si=17108d71d99f44d7",
+    "style_note": "The global phenomenon that brought K-pop to the world stage."
   },
   {
     "country": "Spain",
@@ -362,18 +362,18 @@
   {
     "country": "Turkiye",
     "code": "tr",
-    "track_name": "",
-    "artist_name": "",
-    "spotify_uri": "",
-    "style_note": ""
+    "track_name": "Zühtü",
+    "artist_name": "Esin Afşar",
+    "spotify_uri": "https://open.spotify.com/track/2CJ4PxGqDZEeKtR5EPviTQ?si=72bf925328814278",
+    "style_note": "A joyous, avant-garde 1974 crossover that takes a traditional Turkish folk song and supercharges it with fuzzy psych-rock."
   },
   {
     "country": "Uruguay",
     "code": "uy",
-    "track_name": "",
-    "artist_name": "",
-    "spotify_uri": "",
-    "style_note": ""
+    "track_name": "¿Qué será qué es?",
+    "artist_name": "Jorge Drexler with Rueda de Candombe",
+    "spotify_uri": "https://open.spotify.com/track/3rlz9AtVwtM996bgrBYZF4?si=5debbe06b6cc4b89",
+    "style_note": "The once-banned sound of Afro-Uruguayan Candombe, is a hypnotic blend of acordian and traditional percussion."
   },
   {
     "country": "Uzbekistan",
