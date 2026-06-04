@@ -258,28 +258,26 @@
   {
     "country": "Panama",
     "code": "pa",
-    "track_name": "",
-    "artist_name": "",
-    "spotify_uri": "",
-    "style_note": ""
+    "track_name": "Panama Esta Bueno Y Ma",
+    "artist_name": "Los Exagerados",
+    "spotify_uri": "https://open.spotify.com/track/2ZDkT8afN8II8y5hkYJAyd?si=a8e08fbcdd4b4da5",
+    "style_note": "Translating to 'Panama is great, and then some!', this is an infectious dose of late 60s, early 70s Latin salsa jazz."
   },
   {
     "country": "Paraguay",
     "code": "py",
-    "track_name": "",
-    "artist_name": "",
-    "spotify_uri": "",
-    "style_note": ""
+    "track_name": "Pájaro Campana",
+    "artist_name": "Los Paraguayos",
+    "spotify_uri": "https://open.spotify.com/track/6Dw0h3D6ile2SmTdMJyJFH?si=fe5a41582aea4c3d",
+    "style_note": "Meaning 'The Bellbird', this is a delightful instrumental track in which the harp is used to mimic the call of Paraguay's national bird."
   },
   {
     "country": "Portugal",
     "code": "pt",
-    "continent": "Europe",
     "track_name": "Estranha Forma de Vida",
     "artist_name": "Amália Rodrigues",
-    "album_name": "O Melhor de Amália",
-    "spotify_uri": "spotify:track:6I5kPK1JODD6FlmXSUH4WK",
-    "style_note": "The definitive sound of Portuguese Fado—raw, soulful, and deeply melancholic."
+    "spotify_uri": "https://open.spotify.com/track/6I5kpK1JoDD6FlmXsUH4WK?si=aae36ce0cc10452f",
+    "style_note": "Meaning 'Strange Way of Life', this is one of the absolute pillars of Portuguese Fado, capturing the essence of saudade, the Portuguese blend of longing, melancholy, and resignation to fate."
   },
   {
     "country": "Qatar",
@@ -356,10 +354,8 @@
   {
     "country": "Tunisia",
     "code": "tn",
-    "continent": "Africa",
     "track_name": "Something in the Way",
     "artist_name": "Emel",
-    "album_name": "The Tunis Diaries",
     "spotify_uri": "spotify:track:35hQ58kBiauhXVy0hjcJIA",
     "style_note": "Haunting North African electronic reimagining of Nirvana; dark and sparse."
   },
