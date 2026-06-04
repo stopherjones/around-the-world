@@ -282,18 +282,18 @@
   {
     "country": "Qatar",
     "code": "qa",
-    "track_name": "",
-    "artist_name": "",
-    "spotify_uri": "",
-    "style_note": ""
+    "track_name": "Ya Habbibi",
+    "artist_name": "Ali Abdul Sattar",
+    "spotify_uri": "https://open.spotify.com/track/5tEggOrYgzopEw1BfUKnG5?si=72bc8a3f01e44b0c",
+    "style_note": "Meaning 'My Beloved', this is one of the pioneering tracks of modern Khaleeji (Persian Gulf) pop"
   },
   {
     "country": "Saudi Arabia",
     "code": "sa",
-    "track_name": "",
-    "artist_name": "",
-    "spotify_uri": "",
-    "style_note": ""
+    "track_name": "Sallatu Allah",
+    "artist_name": "Jordi Savall",
+    "spotify_uri": "https://open.spotify.com/track/3WqAOTKJ8uEKGyIhDn281U?si=dbb195a245cc4f46",
+    "style_note": "Meaning 'Blessings of God upon the Prophet', this track depicts the 14th Century 'Islamic Marco Polo', Ibn Battuta's pilgrimage to Mecca."
   },
   {
     "country": "Scotland",
@@ -330,10 +330,10 @@
   {
     "country": "Spain",
     "code": "es",
-    "track_name": "",
+    "track_name": "Berghain",
     "artist_name": "Rosalia",
-    "spotify_uri": "",
-    "style_note": ""
+    "spotify_uri": "https://open.spotify.com/track/2T8yuUKl1nhmtaIocqWo4i?si=0be4165c43964565",
+    "style_note": "Dark, viseral, operatic, epic. A tour de force from the genre-defying Catalan superstar."
   },
   {
     "country": "Sweden",
@@ -346,18 +346,18 @@
   {
     "country": "Switzerland",
     "code": "ch",
-    "track_name": "",
-    "artist_name": "",
-    "spotify_uri": "",
-    "style_note": ""
+    "track_name": "Eisbär",
+    "artist_name": "Grauzone",
+    "spotify_uri": "https://open.spotify.com/track/2SSf9yO6zuxeutDRbfctTV?si=800079135d1a4f74",
+    "style_note": "At the forefront of Neue Deutsche Welle (German New Wave). Swiss band Grauzone offer an anxious, driving synth track about wanting to be a polar bear to never have to cry again."
   },
   {
     "country": "Tunisia",
     "code": "tn",
     "track_name": "Something in the Way",
     "artist_name": "Emel",
-    "spotify_uri": "spotify:track:35hQ58kBiauhXVy0hjcJIA",
-    "style_note": "Haunting North African electronic reimagining of Nirvana; dark and sparse."
+    "spotify_uri": "https://open.spotify.com/track/35hQ58kBiauhXVy0hjcJlA?si=50517075e0d7456d",
+    "style_note": "The haunting, soaring, melancholic voice of Emel, the 'Voice of the Tunisian Revolution', recorded minimally during the 2020 Lockdown with a single guitar and a laptop in a quiet Tunisian garden."
   },
   {
     "country": "Turkiye",
@@ -378,9 +378,9 @@
   {
     "country": "Uzbekistan",
     "code": "uz",
-    "track_name": "",
-    "artist_name": "",
-    "spotify_uri": "",
-    "style_note": ""
+    "track_name": "Sen Qaidan Bilasan (How Do You Know)",
+    "artist_name": "Original",
+    "spotify_uri": "https://open.spotify.com/track/6NJg7Fd3cMyoBtIb9PaTQT?si=4629d86a9865460f",
+    "style_note": "A driving space-disco track from Uzbekistan's thriving '80s music scene, reminiscent of Giorgio Moroder or Cerrone."
   }
 ]
