@@ -82,10 +82,10 @@
   {
     "country": "Cape Verde",
     "code": "cv",
-    "track_name": "Petit Pays",
-    "artist_name": "Cesária Évora",
-    "spotify_uri": "https://open.spotify.com/track/3TPr2Em1i454nDS8UJbaFW?si=ebfa44133e064045",
-    "style_note": "A classic of Cape Verdian 'morna', rich with bittersweet longing and love for her small island homeland"
+    "track_name": "Les Mots d'Amour",
+    "artist_name": "Mayra Andrade",
+    "spotify_uri": "https://open.spotify.com/track/5wWsPTSLg9gLuD39EjCxB4?si=d82591c6664f4fd3",
+    "style_note": "The slow, melancholic sound of Cape Verdean 'Morna' given a Parisian cafe uplift."
   },
   {
     "country": "Colombia",
@@ -234,26 +234,26 @@
   {
     "country": "Netherlands",
     "code": "nl",
-    "track_name": "",
-    "artist_name": "",
-    "spotify_uri": "",
-    "style_note": ""
+    "track_name": "Keep It Together",
+    "artist_name": "Pip Blom",
+    "spotify_uri": "https://open.spotify.com/track/60DviYw4Xkmmph4iYqlwAu?si=0fa7b0341b1a421a",
+    "style_note": "Juat an infectiously bright and joyous slice of Dutch indie-pop/rock."
   },
   {
     "country": "New Zealand",
     "code": "nz",
-    "track_name": "",
-    "artist_name": "",
-    "spotify_uri": "",
-    "style_note": ""
+    "track_name": "Kai Tangata",
+    "artist_name": "Alien Weaponry",
+    "spotify_uri": "https://open.spotify.com/track/0YWyKtLAlmVjryfY6CSxYE?si=ff0bdcac19ec4ce1",
+    "style_note": "An absolute bombtrack of New Zealand 'Haka Metal' marrying thrash riffs with the fierce, rhythmic war cries of a traditional Māori Haka."
   },
   {
     "country": "Norway",
     "code": "no",
-    "continent": "Europe",
+    "continent": "Grá",
     "artist_name": "Wardruna",
-    "spotify_uri": "spotify:track:0OXEH9T6QSQCrmnjdtpf4P",
-    "style_note": "Dark, ambient Nordic folk utilizing ancient instruments for a ritualistic atmosphere."
+    "spotify_uri": "https://open.spotify.com/track/4oxRC4nRroHHtoBsTdSm7Y?si=44969d4139e44d15",
+    "style_note": "Dark, ambient Nordic folk utilizing ancient instruments for a ritualistic atmosphere. Grá, meaning 'the grey one' refers to the   wolf as a symbol of the broken bond between humans and the wild, offering a song of reconciliation to heal that ancient rift."
   },
   {
     "country": "Panama",
