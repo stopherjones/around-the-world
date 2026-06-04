@@ -307,17 +307,17 @@
     "country": "Senegal",
     "code": "sn",
     "track_name": "Mane Khouma Khol Thi Yao",
-    "artist_name": "Etoile De Dakar;Youssou N'Dour;El Hadji Faye",
-    "spotify_uri": "spotify:track:36s8KYzChBLukyzXPEy03G",
-    "style_note": "Seminal Senegalese Mbalax featuring a young Youssou N'Dour; complex and driving."
+    "artist_name": "Étoile de Dakar",
+    "spotify_uri": "https://open.spotify.com/track/36s8KYzCHbLUkyzXPeY03G?si=5caa4e3885bb484c",
+    "style_note": "This late-70s gem sees a young Youssou N'Dour weaving soulful Wolof vocals over the poly-rhythmic sound of Senegalese Mbalax."
   },
   {
     "country": "South Africa",
     "code": "za",
-    "track_name": "",
-    "artist_name": "",
-    "spotify_uri": "",
-    "style_note": ""
+    "track_name": "Nkalakatha",
+    "artist_name": "Mandoza",
+    "spotify_uri": "https://open.spotify.com/track/2PGxiV2TSgVHd02eBd0Kz1?si=224be40a123c45a3",
+    "style_note": "A juggernaut of the late '90s Kwaito movement, born in the townships of Johannesburg. African percussion, deep basslines, and Mandoza's roaring, unmistakable Zulu vocals became a unifying stadium anthem across South Africa."
   },
   {
     "country": "South Korea",
@@ -338,10 +338,10 @@
   {
     "country": "Sweden",
     "code": "se",
-    "track_name": "",
-    "artist_name": "",
-    "spotify_uri": "",
-    "style_note": ""
+    "track_name": "Sápmelaš",
+    "artist_name": "Spirituz",
+    "spotify_uri": "https://open.spotify.com/track/5o62PGME2jv1KAcfZk3xSF?si=3ff2526427d543df",
+    "style_note": "Relentless yet hypnotic, this 138 BPM psytrance odyssey celebrates indigenous people of Sápmi, a cultural region that stretches across the northern parts of Norway, Sweden, Finland, and the Kola Peninsula of Russia."
   },
   {
     "country": "Switzerland",
