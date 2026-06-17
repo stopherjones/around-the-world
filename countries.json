@@ -34,7 +34,7 @@
   { "name": "Central African Republic", "code": "cf", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
   { "name": "Chad", "code": "td", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
   { "name": "Chile", "code": "cl", "type": "country", "continent": "South America", "read": false, "books": [],"music": [] },
-  { "name": "China", "code": "cn", "type": "country", "continent": "Asia", "read": true, "books": [{ "date_read": "2025-04-10", "title": "Journey to the West", "author": "Wu Cheng'en" }],"music": [] },
+  { "name": "China", "code": "cn", "type": "country", "continent": "Asia", "read": true, "books": [{ "date_read": "2025-04-10", "title": "Journey to the West", "author": "Wu Cheng'en" }],"music": [{ "artist": "Beibei Wang", "album_or_playlist": "The Endless Dance", "url": "https://open.spotify.com/album/1sqUgnq09kdSWBrxPrqA5F?si=iyXZkvQ1SZq7RDY-YdJSNA", "description": "A joyous meeting of ancient Chinese solar cycles and modern synth electronica", "date": "01-10" }] },
   { "name": "Colombia", "code": "co", "type": "country", "continent": "South America", "read": false, "books": [],"music": [{ "artist": "dj spizike", "album_or_playlist": "This is dj spizike", "url": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1aJKOo?si=LZLf5eeIQpqgoGq9qrIdUQ", "description": "DJ and beatmaker, popular on TikTok for fusing hip hop beats over '60s Spanish pop songs", "date": "20-07" }] },
   { "name": "Comoros", "code": "km", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
   { "name": "Congo (Republic of)", "code": "cg", "type": "country", "continent": "Africa", "read": false, "books": [],"music": [] },
