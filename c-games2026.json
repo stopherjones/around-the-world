@@ -18,10 +18,10 @@
   {
     "country": "Australia",
     "code": "au",
-    "track_name": "Red Right Hand",
-    "artist_name": "King Short Shirt",
-    "spotify_uri": "https://open.spotify.com/track/0jVo3e34A15l6MNu1O3cfa?si=15d64ea47c404fb7",
-    "style_note": "Nick Cave's sinister masterpiece telling the story of a towering, shadowy figure stalking an industrial wasteland."
+    "track_name": "Crossings",
+    "artist_name": "David Hudson, Alan Dargin, Matthew Doyle, Mark Atkins",
+    "spotify_uri": "https://open.spotify.com/track/6hMZAn7maCqgABx6EK08WM?si=f93220ea366d4736",
+    "style_note": "A deep, earthy, yet hypnotic rhythm featuring the digeridoo and other traditional Aboriginal instruments."
   },
   {
     "country": "Bahamas",
@@ -94,5 +94,37 @@
     "artist_name": "EKO",
     "spotify_uri": "https://open.spotify.com/track/16edYoyGWlfItCbNWd6zOB?si=d7d9bf39859b41cd",
     "style_note": "A joyous slice of 1970s Cameroonian disco funk layered on top of traditional Makossa grooves."
+  },
+  {
+    "country": "Canada",
+    "code": "ca",
+    "track_name": "Isumagijunnaitaungituq (The Unforgiven)",
+    "artist_name": "Elisapie",
+    "spotify_uri": "https://open.spotify.com/track/0yHzzOBWitjnOUOzLB5gnv?si=3f714b726a8249d5",
+    "style_note": "Elisapie, a singer from Salluit, Nunavut, translates the iconic Metallica song into her Inuktitut language, transforming it into a tender, poetic protest against colonisation."
+  },
+  {
+    "country": "Cayman Islands",
+    "code": "ky",
+    "track_name": "Pearl of the West Indies",
+    "artist_name": "Swanky Kitchen Band",
+    "spotify_uri": "https://open.spotify.com/track/1DMNpo0zt2jEZ0smH4b1Qj?si=cd9949a870174d13",
+    "style_note": ""
+  },
+  {
+    "country": "Cook Islands",
+    "code": "ck",
+    "track_name": "Aitutaki Enua",
+    "artist_name": "Rarotongan Performers",
+    "spotify_uri": "https://open.spotify.com/track/6XSXXoACpocaWrRibfJaHG?si=8736ab3b5a954795",
+    "style_note": "The relentlessly high-energy rhythms of the Cook Island 'pate' (log drum), recorded in 1975 to mark the 10th anniversary of the Cook Islands' self-governance (Te Maeva Nui)"
+  },
+  {
+    "country": "Cyprus",
+    "code": "cy",
+    "track_name": "Cypriot Sousta",
+    "artist_name": "Monsieur Doumani",
+    "spotify_uri": "https://open.spotify.com/track/6sYC04RWdxLJfDLJEjcfzb?si=b5afd0e04a5547ae",
+    "style_note": "Monsieur Doumani keep traditional Cypriot music and instruments alive by giving them a modern twist, such as in this infectious, playful instrumental number."
   }
 ]
