@@ -2,7 +2,7 @@ let countriesData = [];
 let highlightsData = [];
 
 const isMusicHighlightsPage = document.body?.id === 'music-highlights';
-const dataSource = isMusicHighlightsPage ? 'highlights.json' : 'countries.json';
+const dataSource = document.body?.dataset?.dataSource || (isMusicHighlightsPage ? 'highlights.json' : 'countries.json');
 
 // Load JSON once, then render whatever the page needs
 fetch(dataSource)

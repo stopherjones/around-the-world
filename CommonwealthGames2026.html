@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around the World - Commonwealth Games 2026 playlist</title>
+    <link rel="icon" href="favicon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="music-highlights" data-data-source="c-games2026.json">
+    <div class="top-links">
+        <a href="index.html" class="top-link">Back to Gallery</a>
+        <a href="books.html" class="top-link">View books list</a>
+    </div>
+    <h1 class="main-title">Commonwealth Games 2026 playlist</h1>
+    <p class="subtitle">A playlist celebrating the participating nations of the 2026 Commonwealth Games through a wide variety of music from across the globe.</p>
+    
+    <p class="subtitle"><a target="_blank" href="https://open.spotify.com/playlist/185Dayu6I8UwWVPcvLUr96">Spotify playlist here</a></p>
+
+    <nav class="filter-bar music-bar">
+        <!-- Sort and Continent filters removed -->
+
+        <div class="filter-group random">
+            <button id="randomPicker">Random entry</button>
+        </div>
+
+        <div class="filter-group search">
+            <label for="searchInput">Search</label>
+            <input type="text" id="searchInput" placeholder="Find a country, artist or album...">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="musicList" class="music-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Music page rendering
+        let musicSearchEl;
+
+        function setupMusicFilters() {
+            musicSearchEl = document.getElementById("searchInput");
+
+            if (musicSearchEl) musicSearchEl.addEventListener("input", renderMusic);
+        }
+
+        function renderMusic() {
+            const musicListEl = document.getElementById("musicList");
+            if (!musicListEl) return;
+
+            musicListEl.innerHTML = "";
+
+            const search = musicSearchEl?.value.toLowerCase() || "";
+
+            const musicItems = countriesData.filter(c =>
+                c.music &&
+                c.music.length > 0 &&
+                (search === "" || c.name.toLowerCase().includes(search) || 
+                 c.music.some(m => 
+                    (m.artist?.toLowerCase().includes(search)) ||
+                    (m.album_or_playlist?.toLowerCase().includes(search)) ||
+                    (m.description?.toLowerCase().includes(search))
+                 )
+                )
+            );
+
+            if (musicItems.length === 0) {
+                musicListEl.innerHTML = '<div class="empty-state">No music recorded yet.</div>';
+                updateStats(countriesData, 'music');
+                return;
+            }
+
+            // Flatten music entries with country info
+            let flatMusic = [];
+            musicItems.forEach(country => {
+                country.music.forEach(m => {
+                    flatMusic.push({
+                        ...m,
+                        countryName: country.name,
+                        countryCode: country.code,
+                        type: country.type
+                    });
+                });
+            });
+
+            // Preserve highlights.json order on the highlights page
+            if (document.body.id !== 'music-highlights') {
+                flatMusic.sort((a, b) => {
+                    if (a.type !== b.type) {
+                        return a.type === 'country' ? -1 : 1;
+                    }
+                    return a.countryName.localeCompare(b.countryName);
+                });
+            }
+
+            // Render
+            flatMusic.forEach(entry => {
+                const item = document.createElement("div");
+                item.classList.add("music-item");
+
+                const flagDiv = document.createElement("div");
+                flagDiv.classList.add("flag-thumbnail");
+                const img = document.createElement("img");
+                if (entry.countryCode && (entry.countryCode.includes("/") || entry.countryCode.startsWith("http"))) {
+                    img.src = entry.countryCode;
+                } else if (entry.countryCode) {
+                    img.src = `https://flagcdn.com/w160/${entry.countryCode}.png`;
+                }
+                img.alt = `Flag of ${entry.countryName}`;
+                flagDiv.appendChild(img);
+
+                const details = document.createElement("div");
+                details.classList.add("music-details");
+
+                const countryName = document.createElement("div");
+                countryName.classList.add("country-name");
+                countryName.textContent = entry.countryName;
+                details.appendChild(countryName);
+
+                const artist = document.createElement("div");
+                artist.classList.add("music-artist");
+                artist.textContent = entry.artist || "";
+                details.appendChild(artist);
+
+                const album = document.createElement("div");
+                album.classList.add("music-album");
+                if (entry.url) {
+                    const a = document.createElement("a");
+                    a.href = entry.url;
+                    a.target = "_blank";
+                    a.rel = "noopener noreferrer";
+                    a.textContent = entry.album_or_playlist || "Listen";
+                    album.appendChild(a);
+                } else {
+                    album.textContent = entry.album_or_playlist || "";
+                }
+                details.appendChild(album);
+
+                if (entry.description) {
+                    const desc = document.createElement("div");
+                    desc.classList.add("music-desc");
+                    desc.textContent = entry.description;
+                    details.appendChild(desc);
+                }
+
+                if (entry.date) {
+                    const dateEl = document.createElement("div");
+                    dateEl.classList.add("music-date");
+                    // Format DD-MM to DD-MMM
+                    const [day, month] = entry.date.split("-");
+                    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                    const monthIndex = parseInt(month) - 1;
+                    const formatted = `${day}-${monthNames[monthIndex]}`;
+                    dateEl.textContent = `National day: ${formatted}`;
+                    details.appendChild(dateEl);
+                }
+
+                item.appendChild(flagDiv);
+                item.appendChild(details);
+                musicListEl.appendChild(item);
+            });
+
+            updateStats(countriesData, 'music');
+        }
+
+        // Random picker functionality
+        document.getElementById("randomPicker").addEventListener("click", pickRandom);
+
+        function pickRandom() {
+            const musicListEl = document.getElementById("musicList");
+            const items = musicListEl.querySelectorAll(".music-item");
+            if (items.length === 0) return;
+            const randomIndex = Math.floor(Math.random() * items.length);
+            const randomItem = items[randomIndex];
+            randomItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            // Highlight temporarily
+            randomItem.style.backgroundColor = 'yellow';
+            setTimeout(() => randomItem.style.backgroundColor = '', 2000);
+        }
+    </script>
+
+</body>
+</html>

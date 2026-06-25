@@ -1,0 +1,98 @@
+[
+  {
+    "country": "Anguilla",
+    "code": "ai",
+    "track_name": "We've Seen it All",
+    "artist_name": "Omari and Bankie Banx",
+    "spotify_uri": "https://open.spotify.com/track/4ijU1zRPXwjkB6YZxpMFSB?si=1a59327eb24e4847",
+    "style_note": "Father and son collborate on this laid-back reggae reflection."
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "code": "ag",
+    "track_name": "Nobody Go Run Me",
+    "artist_name": "King Short Shirt",
+    "spotify_uri": "https://open.spotify.com/track/7iasGRMH72KtZ4DMfYfFMZ?si=f528612415d44c67",
+    "style_note": "A defiant calypso anthem from the 15-time winner of the Antigua and Barbuda Calypso Competition."
+  },
+  {
+    "country": "Australia",
+    "code": "au",
+    "track_name": "Red Right Hand",
+    "artist_name": "King Short Shirt",
+    "spotify_uri": "https://open.spotify.com/track/0jVo3e34A15l6MNu1O3cfa?si=15d64ea47c404fb7",
+    "style_note": "Nick Cave's sinister masterpiece telling the story of a towering, shadowy figure stalking an industrial wasteland."
+  },
+  {
+    "country": "Bahamas",
+    "code": "bs",
+    "track_name": "Da River",
+    "artist_name": "Ophie & Da Websites",
+    "spotify_uri": "https://open.spotify.com/track/56GJXInYxFAs2kgf9wtaoP?si=84da699076df4bf9",
+    "style_note": "Raw but infectious - this is a slice of pure, traditional Bahamian Rake-n-Scrape."
+  },
+  {
+    "country": "Bangladesh",
+    "code": "bd",
+    "track_name": "Prarthona",
+    "artist_name": "Momotaz x Mizan",
+    "spotify_uri": "https://open.spotify.com/track/5RL2A6ZuKkZM0McehobOjd?si=f647d8470bb2450c",
+    "style_note": "A transcendental, rain-summoning incantation where the natural forces of Bangladeshi folk are given a modern facelift by the regional phenomenon that is the Coke Studio."
+  },
+  {
+    "country": "Barbados",
+    "code": "bb",
+    "track_name": "Roll It Gal",
+    "artist_name": "Alison Hinds",
+    "spotify_uri": "https://open.spotify.com/track/1dhrBVOBJVRAomxv0sqfmK?si=6bdad8ac88934014",
+    "style_note": "An anthem for female empowerment featuring the wine-and-wuk kinetic energy of Barbadian Ragga Soca (Soul of calypso)."
+  },
+  {
+    "country": "Belize",
+    "code": "bz",
+    "track_name": "Black Catbird",
+    "artist_name": "The Garifuna Collective",
+    "spotify_uri": "https://open.spotify.com/track/6s9n8j05v6iezQO4vdlClA?si=5b3e5ca649834204",
+    "style_note": "At once haunting and joyful, Black Catbird blends Garifuna rhytms with contemporary electronica to evoke the Belizean rainforest."
+  },
+  {
+    "country": "Bermuda",
+    "code": "bm",
+    "track_name": "Gombey Dance",
+    "artist_name": "Hubert Smith and his Coral Islanders",
+    "spotify_uri": "https://open.spotify.com/track/6lHOfqDMGBTECjtxJFsxcs?si=801b825d969142f3",
+    "style_note": "The energetic street rhythms of Bermudan Gombey are smooth-talked into this suave calypso swing."
+  },
+  {
+    "country": "Botswana",
+    "code": "bw",
+    "track_name": "Dare to Fly",
+    "artist_name": "Samba the Great",
+    "spotify_uri": "https://open.spotify.com/track/7msNVdnfJJcojcS97aAQgn?si=5e2eba5a882f42ad",
+    "style_note": "A defiant manifesto for female and black empowerment - full of edgy punk energy against a hip-hop foundation."
+  },
+  {
+    "country": "British Virgin Islands",
+    "code": "vg",
+    "track_name": "Don't Blame it on Elvis",
+    "artist_name": "The Fabulous Clevertys",
+    "spotify_uri": "https://open.spotify.com/track/5OVBspkAhlRVKYHrQtLQM8?si=1004a7ab557c442e",
+    "style_note": "A tongue-in-cheek calypso defence of Elvis Presley, released at the height of 1950s Rock n Roll."
+  },
+  {
+    "country": "Brunei",
+    "code": "bn",
+    "track_name": "Adai-Adai 2.0",
+    "artist_name": "Fauziah Gambus, Yunk-G, Dan.EL, KOEL & Whooguan",
+    "spotify_uri": "https://open.spotify.com/track/29P40NF99i7hwWvWfdzzLe?si=e4485d6fb89f491b",
+    "style_note": "A vibrant reimagining of the Bruneian maritime folk song, fusing traditional stringed instruments with rap energy and hip-hop beats."
+  },
+  {
+    "country": "Cameroon",
+    "code": "cm",
+    "track_name": "M'onguele M'am",
+    "artist_name": "EKO",
+    "spotify_uri": "https://open.spotify.com/track/16edYoyGWlfItCbNWd6zOB?si=d7d9bf39859b41cd",
+    "style_note": "A joyous slice of 1970s Cameroonian disco funk layered on top of traditional Makossa grooves."
+  }
+]
