@@ -109,7 +109,7 @@
     "track_name": "Pearl of the West Indies",
     "artist_name": "Swanky Kitchen Band",
     "spotify_uri": "https://open.spotify.com/track/1DMNpo0zt2jEZ0smH4b1Qj?si=cd9949a870174d13",
-    "style_note": ""
+    "style_note": "A lively, foot-tapping example of Cayman 'kitchen dance music', in which everyday household utensils were used to bring the rhythm alongside the Celtic fiddle and cowskin drum."
   },
   {
     "country": "Cook Islands",
@@ -126,5 +126,13 @@
     "artist_name": "Monsieur Doumani",
     "spotify_uri": "https://open.spotify.com/track/6sYC04RWdxLJfDLJEjcfzb?si=b5afd0e04a5547ae",
     "style_note": "Monsieur Doumani keep traditional Cypriot music and instruments alive by giving them a modern twist, such as in this infectious, playful instrumental number."
+  },
+  {
+    "country": "Dominica",
+    "code": "dm",
+    "track_name": "Cadence Lypso Party",
+    "artist_name": "Exile One",
+    "spotify_uri": "https://open.spotify.com/track/148o2obvadmaxp32kzlAHe?si=b8b75486a4674bb7",
+    "style_note": ""
   }
 ]
