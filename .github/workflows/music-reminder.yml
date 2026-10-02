@@ -2,7 +2,7 @@ name: Music Reminder
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # 8am UTC daily - adjust to your timezone
+    - cron: '0 1 * * *'  # 8am UTC daily - adjust to your timezone
   workflow_dispatch:       # allows manual trigger for testing
 
 jobs:
