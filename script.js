@@ -1,8 +1,11 @@
 let countriesData = [];
 let highlightsData = [];
+let eventsData = [];
 
 const isMusicHighlightsPage = document.body?.id === 'music-highlights';
-const dataSource = document.body?.dataset?.dataSource || (isMusicHighlightsPage ? 'highlights.json' : 'countries.json');
+const isCalendarPage = document.body?.id === 'calendar-page' || document.body?.dataset?.dataSource === 'events.json';
+
+const dataSource = document.body?.dataset?.dataSource || (isMusicHighlightsPage ? 'highlights.json' : (isCalendarPage ? 'events.json' : 'countries.json'));
 
 // Load JSON once, then render whatever the page needs
 fetch(dataSource)
@@ -37,6 +40,8 @@ fetch(dataSource)
                     }]
                 };
             });
+        } else if (isCalendarPage) {
+            eventsData = data;
         } else {
             countriesData = data;
         }
@@ -59,12 +64,18 @@ fetch(dataSource)
             setupMusicFilters();
             renderMusic();
         }
+
+        // If we're on the calendar page
+        if (document.getElementById("calendarList")) {
+            setupCalendarFilters();
+            renderCalendar();
+        }
     });
 
 /* ----------------- STATS ----------------- */
 
 function updateStats(data, pageType = 'gallery') {
-    const totalCountries = pageType === 'highlights' ? 0 : data.filter(c => c.type === 'country').length;
+    const totalCountries = pageType === 'highlights' || pageType === 'calendar' ? 0 : data.filter(c => c.type === 'country').length;
     const statText = document.getElementById("statText");
     if (!statText) return;
 
@@ -140,6 +151,19 @@ function updateStats(data, pageType = 'gallery') {
         );
 
         statText.textContent = `${filteredHighlights.length} tracks from ${data.length} items`;
+    } else if (pageType === 'calendar') {
+        const search = document.getElementById("searchInput")?.value.toLowerCase() || "";
+        const filtered = data.filter(ev =>
+            search === "" ||
+            ev.event.toLowerCase().includes(search) ||
+            (ev.date_note && ev.date_note.toLowerCase().includes(search)) ||
+            (ev.music && ev.music.some(m =>
+                (m.artist?.toLowerCase().includes(search)) ||
+                (m.album_or_playlist?.toLowerCase().includes(search)) ||
+                (m.description?.toLowerCase().includes(search))
+            ))
+        );
+        statText.textContent = `${filtered.length} events recorded`;
     }
 }
 
@@ -336,7 +360,7 @@ let sortEl;
 function setupBooksFilters() {
     booksSearchEl = document.getElementById("searchInput");
     booksContinentEl = document.getElementById("continentFilter");
-    sortEl = document.getElementById("sortFilter"); // add this select to books.html
+    sortEl = document.getElementById("sortFilter");
 
     if (booksSearchEl) booksSearchEl.addEventListener("input", renderBooks);
     if (booksContinentEl) booksContinentEl.addEventListener("change", renderBooks);
@@ -383,10 +407,9 @@ function renderBooks() {
     if (sortMode === "recent") {
         flatBooks.sort((a, b) => new Date(b.date_read) - new Date(a.date_read));
     } else {
-        // A-Z: countries first, then territories
         flatBooks.sort((a, b) => {
             if (a.type !== b.type) {
-                return a.type === 'country' ? -1 : 1;  // countries before territories
+                return a.type === 'country' ? -1 : 1;
             }
             return a.countryName.localeCompare(b.countryName);
         });
@@ -427,20 +450,18 @@ function renderBooks() {
         author.textContent = `by ${entry.author}`;
         details.appendChild(author);
 
-      if (entry.date_read) {
-    const date = new Date(entry.date_read);
+        if (entry.date_read) {
+            const date = new Date(entry.date_read);
+            const formatted = date.toLocaleString("en-GB", {
+                month: "short",
+                year: "numeric"
+            });
 
-    // Format as "Jan 2024" (short month)
-    const formatted = date.toLocaleString("en-GB", {
-        month: "short",
-        year: "numeric"
-    });
-
-    const dateEl = document.createElement("div");
-    dateEl.classList.add("book-date");
-    dateEl.textContent = `Read: ${formatted}`;
-    details.appendChild(dateEl);
-}
+            const dateEl = document.createElement("div");
+            dateEl.classList.add("book-date");
+            dateEl.textContent = `Read: ${formatted}`;
+            details.appendChild(dateEl);
+        }
 
         item.appendChild(flagDiv);
         item.appendChild(details);
@@ -448,4 +469,264 @@ function renderBooks() {
     });
 
     updateStats(countriesData, 'books');
+}
+
+/* ----------------- MUSIC LIST PAGE ----------------- */
+
+let musicSearchEl;
+let musicContinentEl;
+let musicSortEl;
+
+function setupMusicFilters() {
+    musicSearchEl = document.getElementById("searchInput");
+    musicContinentEl = document.getElementById("continentFilter");
+    musicSortEl = document.getElementById("sortFilter");
+    if (musicSearchEl) musicSearchEl.addEventListener("input", renderMusic);
+    if (musicContinentEl) musicContinentEl.addEventListener("change", renderMusic);
+    if (musicSortEl) musicSortEl.addEventListener("change", renderMusic);
+}
+
+function renderMusic() {
+    const musicListEl = document.getElementById("musicList");
+    if (!musicListEl) return;
+    musicListEl.innerHTML = "";
+    const search = musicSearchEl?.value.toLowerCase() || "";
+    const continent = musicContinentEl?.value || "all";
+    const sortMode = musicSortEl?.value || "alpha";
+    const musicItems = countriesData.filter(c =>
+        c.music &&
+        c.music.length > 0 &&
+        (search === "" || c.name.toLowerCase().includes(search) ||
+          c.music.some(m =>
+             (m.artist?.toLowerCase().includes(search)) ||
+            (m.album_or_playlist?.toLowerCase().includes(search)) ||
+            (m.description?.toLowerCase().includes(search))
+         )
+        ) &&
+        (continent === "all" || c.continent === continent)
+    );
+    if (musicItems.length === 0) {
+        musicListEl.innerHTML = '<div class="empty-state">No music recorded yet.</div>';
+        updateStats(countriesData, 'music');
+        return;
+    }
+
+    let flatMusic = [];
+    musicItems.forEach(country => {
+        country.music.forEach(m => {
+            flatMusic.push({
+                ...m,
+                countryName: country.name,
+                countryCode: country.code,
+                type: country.type
+            });
+        });
+    });
+
+    if (sortMode === "date") {
+        flatMusic.sort((a, b) => {
+            const convertToSortable = (dateStr) => {
+                if (!dateStr) return "99-99";
+                const [day, month] = dateStr.split('-');
+                return `${month}-${day}`;
+            };
+            return convertToSortable(a.date).localeCompare(convertToSortable(b.date));
+        });
+    } else {
+        flatMusic.sort((a, b) => {
+            if (a.type !== b.type) {
+                return a.type === 'country' ? -1 : 1;
+            }
+            return a.countryName.localeCompare(b.countryName);
+        });
+    }
+
+    flatMusic.forEach(entry => {
+        const item = document.createElement("div");
+        item.classList.add("music-item");
+        const flagDiv = document.createElement("div");
+        flagDiv.classList.add("flag-thumbnail");
+        const img = document.createElement("img");
+        if (entry.countryCode && (entry.countryCode.includes("/") || entry.countryCode.startsWith("http"))) {
+            img.src = entry.countryCode;
+        } else if (entry.countryCode) {
+            img.src = `https://flagcdn.com/w160/${entry.countryCode}.png`;
+        }
+        img.alt = `Flag of ${entry.countryName}`;
+        flagDiv.appendChild(img);
+        const details = document.createElement("div");
+        details.classList.add("music-details");
+        const countryName = document.createElement("div");
+        countryName.classList.add("country-name");
+        countryName.textContent = entry.countryName;
+        details.appendChild(countryName);
+        const artist = document.createElement("div");
+        artist.classList.add("music-artist");
+        artist.textContent = entry.artist || "";
+        details.appendChild(artist);
+        const album = document.createElement("div");
+        album.classList.add("music-album");
+        if (entry.url) {
+            const a = document.createElement("a");
+            a.href = entry.url;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.textContent = entry.album_or_playlist || "Listen";
+            album.appendChild(a);
+        } else {
+            album.textContent = entry.album_or_playlist || "";
+        }
+        details.appendChild(album);
+        if (entry.description) {
+            const desc = document.createElement("div");
+            desc.classList.add("music-desc");
+            desc.textContent = entry.description;
+            details.appendChild(desc);
+        }
+        if (entry.date) {
+            const dateEl = document.createElement("div");
+            dateEl.classList.add("music-date");
+            const [day, month] = entry.date.split("-");
+            const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            const monthIndex = parseInt(month) - 1;
+            const formatted = `${day}-${monthNames[monthIndex]}`;
+            dateEl.textContent = `National day: ${formatted}`;
+            details.appendChild(dateEl);
+        }
+        item.appendChild(flagDiv);
+        item.appendChild(details);
+        musicListEl.appendChild(item);
+    });
+    updateStats(countriesData, 'music');
+}
+
+/* ----------------- CALENDAR PAGE ----------------- */
+
+let calendarSearchEl;
+let calendarSortEl;
+
+function setupCalendarFilters() {
+    calendarSearchEl = document.getElementById("searchInput");
+    calendarSortEl = document.getElementById("sortFilter");
+    if (calendarSearchEl) calendarSearchEl.addEventListener("input", renderCalendar);
+    if (calendarSortEl) calendarSortEl.addEventListener("change", renderCalendar);
+}
+
+function renderCalendar() {
+    const calendarListEl = document.getElementById("calendarList");
+    if (!calendarListEl) return;
+    calendarListEl.innerHTML = "";
+    const search = calendarSearchEl?.value.toLowerCase() || "";
+    const sortMode = calendarSortEl?.value || "chronological";
+
+    const filteredEvents = eventsData.filter(ev =>
+        search === "" ||
+        ev.event.toLowerCase().includes(search) ||
+        (ev.date_note && ev.date_note.toLowerCase().includes(search)) ||
+        (ev.music && ev.music.some(m =>
+            (m.artist?.toLowerCase().includes(search)) ||
+            (m.album_or_playlist?.toLowerCase().includes(search)) ||
+            (m.description?.toLowerCase().includes(search))
+        ))
+    );
+
+    if (filteredEvents.length === 0) {
+        calendarListEl.innerHTML = '<div class="empty-state">No events recorded yet.</div>';
+        updateStats(eventsData, 'calendar');
+        return;
+    }
+
+    if (sortMode === "alpha") {
+        filteredEvents.sort((a, b) => a.event.localeCompare(b.event));
+    } else {
+        filteredEvents.sort((a, b) => {
+            const convertToSortable = (dateStr) => {
+                if (!dateStr) return "99-99";
+                const [day, month] = dateStr.split('-');
+                return `${month}-${day}`;
+            };
+            return convertToSortable(a.date).localeCompare(convertToSortable(b.date));
+        });
+    }
+
+    filteredEvents.forEach(eventItem => {
+        const item = document.createElement("div");
+        item.classList.add("music-item");
+
+        const thumbDiv = document.createElement("div");
+        thumbDiv.classList.add("flag-thumbnail");
+        thumbDiv.style.display = "flex";
+        thumbDiv.style.alignItems = "center";
+        thumbDiv.style.justifyContent = "center";
+        thumbDiv.style.fontSize = "1.8rem";
+        thumbDiv.style.background = "#f0f0f0";
+        thumbDiv.textContent = "📆";
+
+        const details = document.createElement("div");
+        details.classList.add("music-details");
+
+        const eventName = document.createElement("div");
+        eventName.classList.add("country-name");
+        eventName.textContent = eventItem.event;
+        details.appendChild(eventName);
+
+        if (eventItem.music && eventItem.music.length > 0) {
+            eventItem.music.forEach(m => {
+                if (m.artist) {
+                    const artistEl = document.createElement("div");
+                    artistEl.classList.add("music-artist");
+                    artistEl.textContent = m.artist;
+                    details.appendChild(artistEl);
+                }
+
+                const albumEl = document.createElement("div");
+                albumEl.classList.add("music-album");
+                if (m.url) {
+                    const a = document.createElement("a");
+                    a.href = m.url;
+                    a.target = "_blank";
+                    a.rel = "noopener noreferrer";
+                    a.textContent = m.album_or_playlist || "Listen";
+                    albumEl.appendChild(a);
+                } else {
+                    albumEl.textContent = m.album_or_playlist || "";
+                }
+                details.appendChild(albumEl);
+
+                if (m.description) {
+                    const desc = document.createElement("div");
+                    desc.classList.add("music-desc");
+                    desc.textContent = m.description;
+                    details.appendChild(desc);
+                }
+            });
+        }
+
+        if (eventItem.date_note) {
+            const dateEl = document.createElement("div");
+            dateEl.classList.add("music-date");
+            dateEl.textContent = `Date: ${eventItem.date_note}`;
+            details.appendChild(dateEl);
+        }
+
+        // Dynamically build the Ecosia search URL using the generic prompt and the event name
+        const encodedQuery = encodeURIComponent(`${eventItem.event} music playlist OR radio broadcast OR coverage`);
+        const dynamicSearchUrl = `https://www.ecosia.org/search?q=${encodedQuery}`;
+
+        const searchEl = document.createElement("div");
+        searchEl.classList.add("music-album");
+        const searchLink = document.createElement("a");
+        searchLink.href = dynamicSearchUrl;
+        searchLink.target = "_blank";
+        searchLink.rel = "noopener noreferrer";
+        searchLink.textContent = `🔍 Search more coverage for ${eventItem.event} on Ecosia`;
+        searchEl.appendChild(searchLink);
+        details.appendChild(searchEl);
+
+        item.appendChild(thumbDiv);
+        item.appendChild(details);
+        calendarListEl.appendChild(item);
+    });
+
+    updateStats(eventsData, 'calendar');
 }

@@ -1,0 +1,175 @@
+[
+  {
+    "event": "Chinese New Year",
+    "date": "21-01",
+    "date_note": "Between 21 January and 20 February",
+    "music": [
+      {
+        "artist": "BBC",
+        "album_or_playlist": "BBC Music Planet",
+        "url": "",
+        "description": "Try BBC Music Planet"
+      }
+    ]
+  },
+  {
+    "event": "Rio Carnival",
+    "date": "04-02",
+    "date_note": "Weekend before Ash Wednesday - between 4 February and 10 March",
+    "music": [
+      {
+        "artist": "Various",
+        "album_or_playlist": "BBC6 Music / Radio Carioco",
+        "url": "",
+        "description": "Try BBC6 Music, or Radio Carioco"
+      }
+    ]
+  },
+  {
+    "event": "Mardi Gras",
+    "date": "03-02",
+    "date_note": "Shrove Tuesday - between 3 February and 9 March",
+    "music": [
+      {
+        "artist": "Mardi Gras Traditions",
+        "album_or_playlist": "Mardi Gras Streams and Broadcasts",
+        "url": "https://mardigrastraditions.com/streams-and-broadcasts/",
+        "description": "Live streams and broadcasts"
+      },
+      {
+        "artist": "WWOZ",
+        "album_or_playlist": "WWOZ New Orleans",
+        "url": "https://www.wwoz.org/",
+        "description": "New Orleans community radio"
+      }
+    ]
+  },
+  {
+    "event": "Eid al-Fitr / Eid al-Adha",
+    "date": "01-03",
+    "date_note": "Currently March / May",
+    "music": [
+      {
+        "artist": "BBC Asian Network",
+        "album_or_playlist": "BBC Asian Network Live",
+        "url": "https://www.bbc.co.uk/sounds/play/live/bbc_asian_network",
+        "description": "Often / usually has a day dedicated to celebrating Eid"
+      }
+    ]
+  },
+  {
+    "event": "Summer solstice",
+    "date": "21-06",
+    "date_note": "21 June",
+    "music": []
+  },
+  {
+    "event": "Notting Hill Carnival",
+    "date": "28-08",
+    "date_note": "Late August Bank Holiday",
+    "music": [
+      {
+        "artist": "BBC 1Xtra",
+        "album_or_playlist": "BBC 1Xtra Carnival Coverage",
+        "url": "https://www.bbc.co.uk/sounds/brand/m0007wjy",
+        "description": "Often / usually cover the Carnival"
+      }
+    ]
+  },
+  {
+    "event": "Diwali",
+    "date": "15-09",
+    "date_note": "mid-September to mid-November",
+    "music": [
+      {
+        "artist": "BBC Asian Network",
+        "album_or_playlist": "BBC Asian Network Live",
+        "url": "https://www.bbc.co.uk/sounds/play/live/bbc_asian_network",
+        "description": "Often / usually has a day dedicated to celebrating Diwali"
+      }
+    ]
+  },
+  {
+    "event": "Halloween",
+    "date": "16-10",
+    "date_note": "31 October",
+    "music": [
+      {
+        "artist": "Chris Jones",
+        "album_or_playlist": "Halloween",
+        "url": "https://open.spotify.com/playlist/3LiBrpMBG4OWwDmWmN5ltf?si=805c057dd7bc421f",
+        "description": "Playlist · Chris Jones · 48 items"
+      },
+      {
+        "artist": "Chris Jones",
+        "album_or_playlist": "Halloween - classical, movie and TV",
+        "url": "https://open.spotify.com/playlist/5dfroKiel6NdifryNpKHe3?si=fae384288d964bba",
+        "description": "Playlist · Chris Jones · 23 items"
+      }
+    ]
+  },
+  {
+    "event": "Dia de los muertos",
+    "date": "01-11",
+    "date_note": "1 November",
+    "music": [
+      {
+        "artist": "BBC",
+        "album_or_playlist": "BBC Music Planet",
+        "url": "",
+        "description": "Try BBC Music Planet"
+      }
+    ]
+  },
+  {
+    "event": "Guy fawkes",
+    "date": "05-11",
+    "date_note": "5 November",
+    "music": [
+      {
+        "artist": "The York Waits",
+        "album_or_playlist": "Fortune or Foe",
+        "url": "https://open.spotify.com/album/7oyN7V8NZYiCvbFUIP6cS4?si=yW9K228xRHGMPLRmhfLKMQ",
+        "description": "Music from the period of the Gunpowder Plot"
+      }
+    ]
+  },
+  {
+    "event": "Winter solstice",
+    "date": "21-12",
+    "date_note": "21 December",
+    "music": [
+      {
+        "artist": "Chris Jones",
+        "album_or_playlist": "Solstice, winter",
+        "url": "https://open.spotify.com/playlist/1lXDkx2m7eiArGEF1DifPD?si=4b5e321ae8da4191",
+        "description": "Playlist · Chris Jones · 11 items"
+      }
+    ]
+  },
+  {
+    "event": "Christmas",
+    "date": "25-12",
+    "date_note": "25 December",
+    "music": [
+      {
+        "artist": "Chris Jones",
+        "album_or_playlist": "Alt Christmas",
+        "url": "https://open.spotify.com/playlist/3aBbvj9hlvwVO4lLjMjS9T?si=4e208d6493e84ceb",
+        "description": "Playlist · Chris Jones · 84 items"
+      },
+      {
+        "artist": "Chris Jones",
+        "album_or_playlist": "Christmas",
+        "url": "https://open.spotify.com/playlist/6ylxeINjnQV4hhTn1R30fF?si=df1b8b956ca045a6",
+        "description": "Playlist · Chris Jones · 56 items"
+      },
+      {
+        "artist": "Chris Jones",
+        "album_or_playlist": "Easy Christmas",
+        "url": "https://open.spotify.com/playlist/4K3FzRKQK3Xui74V97eR5C?si=e3e461e861804249",
+        "description": "Playlist · Chris Jones · 33 items"
+      }
+    ]
+  }
+]

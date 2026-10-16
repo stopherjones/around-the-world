@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around the World - Music Calendar</title>
+    <link rel="icon" href="favicon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="calendar-page" data-data-source="events.json">
+    <div class="top-links">
+        <a href="index.html" class="top-link">Back to Gallery</a>
+        <a href="music.html" class="top-link">View music list</a>
+    </div>
+    <h1 class="main-title">Musical Calendar</h1>
+    <p class="subtitle">Seasonal festivals, solstices, and recurring cultural events throughout the year.</p>
+    
+    <nav class="filter-bar music-bar">
+        <div class="filter-group sort">
+            <label for="sortFilter">Sort</label>
+            <select id="sortFilter">
+                <option value="chronological">Chronological</option>
+                <option value="alpha">Event A–Z</option>
+            </select>
+        </div>
+        <div class="filter-group search">
+            <label for="searchInput">Search</label>
+            <input type="text" id="searchInput" placeholder="Find an event, artist or description...">
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div id="calendarList" class="music-list"></div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        // Calendar page specific rendering logic can go here or integrate into script.js
+    </script>
+    <footer style="text-align: center;">
+        <p>Open-source personal web project built by Chris Jones (stopherjones).</p>
+    </footer>
+</body>
+</html>
