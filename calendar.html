@@ -33,9 +33,104 @@
         <div id="calendarList" class="music-list"></div>
     </div>
     
-    <script src="script.js"></script>
     <script>
-        // Calendar page specific rendering logic can go here or integrate into script.js
+        document.addEventListener('DOMContentLoaded', async () => {
+            const calendarList = document.getElementById('calendarList');
+            const searchInput = document.getElementById('searchInput');
+            const sortFilter = document.getElementById('sortFilter');
+            
+            let eventsData = [];
+
+            try {
+                const response = await fetch('events.json');
+                eventsData = await response.json();
+            } catch (error) {
+                console.error('Error loading events.json:', error);
+                calendarList.innerHTML = '<div class="empty-state">Failed to load events.</div>';
+                return;
+            }
+
+            // Converts event name to a filename format with underscores (e.g. "Chinese New Year" -> "chinese_new_year")
+            function slugify(name) {
+                return name
+                    .toLowerCase()
+                    .replace(/[^a-z0-9]+/g, '_')
+                    .replace(/^_+|_+$/g, '');
+            }
+
+            // Converts DD-MM to MM-DD for correct chronological sorting
+            function getSortableDate(dateStr) {
+                if (!dateStr || !dateStr.includes('-')) return '';
+                const parts = dateStr.split('-');
+                return `${parts[1]}-${parts[0]}`;
+            }
+
+            function renderEvents(events) {
+                if (events.length === 0) {
+                    calendarList.innerHTML = '<div class="empty-state">No events found.</div>';
+                    return;
+                }
+
+                calendarList.innerHTML = events.map(item => {
+                    const filename = slugify(item.event);
+                    const imagePath = `images/${filename}.webp`;
+
+                    const musicHtml = item.music && item.music.length > 0
+                        ? item.music.map(m => `
+                            <div class="music-desc" style="margin-top: 0.5rem;">
+                                <strong>${m.artist}</strong> - 
+                                ${m.url ? `<a href="${m.url}" target="_blank" rel="noopener">${m.album_or_playlist}</a>` : m.album_or_playlist}
+                                ${m.description ? `<br><span style="color: #666; font-size: 0.9rem;">${m.description}</span>` : ''}
+                            </div>
+                        `).join('')
+                        : '<div class="music-desc" style="color: #888; font-style: italic;">No music recommendations listed yet.</div>';
+
+                    return `
+                        <div class="music-item">
+                            <div class="event-thumbnail">
+                                <img src="${imagePath}" alt="${item.event}" onerror="this.style.display='none';">
+                            </div>
+                            <div class="music-details">
+                                <h3 class="music-artist" style="margin-top: 0; margin-bottom: 0.25rem;">${item.event}</h3>
+                                <div class="music-date"><strong>Date:</strong> ${item.date_note || item.date}</div>
+                                <div style="margin-top: 0.75rem;">
+                                                      ${musicHtml}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            function filterAndSortEvents() {
+                const query = searchInput ? searchInput.value.toLowerCase() : '';
+                const sortVal = sortFilter ? sortFilter.value : 'chronological';
+
+                let filtered = eventsData.filter(item => {
+                    const matchesEvent = item.event.toLowerCase().includes(query);
+                    const matchesNote = item.date_note && item.date_note.toLowerCase().includes(query);
+                    const matchesMusic = item.music && item.music.some(m => 
+                        m.artist.toLowerCase().includes(query) || 
+                        m.album_or_playlist.toLowerCase().includes(query) ||
+                        (m.description && m.description.toLowerCase().includes(query))
+                    );
+                    return matchesEvent || matchesNote || matchesMusic;
+                });
+
+                if (sortVal === 'alpha') {
+                    filtered.sort((a, b) => a.event.localeCompare(b.event));
+                } else {
+                    filtered.sort((a, b) => getSortableDate(a.date).localeCompare(getSortableDate(b.date)));
+                }
+
+                renderEvents(filtered);
+            }
+
+            if (searchInput) searchInput.addEventListener('input', filterAndSortEvents);
+            if (sortFilter) sortFilter.addEventListener('change', filterAndSortEvents);
+
+            filterAndSortEvents();
+        });
     </script>
     <footer style="text-align: center;">
         <p>Open-source personal web project built by Chris Jones (stopherjones).</p>
