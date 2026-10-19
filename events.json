@@ -6,7 +6,7 @@
     "music": [
       {
         "artist": "BBC",
-        "album_or_playlist": "BBC Music Planet",
+        "album_or_playlist": "Chinese New Year",
         "url": "",
         "description": "Try BBC Music Planet"
       }
@@ -19,7 +19,7 @@
     "music": [
       {
         "artist": "Various",
-        "album_or_playlist": "BBC6 Music / Radio Carioco",
+        "album_or_playlist": "Rio Carnival",
         "url": "",
         "description": "Try BBC6 Music, or Radio Carioco"
       }
@@ -51,7 +51,7 @@
     "music": [
       {
         "artist": "BBC Asian Network",
-        "album_or_playlist": "BBC Asian Network Live",
+        "album_or_playlist": "Eid",
         "url": "https://www.bbc.co.uk/sounds/play/live/bbc_asian_network",
         "description": "The BBC usually has a day dedicated to celebrating Eid"
       }
@@ -61,7 +61,14 @@
     "event": "Summer solstice",
     "date": "21-06",
     "date_note": "21 June",
-    "music": []
+    "music": [
+      {
+        "artist": "BBC 6 Music",
+        "album_or_playlist": "Summer Solstice",
+        "url": "",
+        "description": "BBC6 Music often mark the solstices"
+      }
+    ]
   },
   {
     "event": "Notting Hill Carnival",
@@ -70,7 +77,7 @@
     "music": [
       {
         "artist": "BBC 1Xtra",
-        "album_or_playlist": "BBC 1Xtra Carnival Coverage",
+        "album_or_playlist": "Carnival Coverage",
         "url": "https://www.bbc.co.uk/sounds/brand/m0007wjy",
         "description": "The BBC often covers the Carnival"
       }
@@ -83,7 +90,7 @@
     "music": [
       {
         "artist": "BBC Asian Network",
-        "album_or_playlist": "BBC Asian Network Live",
+        "album_or_playlist": "Diwali",
         "url": "https://www.bbc.co.uk/sounds/play/live/bbc_asian_network",
         "description": "The BBC usually has a day dedicated to celebrating Diwali"
       }
@@ -144,6 +151,12 @@
         "album_or_playlist": "Solstice, winter",
         "url": "https://open.spotify.com/playlist/1lXDkx2m7eiArGEF1DifPD?si=4b5e321ae8da4191",
         "description": "A collection of songs celebrating winter, its weather and the winter solstice"
+      },
+      {
+        "artist": "BBC 6 Music",
+        "album_or_playlist": "Winter Solstice",
+        "url": "",
+        "description": "BBC6 Music often mark the solstices"
       }
     ]
   },
