@@ -1,7 +1,7 @@
 [
   {
     "event": "Chinese New Year",
-    "date": "21-01",
+    "date": "06-02",
     "date_note": "Between 21 January and 20 February",
     "music": [
       {
@@ -14,7 +14,7 @@
   },
   {
     "event": "Rio Carnival",
-    "date": "04-02",
+    "date": "05-02",
     "date_note": "Weekend before Ash Wednesday - between 4 February and 10 March",
     "music": [
       {
@@ -27,7 +27,7 @@
   },
   {
     "event": "Mardi Gras",
-    "date": "03-02",
+    "date": "09-02",
     "date_note": "Shrove Tuesday - between 3 February and 9 March",
     "music": [
       {
@@ -46,7 +46,7 @@
   },
   {
     "event": "Eid",
-    "date": "01-03",
+    "date": "09-03",
     "date_note": "Currently March / May",
     "music": [
       {
@@ -65,7 +65,7 @@
   },
   {
     "event": "Notting Hill Carnival",
-    "date": "28-08",
+    "date": "29-08",
     "date_note": "Late August Bank Holiday",
     "music": [
       {
@@ -78,7 +78,7 @@
   },
   {
     "event": "Diwali",
-    "date": "15-09",
+    "date": "08-11",
     "date_note": "mid-September to mid-November",
     "music": [
       {
