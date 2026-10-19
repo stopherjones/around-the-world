@@ -40,7 +40,7 @@
         "artist": "WWOZ",
         "album_or_playlist": "WWOZ New Orleans",
         "url": "https://www.wwoz.org/",
-        "description": "New Orleans community radio"
+        "description": "New Orleans community radio usually covers the Mardi Gras festivities."
       }
     ]
   },
@@ -53,7 +53,7 @@
         "artist": "BBC Asian Network",
         "album_or_playlist": "BBC Asian Network Live",
         "url": "https://www.bbc.co.uk/sounds/play/live/bbc_asian_network",
-        "description": "Often / usually has a day dedicated to celebrating Eid"
+        "description": "The BBC usually has a day dedicated to celebrating Eid"
       }
     ]
   },
@@ -72,7 +72,7 @@
         "artist": "BBC 1Xtra",
         "album_or_playlist": "BBC 1Xtra Carnival Coverage",
         "url": "https://www.bbc.co.uk/sounds/brand/m0007wjy",
-        "description": "Often / usually cover the Carnival"
+        "description": "The BBC often covers the Carnival"
       }
     ]
   },
@@ -85,7 +85,7 @@
         "artist": "BBC Asian Network",
         "album_or_playlist": "BBC Asian Network Live",
         "url": "https://www.bbc.co.uk/sounds/play/live/bbc_asian_network",
-        "description": "Often / usually has a day dedicated to celebrating Diwali"
+        "description": "The BBC usually has a day dedicated to celebrating Diwali"
       }
     ]
   },
@@ -98,13 +98,13 @@
         "artist": "Various Artists",
         "album_or_playlist": "Halloween",
         "url": "https://open.spotify.com/playlist/3LiBrpMBG4OWwDmWmN5ltf?si=805c057dd7bc421f",
-        "description": "Playlist · Various Artists · 48 items"
+        "description": "Dark, sinister, occasionally camp - the essential Halloween party playlist."
       },
       {
         "artist": "Various Artists",
         "album_or_playlist": "Halloween - classical, movie and TV",
         "url": "https://open.spotify.com/playlist/5dfroKiel6NdifryNpKHe3?si=fae384288d964bba",
-        "description": "Playlist · Various Artists · 23 items"
+        "description": "Iconic and atmospheric soundtracks from TV and film"
       }
     ]
   },
@@ -114,10 +114,10 @@
     "date_note": "1 November",
     "music": [
       {
-        "artist": "BBC",
-        "album_or_playlist": "BBC Music Planet",
-        "url": "",
-        "description": "Try BBC Music Planet"
+        "artist": "Various Artists",
+        "album_or_playlist": "Dia de los Muertos",
+        "url": "https://open.spotify.com/playlist/2rQrxuYNPjh9tyIeFHTLt5?si=0sKK2j1xSACo9OKgrCWvrA&utm_source=copy-link&pi=fOGjTyVETfiVz",
+        "description": "Traditional and contemporary music celebrating Dia de los Muertos."
       }
     ]
   },
@@ -143,7 +143,7 @@
         "artist": "Various Artists",
         "album_or_playlist": "Solstice, winter",
         "url": "https://open.spotify.com/playlist/1lXDkx2m7eiArGEF1DifPD?si=4b5e321ae8da4191",
-        "description": "Playlist · Various Artists · 11 items"
+        "description": "A collection of songs celebrating winter, its weather and the winter solstice"
       }
     ]
   },
@@ -156,19 +156,19 @@
         "artist": "Various Artists",
         "album_or_playlist": "Alt Christmas",
         "url": "https://open.spotify.com/playlist/3aBbvj9hlvwVO4lLjMjS9T?si=4e208d6493e84ceb",
-        "description": "Playlist · Various Artists · 84 items"
+        "description": "A varied collection of alternative, obscure and outright odd Christmas songs"
       },
       {
         "artist": "Various Artists",
         "album_or_playlist": "Christmas",
         "url": "https://open.spotify.com/playlist/6ylxeINjnQV4hhTn1R30fF?si=df1b8b956ca045a6",
-        "description": "Playlist · Various Artists · 56 items"
+        "description": "A collection of the best Christmas songs from the last 70 years."
       },
       {
         "artist": "Various Artists",
         "album_or_playlist": "Easy Christmas",
         "url": "https://open.spotify.com/playlist/4K3FzRKQK3Xui74V97eR5C?si=e3e461e861804249",
-        "description": "Playlist · Various Artists · 33 items"
+        "description": "A laid back, easy listening kind of Christmas."
       }
     ]
   }
