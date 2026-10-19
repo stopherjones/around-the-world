@@ -95,16 +95,16 @@
     "date_note": "31 October",
     "music": [
       {
-        "artist": "Chris Jones",
+        "artist": "Various Artists",
         "album_or_playlist": "Halloween",
         "url": "https://open.spotify.com/playlist/3LiBrpMBG4OWwDmWmN5ltf?si=805c057dd7bc421f",
-        "description": "Playlist · Chris Jones · 48 items"
+        "description": "Playlist · Various Artists · 48 items"
       },
       {
-        "artist": "Chris Jones",
+        "artist": "Various Artists",
         "album_or_playlist": "Halloween - classical, movie and TV",
         "url": "https://open.spotify.com/playlist/5dfroKiel6NdifryNpKHe3?si=fae384288d964bba",
-        "description": "Playlist · Chris Jones · 23 items"
+        "description": "Playlist · Various Artists · 23 items"
       }
     ]
   },
@@ -140,10 +140,10 @@
     "date_note": "21 December",
     "music": [
       {
-        "artist": "Chris Jones",
+        "artist": "Various Artists",
         "album_or_playlist": "Solstice, winter",
         "url": "https://open.spotify.com/playlist/1lXDkx2m7eiArGEF1DifPD?si=4b5e321ae8da4191",
-        "description": "Playlist · Chris Jones · 11 items"
+        "description": "Playlist · Various Artists · 11 items"
       }
     ]
   },
@@ -153,22 +153,22 @@
     "date_note": "25 December",
     "music": [
       {
-        "artist": "Chris Jones",
+        "artist": "Various Artists",
         "album_or_playlist": "Alt Christmas",
         "url": "https://open.spotify.com/playlist/3aBbvj9hlvwVO4lLjMjS9T?si=4e208d6493e84ceb",
-        "description": "Playlist · Chris Jones · 84 items"
+        "description": "Playlist · Various Artists · 84 items"
       },
       {
-        "artist": "Chris Jones",
+        "artist": "Various Artists",
         "album_or_playlist": "Christmas",
         "url": "https://open.spotify.com/playlist/6ylxeINjnQV4hhTn1R30fF?si=df1b8b956ca045a6",
-        "description": "Playlist · Chris Jones · 56 items"
+        "description": "Playlist · Various Artists · 56 items"
       },
       {
-        "artist": "Chris Jones",
+        "artist": "Various Artists",
         "album_or_playlist": "Easy Christmas",
         "url": "https://open.spotify.com/playlist/4K3FzRKQK3Xui74V97eR5C?si=e3e461e861804249",
-        "description": "Playlist · Chris Jones · 33 items"
+        "description": "Playlist · Various Artists · 33 items"
       }
     ]
   }
