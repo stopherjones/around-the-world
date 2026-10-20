@@ -558,6 +558,13 @@ body {
     gap: 1.5rem;
 }
 
+.music-item.random-entry-highlight {
+    background-color: #fff3a6;
+    outline: 3px solid #d5a900;
+    outline-offset: 2px;
+    transition: background-color 0.2s ease;
+}
+
 .music-item {
     display: flex;
     gap: 1.5rem;

@@ -486,6 +486,22 @@ function setupMusicFilters() {
     if (musicSortEl) musicSortEl.addEventListener("change", renderMusic);
 }
 
+// Random picker for the music list page.
+const randomPickerButton = document.getElementById("randomPicker");
+if (randomPickerButton) randomPickerButton.addEventListener("click", pickRandomMusicEntry);
+
+function pickRandomMusicEntry() {
+    const items = document.querySelectorAll("#musicList .music-item");
+    if (!items.length) return;
+
+    const chosen = items[Math.floor(Math.random() * items.length)];
+    chosen.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    // Use a class so the highlight is easy to style and reliably removed.
+    chosen.classList.add("random-entry-highlight");
+    window.setTimeout(() => chosen.classList.remove("random-entry-highlight"), 2000);
+}
+
 function renderMusic() {
     const musicListEl = document.getElementById("musicList");
     if (!musicListEl) return;
