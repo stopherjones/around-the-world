@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Around the World - My virtual record collection</title>
     <link rel="icon" href="favicon.jpg" type="image/jpg">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/nav.js" defer></script>
+    <link rel="stylesheet" href="css/style.css?v=5">
+    <script src="js/nav.js?v=4" defer></script>
 </head>
 <body data-nav="music" data-sub="records">
     <div id="site-nav" data-root=""></div>
@@ -24,16 +24,15 @@
         <a href="playlists/festival-of-remembrance.html">Festival of Remembrance</a>.
         <a href="playlists/index.html">All playlists</a></p>
 
-    <nav class="filter-bar">
-        <div class="filter-group sort">
+    <nav class="filter-bar filter-static">
+<div class="filter-group sort">
             <label for="sortFilter">Sort</label>
             <select id="sortFilter">
                 <option value="alpha">Country A–Z</option>
                 <option value="date">National Day</option>
             </select>
         </div>
-
-        <div class="filter-group continent">
+<div class="filter-group continent">
             <label for="continentFilter">Continent</label>
             <select id="continentFilter">
                 <option value="all">All</option>
@@ -45,15 +44,17 @@
                 <option value="Oceania">Oceania</option>
             </select>
         </div>
+</nav>
 
-        <div class="filter-group search">
+<nav class="filter-bar filter-sticky">
+<div class="filter-group search">
             <label for="searchInput">Search</label>
             <input type="text" id="searchInput" placeholder="Find a country, artist or album...">
         </div>
-        <div class="filter-group random">
+<div class="filter-group random">
             <button id="randomPicker">Random entry</button>
         </div>
-    </nav>
+</nav>
 
     <div class="container">
         <div id="musicList" class="music-list"></div>

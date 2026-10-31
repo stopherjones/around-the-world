@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Around the World books list</title>
     <link rel="icon" href="favicon.jpg" type="image/jpg">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/nav.js" defer></script>
+    <link rel="stylesheet" href="css/style.css?v=5">
+    <script src="js/nav.js?v=4" defer></script>
 </head>
 <body data-nav="books">
     <div id="site-nav" data-root=""></div>
@@ -19,16 +19,15 @@
     <p class="subtitle">A complete list of books organized by country of origin</p>
 
     <!-- Sticky Nav Bar -->
-    <nav class="filter-bar">
-        <div class="filter-group sort">
+    <nav class="filter-bar filter-static">
+<div class="filter-group sort">
             <label for="sortFilter">Sort</label>
             <select id="sortFilter">
                 <option value="alpha">A–Z</option>
                 <option value="recent">Most Recent</option>
             </select>
         </div>
-
-        <div class="filter-group continent">
+<div class="filter-group continent">
             <label for="continentFilter">Continent</label>
             <select id="continentFilter">
                 <option value="all">All</option>
@@ -40,12 +39,14 @@
                 <option value="Oceania">Oceania</option>
             </select>
         </div>
+</nav>
 
-        <div class="filter-group search">
+<nav class="filter-bar filter-sticky">
+<div class="filter-group search">
             <label for="searchInput">Search</label>
             <input type="text" id="searchInput" placeholder="Find a country...">
         </div>
-    </nav>
+</nav>
 
     <div class="container">
         <div id="booksList" class="books-list"></div>
