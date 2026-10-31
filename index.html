@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Around the World in books and music</title>
     <link rel="icon" href="favicon.jpg" type="image/jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="google-site-verification" content="z9n0lhtaop9VH_-yYuA5LYSZueR5IFPOXtmz3ffvnMw" />
+    <script src="js/nav.js" defer></script>
 </head>
 
-<body>
-    <div class="top-links">
-        <a href="books.html" class="top-link">View books list</a>
-        <a href="music.html" class="top-link">View music list</a>
-    </div>
+<body data-nav="gallery">
+    <div id="site-nav" data-root=""></div>
 
     <h1 class="main-title">Around the world in books and music</h1>
 
@@ -24,11 +22,9 @@
 
     <p class="subtitle">Click on coloured-in flags to see which books I've read or music I've listened to from those
         countries.</p>
-    <p class="subtitle"><b>New for 2026: </b><a href="WorldCup2026.html">World Cup playlist</a> featuring songs from
-        each of the 48 participant nations.</p>
 
     <!-- Sticky Nav Bar -->
-    <nav class="filter-bar index-bar">
+    <nav class="filter-bar">
         <div class="filter-group content-type">
             <label>Show Books or Music:</label>
             <div class="checkbox-group">
@@ -59,7 +55,7 @@
     <!-- Gallery -->
     <div id="gallery" class="gallery"></div>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
     <footer style="text-align: center;">
     <p>Open-source personal web project built by me, Chris Jones (stopherjones). For more information, see <a href="https://stopherjones.github.io/about.html">About Me</a></p>

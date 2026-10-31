@@ -16,7 +16,7 @@
     "style_note": "A legendary, high-energy cumbia anthem celebrating Mexico's colorful lucha libre wrestling culture with bright horns and infectious, swinging beat."
   },
   {
-    "country": "United States of America",
+    "country": "United States",
     "code": "us",
     "track_name": "Electric Pow Wow Drum",
     "artist_name": "The Halluci Nation",
@@ -69,7 +69,7 @@
     "track_name": "I am from Bosnia, take me to America",
     "artist_name": "Dubioza kolektiv",
     "spotify_uri": "https://open.spotify.com/track/3AjZd2FYElRKklkiXIKTx6?si=8e924a2d80e04e62",
-    "style_note": "A satrical swipe at the American Dream, delivered through high-energy Bosnian 'Balkan Ska' blending hip-hop with frantic accordion riffs."
+    "style_note": "A satirical swipe at the American Dream, delivered through high-energy Bosnian 'Balkan Ska' blending hip-hop with frantic accordion riffs."
   },
   {
     "country": "Brazil",
@@ -80,7 +80,7 @@
     "style_note": "A baile funk phenomenon that brought the raw, heavy beats of Rio's favelas to global mainstream pop. Anitta is appearing in the 2026 World Cup opening ceremony."
   },
   {
-    "country": "Cape Verde",
+    "country": "Cabo Verde",
     "code": "cv",
     "track_name": "Les Mots d'Amour",
     "artist_name": "Mayra Andrade",
@@ -96,7 +96,7 @@
     "style_note": "DJ and beatmaker, popular on TikTok for fusing hip hop beats over '60s Spanish pop songs."
   },
   {
-    "country": "DR Congo",
+    "country": "Congo (Democratic Republic)",
     "code": "cd",
     "track_name": "Paradiso",
     "artist_name": "Konono N°1",
@@ -104,7 +104,7 @@
     "style_note": "African beats fusing dance and traditional rhythms using DIY instruments."
   },
   {
-    "country": "Cote d'Ivoire",
+    "country": "Côte d'Ivoire",
     "code": "ci",
     "track_name": "Magic in the Air",
     "artist_name": "Magic System",
@@ -120,7 +120,7 @@
     "style_note": "A hauntingly beautiful folk song that revives the ancient language of the Zadar Arbanasi."
   },
   {
-    "country": "Curacao",
+    "country": "Curaçao",
     "code": "cw",
     "track_name": "Lightswitch",
     "artist_name": "Kuenta I Tambu",
@@ -128,7 +128,7 @@
     "style_note": "A relentless, riotous 'Tambú-tronic' fusion of Afro-Curaçaoan drums and aggressive EDM / Dancehall beats."
   },
   {
-    "country": "czechia",
+    "country": "Czechia",
     "code": "cz",
     "track_name": "Leon",
     "artist_name": "Never Sol",
@@ -149,7 +149,7 @@
     "track_name": "Pearls for Orphans",
     "artist_name": "Le Cri du Caire",
     "spotify_uri": "https://open.spotify.com/track/5wD2DHmPiEg6Pem7EcJvqm?si=85aca78d84ed4e8c",
-    "style_note": "Egyptian poet, Abdullah Miniawy, delivers an aching, emotional cry against oppresion in this haunting jazz number, rich with trumpet, cello and saxophone."
+    "style_note": "Egyptian poet, Abdullah Miniawy, delivers an aching, emotional cry against oppression in this haunting jazz number, rich with trumpet, cello and saxophone."
   },
   {
     "country": "England",
@@ -205,7 +205,7 @@
     "track_name": "ملئ بالامل (Full of Hope)",
     "artist_name": "Munir Bashir",
     "spotify_uri": "https://open.spotify.com/track/4QSY0wCilXSNYdy3EDGAbD?si=67e5dd80ecc44269",
-    "style_note": "Take a meditative break with the Oud vituoso and this composition, set to the sound of songbirds."
+    "style_note": "Take a meditative break with the Oud virtuoso and this composition, set to the sound of songbirds."
   },
   {
     "country": "Japan",
@@ -333,12 +333,12 @@
     "track_name": "Berghain",
     "artist_name": "Rosalia",
     "spotify_uri": "https://open.spotify.com/track/2T8yuUKl1nhmtaIocqWo4i?si=0be4165c43964565",
-    "style_note": "Dark, viseral, operatic, epic. A tour de force from the genre-defying Catalan superstar."
+    "style_note": "Dark, visceral, operatic, epic. A tour de force from the genre-defying Catalan superstar."
   },
   {
     "country": "Sweden",
     "code": "se",
-    "track_name": "Deep Chanelling",
+    "track_name": "Deep Channelling",
     "artist_name": "Spirituz",
     "spotify_uri": "https://open.spotify.com/track/12gqCnI2b1SvKgZyTeWQdD?si=9c1fae5eaa8044c3",
     "style_note": "Relentless yet hypnotic, this 140 BPM 'Forest Psytrance' banger evokes the Scandinavian wilderness to deliver an immersive sonic journey."
@@ -360,7 +360,7 @@
     "style_note": "The haunting, soaring, melancholic voice of Emel, the 'Voice of the Tunisian Revolution', recorded minimally during the 2020 Lockdown with a single guitar and a laptop in a quiet Tunisian garden."
   },
   {
-    "country": "Turkiye",
+    "country": "Turkey",
     "code": "tr",
     "track_name": "Zühtü",
     "artist_name": "Esin Afşar",

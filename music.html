@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Around the World - Music List</title>
+    <title>Around the World - My virtual record collection</title>
     <link rel="icon" href="favicon.jpg" type="image/jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/nav.js" defer></script>
 </head>
-<body>
-    <div class="top-links">
-        <a href="index.html" class="top-link">Back to Gallery</a>
-        <a href="calendar.html" class="top-link">View calendar entries</a>
-    </div>
+<body data-nav="music" data-sub="records">
+    <div id="site-nav" data-root=""></div>
     <h1 class="main-title">My virtual record collection</h1>
 
     <div class="stat-display">
         <span id="statText">0 records from 0 countries</span>
     </div>
 
-    <p class="subtitle">Spotify playlist of highlights <a href="https://open.spotify.com/playlist/5FiWvn8J58Lyy3VFId3Heu?si=84075f56514046f1">here</a></p>
+    <p class="subtitle">Highlights from this collection: <a href="playlists/highlights.html">the highlights playlist</a></p>
 
-    <nav class="filter-bar music-bar">
+    <p class="subtitle"><b>Themed playlists: </b>
+        <a href="playlists/WorldCup2026.html">World Cup 2026</a>,
+        <a href="playlists/CommonwealthGames2026.html">Commonwealth Games 2026</a>,
+        <a href="playlists/festival-of-remembrance.html">Festival of Remembrance</a>.
+        <a href="playlists/index.html">All playlists</a></p>
+
+    <nav class="filter-bar">
         <div class="filter-group sort">
             <label for="sortFilter">Sort</label>
             <select id="sortFilter">
@@ -42,13 +46,12 @@
             </select>
         </div>
 
-        <div class="filter-group random">
-            <button id="randomPicker">Random entry</button>
-        </div>
-
         <div class="filter-group search">
             <label for="searchInput">Search</label>
             <input type="text" id="searchInput" placeholder="Find a country, artist or album...">
+        </div>
+        <div class="filter-group random">
+            <button id="randomPicker">Random entry</button>
         </div>
     </nav>
 
@@ -56,7 +59,7 @@
         <div id="musicList" class="music-list"></div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
     <footer style="text-align: center;">
     <p>Open-source personal web project built by me, Chris Jones (stopherjones). For more information, see <a href="https://stopherjones.github.io/about.html">About Me</a></p>

@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Around the World - Music Calendar</title>
     <link rel="icon" href="favicon.jpg" type="image/jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/nav.js" defer></script>
 </head>
-<body id="calendar-page" data-data-source="events.json">
-    <div class="top-links">
-        <a href="index.html" class="top-link">Back to Gallery</a>
-        <a href="music.html" class="top-link">View music list</a>
-    </div>
+<body id="calendar-page" data-data-source="data/events.json" data-nav="music" data-sub="calendar">
+    <div id="site-nav" data-root=""></div>
     <h1 class="main-title">Musical Calendar</h1>
     <p class="subtitle">Seasonal festivals, solstices, and recurring cultural events throughout the year.</p>
     
-    <nav class="filter-bar music-bar">
+    <nav class="filter-bar">
         <div class="filter-group sort">
             <label for="sortFilter">Sort</label>
             <select id="sortFilter">
@@ -42,10 +40,10 @@
             let eventsData = [];
 
             try {
-                const response = await fetch('events.json');
+                const response = await fetch('data/events.json');
                 eventsData = await response.json();
             } catch (error) {
-                console.error('Error loading events.json:', error);
+                console.error('Error loading data/events.json:', error);
                 calendarList.innerHTML = '<div class="empty-state">Failed to load events.</div>';
                 return;
             }

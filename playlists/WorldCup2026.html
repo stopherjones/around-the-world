@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around the World - World Cup 2026 playlist</title>
+    <link rel="icon" href="../favicon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/nav.js" defer></script>
+</head>
+<body id="playlist-page" data-playlist="../data/playlists/world-cup-2026.json" data-nav="music" data-sub="playlists" data-parent="playlists">
+    <div id="site-nav" data-root="../"></div>
+    <h1 class="main-title" id="playlistTitle">World Cup 2026 playlist</h1>
+    <p class="subtitle" id="playlistSubtitle">A playlist representing the 48 participating nations of the 2026 World Cup, celebrating a wide variety of eras and genres from across the globe.</p>
+    <p class="subtitle" id="playlistLink"></p>
+
+    <nav class="filter-bar">
+        <div class="filter-group search">
+            <label for="searchInput">Search</label>
+            <input type="text" id="searchInput" placeholder="Find a country, artist or track...">
+        </div>
+        <div class="filter-group random">
+            <button id="randomPicker">Random entry</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="musicList" class="music-list"></div>
+    </div>
+
+    <footer style="text-align: center;">
+        <p>Open-source personal web project built by me, Chris Jones (stopherjones). For more information, see <a href="https://stopherjones.github.io/about.html">About Me</a></p>
+    </footer>
+
+    <script src="../js/playlist.js"></script>
+</body>
+</html>

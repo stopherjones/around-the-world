@@ -1,0 +1,112 @@
+{
+  "title": "Festival of Remembrance",
+  "subtitle": "Songs from across Latin America and Central America for remembering the people we have lost, from celebration to grief to gratitude.",
+  "spotify_url": "",
+  "theme": "remembrance",
+  "tracks": [
+    {
+      "country": "Mexico",
+      "code": "mx",
+      "track_name": "La Llorona",
+      "artist_name": "Chavela Vargas",
+      "spotify_uri": "https://open.spotify.com/track/1P8M8FGc3uEfjmmaTSBsvZ",
+      "style_note": "The haunting centrepiece of Mexico's Day of the Dead musical tradition. La Llorona, the Weeping Woman, is a legendary ghost condemned to wander in grief. This traditional Oaxacan song blends folklore, lost love and the pain of separation, with Chavela Vargas delivering one of its most emotionally devastating interpretations."
+    },
+    {
+      "country": "Mexico",
+      "code": "mx",
+      "track_name": "La Calaca - Remasterizada 2006",
+      "artist_name": "Amparo Ochoa",
+      "spotify_uri": "https://open.spotify.com/track/7hmDplqSftS7uQMxsEY9BU",
+      "style_note": "La Calaca is the skeleton personification of death, a familiar and often mischievous figure in Mexican folk culture. This playful folk song captures the irreverent side of Día de Muertos, where death is not just feared but teased, mocked and welcomed into everyday life."
+    },
+    {
+      "country": "Mexico",
+      "code": "mx",
+      "track_name": "Un Puño de Tierra",
+      "artist_name": "Antonio Aguilar",
+      "spotify_uri": "https://open.spotify.com/track/6a5GOVslUy8aYnXrk2yiMb",
+      "style_note": "A classic ranchera meditation on mortality. The title means 'a handful of earth', reflecting the idea that however wealthy or successful we become, we ultimately leave with nothing. Delivered with the swagger and warmth of traditional Mexican banda and ranchera, it is both philosophical and celebratory."
+    },
+    {
+      "country": "Mexico",
+      "code": "mx",
+      "track_name": "Calaverita",
+      "artist_name": "La Santa Cecilia",
+      "spotify_uri": "https://open.spotify.com/track/6JZ420qy5vSsfg2YwKb0T3",
+      "style_note": "A contemporary celebration of the little skulls and skeleton imagery associated with Día de Muertos. La Santa Cecilia bring a lively mixture of cumbia, Latin folk and modern pop, capturing the colourful, communal and joyful side of remembering the departed."
+    },
+    {
+      "country": "Guatemala",
+      "code": "gt",
+      "track_name": "Recuerdos de un Amigo",
+      "artist_name": "Marimba Maderas Chapinas",
+      "spotify_uri": "https://open.spotify.com/track/6SpI32gPDauBzMeteNGJTM",
+      "style_note": "A marimba-led musical remembrance, its title translating as 'Memories of a Friend'. In the Maya-Kaqchikel communities of Sumpango and Santiago Sacatepéquez, Todos Santos is marked by enormous handmade kites flown above cemeteries, symbolically connecting the living and the dead. A beautiful meeting of music, memory and community."
+    },
+    {
+      "country": "Haiti",
+      "code": "ht",
+      "track_name": "Imamou Lele",
+      "artist_name": "Boukman Eksperyans",
+      "spotify_uri": "https://open.spotify.com/track/62HgSefCYPUvsDBAOkoC4O",
+      "style_note": "Haitian roots music, or Rasin, fuses Vodou-derived rhythms with rock and modern sounds. Imamou Lele invokes a spiritual figure associated with the sea and becomes a powerful lament for Haiti's environmental and social struggles. It introduces the country's profound relationship between spirituality, nature and collective identity. Haiti's Fèt Gédé celebrations, meanwhile, honour ancestral spirits through drumming, dancing and irreverent humour."
+    },
+    {
+      "country": "Ecuador",
+      "code": "ec",
+      "track_name": "Cumbia del Olvido",
+      "artist_name": "Nicola Cruz",
+      "spotify_uri": "https://open.spotify.com/track/1oCHMNWzKJdwdwjsPMjXf3",
+      "style_note": "An atmospheric electronic reimagining of Andean and Latin American rhythms. The title translates as 'Cumbia of Forgetting', a particularly evocative choice for a remembrance playlist. Ecuador's Día de los Difuntos blends Catholic observances with Indigenous traditions, including sharing purple colada morada and guaguas de pan, decorative breads made in the shape of babies."
+    },
+    {
+      "country": "Bolivia",
+      "code": "bo",
+      "track_name": "Llorando Se Fue",
+      "artist_name": "Los Kjarkas",
+      "spotify_uri": "https://open.spotify.com/track/6OZROqTzWkH2c47ypb95ST",
+      "style_note": "A landmark of Bolivian Andean folk music, built around the distinctive charango, panpipes and dance rhythms of the Andes. Although not specifically a funeral song, its melancholy melody provides a musical bridge to Bolivia's Todos Santos traditions, when families prepare elaborate offerings of food, bread figures, flowers and photographs to welcome the returning souls of their ancestors."
+    },
+    {
+      "country": "Peru",
+      "code": "pe",
+      "track_name": "El Cóndor Pasa",
+      "artist_name": "Los Incateños",
+      "spotify_uri": "https://open.spotify.com/track/4tvnIZYcs2Ca21I3dvceqA",
+      "style_note": "One of the defining melodies of Andean music, evoking the vast mountains and the condor soaring above them. Its instrumental panpipe arrangement brings an almost spiritual sense of transcendence. In Peru, All Saints and All Souls traditions include cemetery visits, offerings of food and family gatherings to remember the departed."
+    },
+    {
+      "country": "Chile",
+      "code": "cl",
+      "track_name": "Gracias a la Vida",
+      "artist_name": "Violeta Parra",
+      "spotify_uri": "https://open.spotify.com/track/5U7MyRNbuZrWkyAI4bm3Ja",
+      "style_note": "Violeta Parra's extraordinary farewell to life, expressing gratitude for the senses, love, laughter, sorrow and everything that makes us human. Written shortly before her death, the song has acquired an especially poignant legacy. It is less about mourning the dead than celebrating the life they experienced and the memories they leave behind."
+    },
+    {
+      "country": "Argentina",
+      "code": "ar",
+      "track_name": "Alfonsina y el Mar",
+      "artist_name": "Mercedes Sosa",
+      "spotify_uri": "https://open.spotify.com/track/1mmZhYm2m1ZEWNzOFunQOx",
+      "style_note": "A haunting Argentine zamba telling the story of poet Alfonsina Storni, who died by suicide by walking into the sea in 1938. The song imagines her final journey with extraordinary tenderness, turning a tragic real-life death into a beautiful musical elegy. Mercedes Sosa's voice gives it immense emotional weight."
+    },
+    {
+      "country": "Brazil",
+      "code": "br",
+      "track_name": "Canto Das Três Raças",
+      "artist_name": "Clara Nunes",
+      "spotify_uri": "https://open.spotify.com/track/5TSZVy6ZYwhJ6c9h5BLYeG",
+      "style_note": "A powerful samba about the suffering and resistance of Indigenous, African and European-descended peoples in Brazil. It recalls the violence of colonisation, enslavement and exploitation, giving remembrance a broader historical and collective meaning. Clara Nunes delivers it with the emotional force of a spiritual lament."
+    },
+    {
+      "country": "Argentina",
+      "code": "ar",
+      "track_name": "Gracias A La Vida",
+      "artist_name": "Mercedes Sosa",
+      "spotify_uri": "https://open.spotify.com/track/4hgoiF1HeAfdQmT5Gj5Fhb",
+      "style_note": "Mercedes Sosa's interpretation of Violeta Parra's Chilean masterpiece. An expression of gratitude for life itself, it became an enduring anthem of Latin American folk and protest music. Its presence here suggests that the best tribute to the departed may be to celebrate the lives they lived."
+    }
+  ]
+}

@@ -3,9 +3,9 @@ let highlightsData = [];
 let eventsData = [];
 
 const isMusicHighlightsPage = document.body?.id === 'music-highlights';
-const isCalendarPage = document.body?.id === 'calendar-page' || document.body?.dataset?.dataSource === 'events.json';
+const isCalendarPage = document.body?.id === 'calendar-page' || document.body?.dataset?.dataSource === 'data/events.json';
 
-const dataSource = document.body?.dataset?.dataSource || (isMusicHighlightsPage ? 'highlights.json' : (isCalendarPage ? 'events.json' : 'countries.json'));
+const dataSource = document.body?.dataset?.dataSource || (isMusicHighlightsPage ? 'data/highlights.json' : (isCalendarPage ? 'data/events.json' : 'data/countries.json'));
 
 // Load JSON once, then render whatever the page needs
 fetch(dataSource)
@@ -13,7 +13,7 @@ fetch(dataSource)
     .then(data => {
         if (isMusicHighlightsPage) {
             highlightsData = data;
-            // Convert highlights.json items into the same shape the music renderer expects
+            // Convert data/highlights.json items into the same shape the music renderer expects
             countriesData = data.map(h => {
                 const spotifyUri = h.spotify_uri || h.spotify || h.url || "";
                 let url = "";

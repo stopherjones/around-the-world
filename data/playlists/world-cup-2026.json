@@ -1,0 +1,392 @@
+{
+  "title": "World Cup 2026 playlist",
+  "subtitle": "A playlist representing the 48 participating nations of the 2026 World Cup, celebrating a wide variety of eras and genres from across the globe.",
+  "spotify_url": "https://open.spotify.com/playlist/185Dayu6I8UwWVPcvLUr96",
+  "theme": "sport",
+  "tracks": [
+    {
+      "country": "Canada",
+      "code": "ca",
+      "track_name": "Sherpa",
+      "artist_name": "Angine de Poitrine",
+      "spotify_uri": "https://open.spotify.com/track/55mW03rqsI9s3xUnuruF7G?si=bb0e8d7fd63541de",
+      "style_note": "A driving, micro-tonal blast of instrumental guitar math rock from Canada's viral masked, polka-dot-clad breakout duo."
+    },
+    {
+      "country": "Mexico",
+      "code": "mx",
+      "track_name": "Los Luchadores",
+      "artist_name": "La Sonora Santanera",
+      "spotify_uri": "https://open.spotify.com/track/0HBiHi1FZBpI8QOqiS0oBm?si=dc728a9c57aa4763",
+      "style_note": "A legendary, high-energy cumbia anthem celebrating Mexico's colorful lucha libre wrestling culture with bright horns and infectious, swinging beat."
+    },
+    {
+      "country": "United States",
+      "code": "us",
+      "track_name": "Electric Pow Wow Drum",
+      "artist_name": "The Halluci Nation",
+      "spotify_uri": "https://open.spotify.com/track/5e8v4ibmsMHxHLALe5KaiZ?si=72ab2f6273d34a8e",
+      "style_note": "A groundbreaking, heavy electronic track fusing traditional Indigenous powwow vocals and drumming with hip-hop beats."
+    },
+    {
+      "country": "Algeria",
+      "code": "dz",
+      "track_name": "Écoute-moi camarade",
+      "artist_name": "Mazouni",
+      "spotify_uri": "https://open.spotify.com/track/4kckMTfGW38On1wcgSP11A?si=ae7c110b84844f3e",
+      "style_note": "A bohemian mix of 1960s Algerian pop and French yé-yé beats."
+    },
+    {
+      "country": "Argentina",
+      "code": "ar",
+      "track_name": "Eloca",
+      "artist_name": "The Gotan Project",
+      "spotify_uri": "https://open.spotify.com/track/786hvlF3Hi3hdNAXHdIo8Q?si=4f0f45a45a394fa0",
+      "style_note": "A sultry, cinematic masterpiece blending traditional Argentine tango with slick, down-tempo electronic trip-hop beats."
+    },
+    {
+      "country": "Australia",
+      "code": "au",
+      "track_name": "Great Southern Land",
+      "artist_name": "Icehouse",
+      "spotify_uri": "https://open.spotify.com/track/3OmEIZ6bYHqlReQ1YLaRHV?si=bcfca3ad821849d8",
+      "style_note": "An atmospheric, synth-driven pub rock love letter to the vastness of the Australian outback and its ancient history."
+    },
+    {
+      "country": "Austria",
+      "code": "at",
+      "track_name": "Booty Swing",
+      "artist_name": "Parov Stellar",
+      "spotify_uri": "https://open.spotify.com/track/3P7LQUvGw5TQofcETsN4FJ?si=6c0f7e78458b47c4",
+      "style_note": "The pioneer of Euro electro-swing delivers an infectious blend of 1930s jazz vocals fused with driving modern breakbeats."
+    },
+    {
+      "country": "Belgium",
+      "code": "be",
+      "track_name": "Alors on danse",
+      "artist_name": "Stromae",
+      "spotify_uri": "https://open.spotify.com/track/2GYHyAoLWpkxLVa4oYTVko?si=91a4f946a7c74e97",
+      "style_note": "Satire with swagger in this massive electropop hit, pairing an infectious, melancholic saxophone loop with bleak lyrics about escaping economic despair through dance."
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "code": "ba",
+      "track_name": "I am from Bosnia, take me to America",
+      "artist_name": "Dubioza kolektiv",
+      "spotify_uri": "https://open.spotify.com/track/3AjZd2FYElRKklkiXIKTx6?si=8e924a2d80e04e62",
+      "style_note": "A satirical swipe at the American Dream, delivered through high-energy Bosnian 'Balkan Ska' blending hip-hop with frantic accordion riffs."
+    },
+    {
+      "country": "Brazil",
+      "code": "br",
+      "track_name": "Vai Malandra",
+      "artist_name": "Anitta",
+      "spotify_uri": "https://open.spotify.com/track/6u0EAxf1OJTLS7CvInuNd7?si=ada8017c4acc473a",
+      "style_note": "A baile funk phenomenon that brought the raw, heavy beats of Rio's favelas to global mainstream pop. Anitta is appearing in the 2026 World Cup opening ceremony."
+    },
+    {
+      "country": "Cabo Verde",
+      "code": "cv",
+      "track_name": "Les Mots d'Amour",
+      "artist_name": "Mayra Andrade",
+      "spotify_uri": "https://open.spotify.com/track/5wWsPTSLg9gLuD39EjCxB4?si=d82591c6664f4fd3",
+      "style_note": "The slow, melancholic sound of Cape Verdean 'Morna' given a Parisian cafe uplift."
+    },
+    {
+      "country": "Colombia",
+      "code": "co",
+      "track_name": "Un Pelito y un Tamal",
+      "artist_name": "dj spizike",
+      "spotify_uri": "https://open.spotify.com/track/1VBss5t7b8CX4xZqSc5VN8?si=b5e93bc78ac04cee",
+      "style_note": "DJ and beatmaker, popular on TikTok for fusing hip hop beats over '60s Spanish pop songs."
+    },
+    {
+      "country": "Congo (Democratic Republic)",
+      "code": "cd",
+      "track_name": "Paradiso",
+      "artist_name": "Konono N°1",
+      "spotify_uri": "https://open.spotify.com/track/5FF4SpIWmPxMOvEuyYacv0?si=6c5670d60cbf4863",
+      "style_note": "African beats fusing dance and traditional rhythms using DIY instruments."
+    },
+    {
+      "country": "Côte d'Ivoire",
+      "code": "ci",
+      "track_name": "Magic in the Air",
+      "artist_name": "Magic System",
+      "spotify_uri": "https://open.spotify.com/track/3s6ltUrI93LBKU8taezsLn?si=b2f179cc3a1249ca",
+      "style_note": "The joyous theme song to the 2014 World Cup, from the stars of Ivorian Zouglou Afrobeat."
+    },
+    {
+      "country": "Croatia",
+      "code": "hr",
+      "track_name": "One Day in Morea",
+      "artist_name": "Dina e Mel",
+      "spotify_uri": "https://open.spotify.com/track/57WhUd4kkUjOQ6vfYfyMti?si=eec5cec1111e495c",
+      "style_note": "A hauntingly beautiful folk song that revives the ancient language of the Zadar Arbanasi."
+    },
+    {
+      "country": "Curaçao",
+      "code": "cw",
+      "track_name": "Lightswitch",
+      "artist_name": "Kuenta I Tambu",
+      "spotify_uri": "https://open.spotify.com/track/1bYrAiFxOnZBZk8UZYsGMM?si=010cc08a9300494a",
+      "style_note": "A relentless, riotous 'Tambú-tronic' fusion of Afro-Curaçaoan drums and aggressive EDM / Dancehall beats."
+    },
+    {
+      "country": "Czechia",
+      "code": "cz",
+      "track_name": "Leon",
+      "artist_name": "Never Sol",
+      "spotify_uri": "https://open.spotify.com/track/1QRG1ukcreylANyLxR1Uzm?si=818554499e414d72",
+      "style_note": "Rousing, dark, melancholy and synth-heavy. A passionate cry for 'freedom, resilience, strong wind in your hair and never ending horizon'."
+    },
+    {
+      "country": "Ecuador",
+      "code": "ec",
+      "track_name": "Jocotoco Antpitta",
+      "artist_name": "Nicola Cruz",
+      "spotify_uri": "https://open.spotify.com/track/0hh8kMA8Zk4UeUcRXQcQ9f?si=690df5d095124c8d",
+      "style_note": "Named for the rare bird found in the high Ecuadorian forests, blending its call over electronic textures."
+    },
+    {
+      "country": "Egypt",
+      "code": "eg",
+      "track_name": "Pearls for Orphans",
+      "artist_name": "Le Cri du Caire",
+      "spotify_uri": "https://open.spotify.com/track/5wD2DHmPiEg6Pem7EcJvqm?si=85aca78d84ed4e8c",
+      "style_note": "Egyptian poet, Abdullah Miniawy, delivers an aching, emotional cry against oppression in this haunting jazz number, rich with trumpet, cello and saxophone."
+    },
+    {
+      "country": "England",
+      "code": "gb-eng",
+      "track_name": "World in Motion",
+      "artist_name": "New Order",
+      "spotify_uri": "https://open.spotify.com/track/08po8QZK3tihnLBZWATAki?si=51785ab0eb7e4d69",
+      "style_note": "The only decent England World Cup song."
+    },
+    {
+      "country": "France",
+      "code": "fr",
+      "track_name": "Contact",
+      "artist_name": "Jarvis Cocker",
+      "spotify_uri": "https://open.spotify.com/track/2dWrIJdwYWI6K7WWL3kpqu?si=79d7e520735a4e56",
+      "style_note": "Jarvis Cocker reimagines a Brigitte Bardot classic with suave charm and a British wink."
+    },
+    {
+      "country": "Germany",
+      "code": "de",
+      "track_name": "Das Model",
+      "artist_name": "Kraftwerk",
+      "spotify_uri": "https://open.spotify.com/track/3VwLD5o1r0YBLkjUfgSEYg?si=e23b0ec71278460c",
+      "style_note": "The definitive German-language version of the behemoth of 1980s synth pop."
+    },
+    {
+      "country": "Ghana",
+      "code": "gh",
+      "track_name": "Love and Death",
+      "artist_name": "Ebo Taylor",
+      "spotify_uri": "https://open.spotify.com/track/2EdcEOJf2V8xMOTO7q2gCN?si=51f4b5903b2f4d78",
+      "style_note": "The king of Ghanaian Highlife with his masterful blend of Afrobeat and soulful vocals."
+    },
+    {
+      "country": "Haiti",
+      "code": "ht",
+      "track_name": "Imamou Lele",
+      "artist_name": "Boukman Eksperyans",
+      "spotify_uri": "https://open.spotify.com/track/62HgSefCYPUvsDBAOkoC4O?si=1d0e2aff29094b62",
+      "style_note": "An infectious blend of Haitian drums and Afro-Caribbean rhythms celebrating the Vodou ocean spirit and ancestral pride."
+    },
+    {
+      "country": "Iran",
+      "code": "ir",
+      "track_name": "Makhlough",
+      "artist_name": "Googoosh",
+      "spotify_uri": "https://open.spotify.com/track/45bsaWbpYBd7VdNxBwY3qe?si=588ac60c061341c0",
+      "style_note": "A glimpse of dreamy psych-pop from the icon of pre-revolution Iran."
+    },
+    {
+      "country": "Iraq",
+      "code": "iq",
+      "track_name": "ملئ بالامل (Full of Hope)",
+      "artist_name": "Munir Bashir",
+      "spotify_uri": "https://open.spotify.com/track/4QSY0wCilXSNYdy3EDGAbD?si=67e5dd80ecc44269",
+      "style_note": "Take a meditative break with the Oud virtuoso and this composition, set to the sound of songbirds."
+    },
+    {
+      "country": "Japan",
+      "code": "jp",
+      "track_name": "Otoko-koko-ni ariki",
+      "artist_name": "Masaya Takashino;Wadaiko Matsuriza",
+      "spotify_uri": "https://open.spotify.com/track/2mSERCMruqABLuH0tcqGOo?si=49ab9ae06dc14281",
+      "style_note": "Thunderous Japanese Taiko drum performance; visceral, physical and hypnotic."
+    },
+    {
+      "country": "Jordan",
+      "code": "jo",
+      "track_name": "Rodi Sha'ratek",
+      "artist_name": "Autostrad",
+      "spotify_uri": "https://open.spotify.com/track/4jeNSkGveh3FnzBMuAsd66?si=0eecb7d23e264004",
+      "style_note": "Indie, reggae, techno? All of the above, infused with the uniquely distinctive sound of the Levantine Mijwiz."
+    },
+    {
+      "country": "Morocco",
+      "code": "ma",
+      "track_name": "Ansuf",
+      "artist_name": "Tarwa N-Tiniri",
+      "spotify_uri": "https://open.spotify.com/track/12j2cxm2cUNt2EqynA7302?si=fbb0ab20d5414d07",
+      "style_note": "The warm, infectious sound of Amazigh 'desert blues', conjuring the swaying stride of camels and the vastness of the Sahara."
+    },
+    {
+      "country": "Netherlands",
+      "code": "nl",
+      "track_name": "Keep It Together",
+      "artist_name": "Pip Blom",
+      "spotify_uri": "https://open.spotify.com/track/60DviYw4Xkmmph4iYqlwAu?si=0fa7b0341b1a421a",
+      "style_note": "Just an infectiously bright and joyous slice of Dutch indie-pop/rock."
+    },
+    {
+      "country": "New Zealand",
+      "code": "nz",
+      "track_name": "Kai Tangata",
+      "artist_name": "Alien Weaponry",
+      "spotify_uri": "https://open.spotify.com/track/0YWyKtLAlmVjryfY6CSxYE?si=ff0bdcac19ec4ce1",
+      "style_note": "An absolute bombtrack of New Zealand 'Haka Metal' marrying thrash riffs with the fierce, rhythmic war cries of a traditional Māori Haka."
+    },
+    {
+      "country": "Norway",
+      "code": "no",
+      "track_name": "Grá",
+      "artist_name": "Wardruna",
+      "spotify_uri": "https://open.spotify.com/track/4oxRC4nRroHHtoBsTdSm7Y?si=44969d4139e44d15",
+      "style_note": "Dark, ambient Nordic folk utilizing ancient instruments for a ritualistic atmosphere. Grá, meaning 'the grey one' refers to the   wolf as a symbol of the broken bond between humans and the wild, offering a song of reconciliation to heal that ancient rift."
+    },
+    {
+      "country": "Panama",
+      "code": "pa",
+      "track_name": "Panama Esta Bueno Y Ma",
+      "artist_name": "Los Exagerados",
+      "spotify_uri": "https://open.spotify.com/track/2ZDkT8afN8II8y5hkYJAyd?si=a8e08fbcdd4b4da5",
+      "style_note": "Translating to 'Panama is great, and then some!', this is an infectious dose of late 60s, early 70s Latin salsa jazz."
+    },
+    {
+      "country": "Paraguay",
+      "code": "py",
+      "track_name": "Bajo el Cielo del Paraguay",
+      "artist_name": "Trio Los Paraguayos",
+      "spotify_uri": "https://open.spotify.com/track/6OOITAXxBVkWPJ5gyElCDY?si=6484c968845446f2",
+      "style_note": "A Polca Paraguay (Paraguayan cowboy music) classic celebrating the Paraguayan landscape 'under the stars'."
+    },
+    {
+      "country": "Portugal",
+      "code": "pt",
+      "track_name": "Canção do Mar",
+      "artist_name": "Dulce Pontas",
+      "spotify_uri": "https://open.spotify.com/track/5hVrqtXHUQ74QbsehPbTDo?si=N4qjLqwAQu6QcGnfKwF4EQ",
+      "style_note": "'The Story of the Sea', a brooding, cinematic reimagining of Amália Rodrigues' 1955 Solidão, that fuses traditional Portuguese Fado with operatic and Arabic elements, to capture the essence of Portuguese nostalgic melancholy known as 'saudade'."
+    },
+    {
+      "country": "Qatar",
+      "code": "qa",
+      "track_name": "Ya Habbibi",
+      "artist_name": "Ali Abdul Sattar",
+      "spotify_uri": "https://open.spotify.com/track/5tEggOrYgzopEw1BfUKnG5?si=72bc8a3f01e44b0c",
+      "style_note": "Meaning 'My Beloved', this is one of the pioneering tracks of modern Khaleeji (Persian Gulf) pop"
+    },
+    {
+      "country": "Saudi Arabia",
+      "code": "sa",
+      "track_name": "Sallatu Allah",
+      "artist_name": "Jordi Savall",
+      "spotify_uri": "https://open.spotify.com/track/3WqAOTKJ8uEKGyIhDn281U?si=dbb195a245cc4f46",
+      "style_note": "Meaning 'Blessings of God upon the Prophet', this track depicts the 14th Century 'Islamic Marco Polo', Ibn Battuta's pilgrimage to Mecca."
+    },
+    {
+      "country": "Scotland",
+      "code": "gb-sct",
+      "track_name": "Letter From America",
+      "artist_name": "The Proclaimers",
+      "spotify_uri": "https://open.spotify.com/track/2AQZ89Q1ZZWsJNWwXZpLtY?si=qr6VBWWnSz-deWXkDFu96Q",
+      "style_note": "'I wonder how it got on when it reached the promised land?' The team probably got back to Scotland before the letter did ;)"
+    },
+    {
+      "country": "Senegal",
+      "code": "sn",
+      "track_name": "Mane Khouma Khol Thi Yao",
+      "artist_name": "Étoile de Dakar",
+      "spotify_uri": "https://open.spotify.com/track/36s8KYzCHbLUkyzXPeY03G?si=5caa4e3885bb484c",
+      "style_note": "This late-70s gem sees a young Youssou N'Dour weaving soulful Wolof vocals over the poly-rhythmic sound of Senegalese Mbalax."
+    },
+    {
+      "country": "South Africa",
+      "code": "za",
+      "track_name": "Nkalakatha",
+      "artist_name": "Mandoza",
+      "spotify_uri": "https://open.spotify.com/track/2PGxiV2TSgVHd02eBd0Kz1?si=224be40a123c45a3",
+      "style_note": "A juggernaut of the late '90s Kwaito movement, born in the townships of Johannesburg. African percussion, deep basslines, and Mandoza's roaring, unmistakable Zulu vocals became a unifying stadium anthem across South Africa."
+    },
+    {
+      "country": "South Korea",
+      "code": "kr",
+      "track_name": "That That",
+      "artist_name": "PSY feat SUGA of BTS",
+      "spotify_uri": "https://open.spotify.com/track/7GNRUsU3M4XNDDB9xle5Dz?si=a185d481e6354f04",
+      "style_note": "An alternative to 'that track' from the global phenomenon that brought K-pop to the world stage."
+    },
+    {
+      "country": "Spain",
+      "code": "es",
+      "track_name": "Berghain",
+      "artist_name": "Rosalia",
+      "spotify_uri": "https://open.spotify.com/track/2T8yuUKl1nhmtaIocqWo4i?si=0be4165c43964565",
+      "style_note": "Dark, visceral, operatic, epic. A tour de force from the genre-defying Catalan superstar."
+    },
+    {
+      "country": "Sweden",
+      "code": "se",
+      "track_name": "Deep Channelling",
+      "artist_name": "Spirituz",
+      "spotify_uri": "https://open.spotify.com/track/12gqCnI2b1SvKgZyTeWQdD?si=9c1fae5eaa8044c3",
+      "style_note": "Relentless yet hypnotic, this 140 BPM 'Forest Psytrance' banger evokes the Scandinavian wilderness to deliver an immersive sonic journey."
+    },
+    {
+      "country": "Switzerland",
+      "code": "ch",
+      "track_name": "Eisbär",
+      "artist_name": "Grauzone",
+      "spotify_uri": "https://open.spotify.com/track/2SSf9yO6zuxeutDRbfctTV?si=800079135d1a4f74",
+      "style_note": "At the forefront of Neue Deutsche Welle (German New Wave). Swiss band Grauzone offer an anxious, driving synth track about wanting to be a polar bear to never have to cry again."
+    },
+    {
+      "country": "Tunisia",
+      "code": "tn",
+      "track_name": "Something in the Way",
+      "artist_name": "Emel",
+      "spotify_uri": "https://open.spotify.com/track/35hQ58kBiauhXVy0hjcJlA?si=50517075e0d7456d",
+      "style_note": "The haunting, soaring, melancholic voice of Emel, the 'Voice of the Tunisian Revolution', recorded minimally during the 2020 Lockdown with a single guitar and a laptop in a quiet Tunisian garden."
+    },
+    {
+      "country": "Turkey",
+      "code": "tr",
+      "track_name": "Zühtü",
+      "artist_name": "Esin Afşar",
+      "spotify_uri": "https://open.spotify.com/track/2CJ4PxGqDZEeKtR5EPviTQ?si=72bf925328814278",
+      "style_note": "A joyous, avant-garde 1974 crossover that takes a traditional Turkish folk song and supercharges it with fuzzy psych-rock."
+    },
+    {
+      "country": "Uruguay",
+      "code": "uy",
+      "track_name": "¿Qué será qué es?",
+      "artist_name": "Jorge Drexler with Rueda de Candombe",
+      "spotify_uri": "https://open.spotify.com/track/3rlz9AtVwtM996bgrBYZF4?si=5debbe06b6cc4b89",
+      "style_note": "The once-banned sound of Afro-Uruguayan Candombe, is a hypnotic blend of acordian and traditional percussion."
+    },
+    {
+      "country": "Uzbekistan",
+      "code": "uz",
+      "track_name": "Sen Qaidan Bilasan (How Do You Know)",
+      "artist_name": "Original",
+      "spotify_uri": "https://open.spotify.com/track/6NJg7Fd3cMyoBtIb9PaTQT?si=4629d86a9865460f",
+      "style_note": "A driving space-disco track from Uzbekistan's thriving '80s Soviet music scene, reminiscent of Giorgio Moroder or Cerrone."
+    }
+  ]
+}
