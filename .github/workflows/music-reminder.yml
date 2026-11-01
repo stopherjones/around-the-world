@@ -10,7 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
+      # Stop before sending anything if a data file is malformed or has a bad date,
+      # so a broken edit can't send a wrong reminder.
+      - name: Validate data files
+        run: |
+          python3 tools/validate_data.py
+
+      # Reads data/countries.json and data/events.json from the repo root
       - name: Check for today's music entries
         id: check
         run: |
