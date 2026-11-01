@@ -1,17 +1,24 @@
 import json
 import os
 from datetime import datetime
+from pathlib import Path
+
+# Resolve data paths from the repo root (this file lives in .github/scripts/),
+# so the script works whatever the current folder is.
+ROOT = Path(__file__).resolve().parents[2]
+COUNTRIES_FILE = ROOT / 'data' / 'countries.json'
+EVENTS_FILE = ROOT / 'data' / 'events.json'
 
 today = datetime.now().strftime('%d-%m')
 
 # Load countries data
-with open('countries.json') as f:
+with open(COUNTRIES_FILE, encoding='utf-8') as f:
     countries = json.load(f)
 
 # Load events data (safely handle if file doesn't exist yet)
 events = []
-if os.path.exists('events.json'):
-    with open('events.json') as f:
+if EVENTS_FILE.exists():
+    with open(EVENTS_FILE, encoding='utf-8') as f:
         events = json.load(f)
 
 country_matches = []
