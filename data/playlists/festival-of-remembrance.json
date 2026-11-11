@@ -5,76 +5,28 @@
   "theme": "remembrance",
   "tracks": [
     {
-      "country": "Mexico",
-      "code": "mx",
-      "track_name": "La Llorona",
-      "artist_name": "Chavela Vargas",
-      "spotify_uri": "https://open.spotify.com/track/1P8M8FGc3uEfjmmaTSBsvZ",
-      "style_note": "The haunting centrepiece of Mexico's Day of the Dead musical tradition. La Llorona, the Weeping Woman, is a legendary ghost condemned to wander in grief. This traditional Oaxacan song blends folklore, lost love and the pain of separation, with Chavela Vargas delivering one of its most emotionally devastating interpretations."
+      "country": "Argentina",
+      "code": "ar",
+      "track_name": "Alfonsina y el Mar",
+      "artist_name": "Mercedes Sosa",
+      "spotify_uri": "https://open.spotify.com/track/1mmZhYm2m1ZEWNzOFunQOx",
+      "style_note": "A haunting Argentine canción telling the story of poet Alfonsina Storni, who died by suicide by walking into the sea in 1938. The song imagines her final journey with extraordinary tenderness, turning a tragic real-life death into a beautiful musical elegy."
     },
     {
-      "country": "Mexico",
-      "code": "mx",
-      "track_name": "La Calaca - Remasterizada 2006",
-      "artist_name": "Amparo Ochoa",
-      "spotify_uri": "https://open.spotify.com/track/7hmDplqSftS7uQMxsEY9BU",
-      "style_note": "La Calaca is the skeleton personification of death, a familiar and often mischievous figure in Mexican folk culture. This playful folk song captures the irreverent side of Día de Muertos, where death is not just feared but teased, mocked and welcomed into everyday life."
+      "country": "Argentina",
+      "code": "ar",
+      "track_name": "Volver",
+      "artist_name": "Carlos Gardel",
+      "spotify_uri": "https://open.spotify.com/track/71bkiosdVssjMrVDbdeG7n",
+      "style_note": "A melancholic tango classic about the bitter-sweet pain of returning home, bearing the scars of time, loss, and lingering memories."
     },
     {
-      "country": "Mexico",
-      "code": "mx",
-      "track_name": "Un Puño de Tierra",
-      "artist_name": "Antonio Aguilar",
-      "spotify_uri": "https://open.spotify.com/track/6a5GOVslUy8aYnXrk2yiMb",
-      "style_note": "A classic ranchera meditation on mortality. The title means 'a handful of earth', reflecting the idea that however wealthy or successful we become, we ultimately leave with nothing. Delivered with the swagger and warmth of traditional Mexican banda and ranchera, it is both philosophical and celebratory."
-    },
-    {
-      "country": "Mexico",
-      "code": "mx",
-      "track_name": "Calaverita",
-      "artist_name": "La Santa Cecilia",
-      "spotify_uri": "https://open.spotify.com/track/6JZ420qy5vSsfg2YwKb0T3",
-      "style_note": "A contemporary celebration of the little skulls and skeleton imagery associated with Día de Muertos. La Santa Cecilia bring a lively mixture of cumbia, Latin folk and modern pop, capturing the colourful, communal and joyful side of remembering the departed."
-    },
-    {
-      "country": "Guatemala",
-      "code": "gt",
-      "track_name": "Recuerdos de un Amigo",
-      "artist_name": "Marimba Maderas Chapinas",
-      "spotify_uri": "https://open.spotify.com/track/6SpI32gPDauBzMeteNGJTM",
-      "style_note": "A marimba-led musical remembrance, its title translating as 'Memories of a Friend'. In the Maya-Kaqchikel communities of Sumpango and Santiago Sacatepéquez, Todos Santos is marked by enormous handmade kites flown above cemeteries, symbolically connecting the living and the dead. A beautiful meeting of music, memory and community."
-    },
-    {
-      "country": "Haiti",
-      "code": "ht",
-      "track_name": "Imamou Lele",
-      "artist_name": "Boukman Eksperyans",
-      "spotify_uri": "https://open.spotify.com/track/62HgSefCYPUvsDBAOkoC4O",
-      "style_note": "Haitian roots music, or Rasin, fuses Vodou-derived rhythms with rock and modern sounds. Imamou Lele invokes a spiritual figure associated with the sea and becomes a powerful lament for Haiti's environmental and social struggles. It introduces the country's profound relationship between spirituality, nature and collective identity. Haiti's Fèt Gédé celebrations, meanwhile, honour ancestral spirits through drumming, dancing and irreverent humour."
-    },
-    {
-      "country": "Ecuador",
-      "code": "ec",
-      "track_name": "Cumbia del Olvido",
-      "artist_name": "Nicola Cruz",
-      "spotify_uri": "https://open.spotify.com/track/1oCHMNWzKJdwdwjsPMjXf3",
-      "style_note": "An atmospheric electronic reimagining of Andean and Latin American rhythms. The title translates as 'Cumbia of Forgetting', a particularly evocative choice for a remembrance playlist. Ecuador's Día de los Difuntos blends Catholic observances with Indigenous traditions, including sharing purple colada morada and guaguas de pan, decorative breads made in the shape of babies."
-    },
-    {
-      "country": "Bolivia",
-      "code": "bo",
-      "track_name": "Llorando Se Fue",
-      "artist_name": "Los Kjarkas",
-      "spotify_uri": "https://open.spotify.com/track/6OZROqTzWkH2c47ypb95ST",
-      "style_note": "A landmark of Bolivian Andean folk music, built around the distinctive charango, panpipes and dance rhythms of the Andes. Although not specifically a funeral song, its melancholy melody provides a musical bridge to Bolivia's Todos Santos traditions, when families prepare elaborate offerings of food, bread figures, flowers and photographs to welcome the returning souls of their ancestors."
-    },
-    {
-      "country": "Peru",
-      "code": "pe",
-      "track_name": "El Cóndor Pasa",
-      "artist_name": "Los Incateños",
-      "spotify_uri": "https://open.spotify.com/track/4tvnIZYcs2Ca21I3dvceqA",
-      "style_note": "One of the defining melodies of Andean music, evoking the vast mountains and the condor soaring above them. Its instrumental panpipe arrangement brings an almost spiritual sense of transcendence. In Peru, All Saints and All Souls traditions include cemetery visits, offerings of food and family gatherings to remember the departed."
+      "country": "Brazil",
+      "code": "br",
+      "track_name": "As Rosas Não Falam",
+      "artist_name": "Cartola",
+      "spotify_uri": "https://open.spotify.com/track/6J4gdn9L1im9uqzqBLhht6",
+      "style_note": "A delicate Samba masterpiece reflecting on heartbreak and mortality, where silence and fading roses speak of profound, unspoken grief."
     },
     {
       "country": "Chile",
@@ -85,44 +37,100 @@
       "style_note": "Violeta Parra's extraordinary farewell to life, expressing gratitude for the senses, love, laughter, sorrow and everything that makes us human. Written shortly before her death, the song has acquired an especially poignant legacy. It is less about mourning the dead than celebrating the life they experienced and the memories they leave behind."
     },
     {
-      "country": "Argentina",
-      "code": "ar",
-      "track_name": "Alfonsina y el Mar",
-      "artist_name": "Mercedes Sosa",
-      "spotify_uri": "https://open.spotify.com/track/1mmZhYm2m1ZEWNzOFunQOx",
-      "style_note": "A haunting Argentine zamba telling the story of poet Alfonsina Storni, who died by suicide by walking into the sea in 1938. The song imagines her final journey with extraordinary tenderness, turning a tragic real-life death into a beautiful musical elegy. Mercedes Sosa's voice gives it immense emotional weight."
+      "country": "Chile",
+      "code": "cl",
+      "track_name": "Rin Del Angelito",
+      "artist_name": "Violeta Parra",
+      "spotify_uri": "https://open.spotify.com/track/1Pi2EG4FpGoGl6uFxd2tp6",
+      "style_note": "A tender Chilean angelito funeral song celebrating a child's soul ascending to heaven, transforming grief into pure spiritual light."
     },
     {
-      "country": "Brazil",
-      "code": "br",
-      "track_name": "Canto Das Três Raças",
-      "artist_name": "Clara Nunes",
-      "spotify_uri": "https://open.spotify.com/track/5TSZVy6ZYwhJ6c9h5BLYeG",
-      "style_note": "A powerful samba about the suffering and resistance of Indigenous, African and European-descended peoples in Brazil. It recalls the violence of colonisation, enslavement and exploitation, giving remembrance a broader historical and collective meaning. Clara Nunes delivers it with the emotional force of a spiritual lament."
+      "country": "Cuba",
+      "code": "cu",
+      "track_name": "Lágrimas Negras",
+      "artist_name": "Buena Vista Social Club",
+      "spotify_uri": "https://open.spotify.com/track/32NzVi6ne2G51sgmEeuGzl",
+      "style_note": "The iconic Cuban song, a fusion of bolero and Cuban 'son', that expresses deep sorrow over lost love and abandonment."
     },
     {
-      "country": "Argentina",
-      "code": "ar",
-      "track_name": "Gracias A La Vida",
-      "artist_name": "Mercedes Sosa",
-      "spotify_uri": "https://open.spotify.com/track/4hgoiF1HeAfdQmT5Gj5Fhb",
-      "style_note": "Mercedes Sosa's interpretation of Violeta Parra's Chilean masterpiece. An expression of gratitude for life itself, it became an enduring anthem of Latin American folk and protest music. Its presence here suggests that the best tribute to the departed may be to celebrate the lives they lived."
+      "country": "Haiti",
+      "code": "ht",
+      "track_name": "Nou Pap Sa Bliye",
+      "artist_name": "Boukman Eksperyans",
+      "spotify_uri": "https://open.spotify.com/track/5Q2PtDWz4YN4hjPcqekjg0",
+      "style_note": "Translating to 'We Cannot Forget', this is an upbeat confrontation to loss and tragedy from the defiant Haitian Rasin band, who seamlessly blend Vodou-derived rhythms with rock and modern sounds."
     },
-{
-  "country": "Haiti",
-  "code": "ht",
-  "track_name": "Bawon Mande",
-  "artist_name": "https://open.spotify.com/track/4QGXHZu3q4vMDsghNCkvOW?si=Uwy7GPmNRdeCcW_zToNzkw&utm_source=copy-link",
-  "spotify_uri": "Lakou Badjo",
-  "style_note": "'Bawon Mande' is a traditional ceremonial chant dedicated to Bawon Samdi (Baron Samedi), the ruler of the dead and head of the Gede spirit family in Haitian Vodou.Translated from Haitian Creole, the title means 'The Baron Asks'. The song addresses themes of mortality, justice, and the spiritual afterlife,."
-},
-{
-  "country": "Haiti",
-  "code": "ht",
-  "track_name": "Yenvalou Ghede",
-  "artist_name": "Bonnie Devlin",
-  "spotify_uri": "https://open.spotify.com/track/18bk4c2KPD3g20FTHvg8iE?si=ZSJ1TG3SSgmyhzfipUhMIw&utm_source=copy-link",
-  "style_note": "'Yenvalou Ghede' is a sacred ceremonial piece used in Haitian Vodou to invoke and honor the Ghede (or Guédé), the family of spirits (lwa) associated with death, fertility, and the ancestors."
-}
+    {
+      "country": "Haiti",
+      "code": "ht",
+      "track_name": "Yenvalou Ghede",
+      "artist_name": "Bonnie Devlin",
+      "spotify_uri": "https://open.spotify.com/track/62HgSefCYPUvsDBAOkoC4O",
+      "style_note": "A serene, spiritual dance dedicated to the Gede spirits of death and rebirth, using fluid Vodou rhythms to honour ancestral memory."
+    },
+    {
+      "country": "Mexico",
+      "code": "mx",
+      "track_name": "La Llorona",
+      "artist_name": "Chavela Vargas",
+      "spotify_uri": "https://open.spotify.com/track/1P8M8FGc3uEfjmmaTSBsvZ",
+      "style_note": "The haunting centrepiece of Mexico's Day of the Dead musical tradition. La Llorona, the Weeping Woman, is a legendary ghost condemned to wander in grief. This traditional Oaxacan song blends folklore, lost love and the pain of separation."
+    },
+    {
+      "country": "Mexico",
+      "code": "mx",
+      "track_name": "Dios Nunca Muere",
+      "artist_name": "Lila Downs",
+      "spotify_uri": "https://open.spotify.com/track/28QHawocxdu8KeK3EpfNbN",
+      "style_note": "A stirring, brass-filled Oaxacan anthem calling for God's love to help the soul endure the grief of loss."
+    },
+    {
+      "country": "Mexico",
+      "code": "mx",
+      "track_name": "Cempasúchil",
+      "artist_name": "Monsieur Periné",
+      "spotify_uri": "https://open.spotify.com/track/1bPccoPCso5WgOLGB4LAbQ",
+      "style_note": "A life-affirming celebration of those who have passed, remembered through the November blooms of the emblem of Día de los Muertos, the Cempasúchil (the marigold flower)."
+    },
+    {
+      "country": "Mexico",
+      "code": "mx",
+      "track_name": "Recuérdame",
+      "artist_name": "Natalie Lafourcade",
+      "spotify_uri": "https://open.spotify.com/track/4zw8KSRiHzzaF9QHwzpXqo",
+      "style_note": "Meaning “Remember Me” this tender ballad is a heartfelt plea to a loved one to keep memories alive even after separation or loss."
+    },
+    {
+      "country": "Mexico",
+      "code": "mx",
+      "track_name": "La Calaca",
+      "artist_name": "Amparo Ochoa",
+      "spotify_uri": "https://open.spotify.com/track/7hmDplqSftS7uQMxsEY9BU",
+      "style_note": "A whimsical, even joyous tribute to La Calaca, the skeleton symbol of Dia de los Muertos, embodying the idea that death is a joyful and equalizing force."
+    },
+    {
+      "country": "Mexico",
+      "code": "mx",
+      "track_name": "Calaveritas",
+      "artist_name": "Los Chorizeras",
+      "spotify_uri": "https://open.spotify.com/track/5sKjll8ujxP6p5lmpITb3L",
+      "style_note": "Las Chorizeras are the all-female, contemporary Mariachi fusion group, bringing this fresh, vibrant celebration of the little skulls and skeleton imagery associated with Día de Muertos."
+    },
+    {
+      "country": "Mexico",
+      "code": "mx",
+      "track_name": "Vamos a Morir",
+      "artist_name": "Pate de Fua",
+      "spotify_uri": "https://open.spotify.com/track/2IFFqBY6Khw7vgVezoXXkY",
+      "style_note": "A vibrant, gypsy-jazz-infused folk tune offering a wry, life-affirming reminder that death awaits us all, so we might as well live fully now."
+    },
+    {
+      "country": "Peru",
+      "code": "pe",
+      "track_name": "Responso Funerario",
+      "artist_name": "Jose Rojas",
+      "spotify_uri": "https://open.spotify.com/track/4XdCx6UATR5TKFA68eq0lf",
+      "style_note": "At once deeply personal and communal, this 'Day of the Dead' funeral chant is a solemn offering of spiritual prayers for eternal rest and solace to grieving families."
+    }
   ]
 }
