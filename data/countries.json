@@ -2649,7 +2649,15 @@
     "continent": "Europe",
     "read": false,
     "books": [],
-    "music": []
+    "music": [
+      {
+        "artist": "Giovanni Pierluigi da Palestrina",
+        "album_or_playlist": "Palestrina",
+        "url": "https://open.spotify.com/album/1c70yzdOtmUlEna6jp9kwf?si=r51JiPrMTcCeSy03uzrc4Q&utm_source=copy-link",
+        "description": "Soaring Renaissance choral music from the composer who helped define the sound of the papal church. Palestrina served as maestro di cappella at St Peter’s in Rome, and his interweaving vocal lines became a hallmark of the Vatican’s musical tradition.",
+        "date": "11-02"
+      }
+    ]
   },
   {
     "name": "Venezuela",
